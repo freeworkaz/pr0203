@@ -1,0 +1,215 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ru">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Практическое занятие №7 Составление политики безопасности предприятия с учетом работы систем обнаружения вторжений. &#8212; Документация course0203 1</title>
+    
+    <link rel="stylesheet" href="_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    './',
+        VERSION:     '1',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <script type="text/javascript" src="_static/translations.js"></script>
+    <link rel="index" title="Алфавитный указатель" href="genindex.html" />
+    <link rel="search" title="Поиск" href="search.html" />
+    <link rel="top" title="Документация course0203 1" href="index.html" />
+    <link rel="next" title="Практическое занятие №8 Тестирования аппаратных межсетевых экранов." href="pz8.html" />
+    <link rel="prev" title="Практическое занятие №6 Настройка систем обнаружения вторжений для обнаружения сетевых атак." href="pz6.html" />
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head>
+  <body role="document">
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="o7">
+<h1>Практическое занятие №7 Составление политики безопасности предприятия с учетом работы систем обнаружения вторжений.<a class="headerlink" href="#o7" title="Ссылка на этот заголовок">¶</a></h1>
+<div class="section" id="id1">
+<h2>Цель работы:<a class="headerlink" href="#id1" title="Ссылка на этот заголовок">¶</a></h2>
+<ol class="arabic simple">
+<li>Получить практический опыт выявления технических каналов утечки информации.</li>
+</ol>
+</div>
+<div class="section" id="id2">
+<h2>Литература:<a class="headerlink" href="#id2" title="Ссылка на этот заголовок">¶</a></h2>
+<ol class="arabic simple">
+<li>Хорев, П.Б. Программно-аппаратная защита информации : учебное пособие для вузов / П.Б. Хорев. - Москва: ФОРУМ, стр 69-96.</li>
+</ol>
+</div>
+<div class="section" id="id3">
+<h2>Подготовка к работе:<a class="headerlink" href="#id3" title="Ссылка на этот заголовок">¶</a></h2>
+<ol class="arabic simple">
+<li>Подготовить бланк отчета;</li>
+<li>Изучить предложенную литературу.</li>
+</ol>
+</div>
+<div class="section" id="id4">
+<h2>Основное оборудование:<a class="headerlink" href="#id4" title="Ссылка на этот заголовок">¶</a></h2>
+<ol class="arabic simple">
+<li>Компьютер под управлением ОС Windows Server 2008 R2;</li>
+<li>Виртуальные машины в программе VirtualBox на основе Ubuntu Linux согласно заданию и схеме сети;</li>
+<li>Модель простой сети и ресурсов простой сети;</li>
+<li>Пакет GNS3 и комплект виртуальных машин, необходимых для схемы сети;</li>
+<li>ОС Ubuntu Liunux с установленной СОВ Snort и настроенным интерфейсом;</li>
+<li>Пакеты прикладных программ LibreOffice.</li>
+</ol>
+</div>
+<div class="section" id="id5">
+<h2>Задание:<a class="headerlink" href="#id5" title="Ссылка на этот заголовок">¶</a></h2>
+<ol class="arabic simple">
+<li>Выполнить интеграцию СОВ Snort в модель сети;</li>
+</ol>
+</div>
+<div class="section" id="id6">
+<h2>Порядок выполнения работы:<a class="headerlink" href="#id6" title="Ссылка на этот заголовок">¶</a></h2>
+<ol class="arabic simple">
+<li>Выполнить подключение СОВ Snort в модель сети. Выполнить настройку интерфеса СОВ Snort.</li>
+<li>Составить политику безопасности  с учетом использования СОВ Snort. В политике отразить:</li>
+</ol>
+<blockquote>
+<div><ol class="arabic simple">
+<li>Активы и их роли в информационной систем предприятия.</li>
+<li>Уязвимости и угрзозы безопасности для выделенных ативов.</li>
+<li>Косвенные меры защиты, использующиеся для защиты активов. Их эффективность и состав.</li>
+<li>Прямые меры защиты, использующиеся для защиты активов. Их эффективность и состав.</li>
+<li>Сетевые угрозы для выделенных активов, их влияние на активы предприятия.</li>
+<li>Мера обнаружения сетевых угроз. Их эффективность. Порядок действий при обнаружении угрозы.</li>
+<li>Меры устранения угроз. Их эффективность. Порядок действий для устранения угрозы.</li>
+<li>Меры компенсирования воздействия угроз. Их эффективность. Порядок применения компенсационных мер для снижения результатов реализации угрозы.</li>
+</ol>
+</div></blockquote>
+<ol class="arabic simple">
+<li>Построенную политику свести к таблице, на основе которой составить задание для администратора, в котором указать задачи администратора по выполнению вышеуказзанных пунктов политики.</li>
+</ol>
+</div>
+<div class="section" id="id7">
+<h2>Содержание отчета:<a class="headerlink" href="#id7" title="Ссылка на этот заголовок">¶</a></h2>
+<ol class="arabic simple">
+<li>Цель работы;</li>
+<li>Содержание действий по выполнению данной работы;</li>
+<li>Ответы на контрольные вопросы;</li>
+<li>Вывод.</li>
+</ol>
+</div>
+<div class="section" id="id8">
+<h2>Контрольные вопросы:<a class="headerlink" href="#id8" title="Ссылка на этот заголовок">¶</a></h2>
+<ol class="arabic simple">
+<li>Что понимают под системой защиты информации с «полным перекрытием»?</li>
+<li>Что понимают под мерами компенсирования воздействия угроз?</li>
+<li>Каким образом на практике оценивается эффективность реализованных мер защиты?</li>
+</ol>
+</div>
+<div class="section" id="id9">
+<h2>Приложение:<a class="headerlink" href="#id9" title="Ссылка на этот заголовок">¶</a></h2>
+<p>Установка и базовая настройка Snort, IDS устанавливается на тот же сервер, чей сетевой трафик и требуется проверять.</p>
+<p># sudo apt-get install snort-mysql</p>
+<p>при установке будет запрос на ввод сети, которая будет считаться локальной, установить адрес локальной сети.</p>
+<p>дальше последует пункт с созданием БД MySQL для хранения данных приложения, выполняем его как нам и подсказывает инсталлятор</p>
+<p># cd /usr/share/doc/snort-mysql/
+# zcat create_mysql.gz | mysql -u &lt;user&gt; -h &lt;host&gt; -p &lt;databasename&gt;</p>
+<p>Порядок настройки Snort описан в файле /usr/share/doc/snort-mysql/ в файде README.mysql. В данном файле расписаны основные команды по настройке СУБД Mysql для работы Snort
+создаем sql пользователя для доступа к этой базе и прописываем данные для доступа к этой БД в файл
+/etc/snort/database.conf командой sudo nano /etc/snort/database.conf</p>
+<p>output database: log, mysql, user=&lt;созданный пользователь&gt; password=&lt;ваш пароль&gt; dbname=&lt;созданная БД&gt; host=localhost</p>
+<p>удаляем файл /etc/snort/db-pending-config и запускаем Snort</p>
+<p>sudo invoke-rc.d snort start</p>
+<p>Устанавливаем Acidbase, веб-приложение для работы с данными собираемыми Snort&#8217;ом</p>
+<p>sudo apt-get install acidbase</p>
+<p>в процессе инсталляции будет надо будет указать пароль для доступа к БД Snort&#8217;а. Данные будут прописаны сюда /etc/acidbase/database.php</p>
+<p>проходим по <a class="reference external" href="http:/">http:/</a>/&lt;IP_адрес&gt;/acidbase/base_db_setup.php</p>
+<p>жмем кнопку &#8220;Create BASE AG&#8221;, добавятся новые таблицы расширяющие БД Snort для поддержки функциональности BASE (так же будет напоминание, что для поддержки возможности удаления логов, sql пользователь из под которого ведется работа с БД должен иметь права delete и update)</p>
+<p>проходим по <a class="reference external" href="http:/">http:/</a>/&lt;IP_адрес&gt;/acidbase</p>
+<p>Теперь можно создавать учетные записи в Acidbase, разграничивать права пользователей и продолжать работу с приложением.</p>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <h3><a href="index.html">Оглавление</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">Практическое занятие №7 Составление политики безопасности предприятия с учетом работы систем обнаружения вторжений.</a><ul>
+<li><a class="reference internal" href="#id1">Цель работы:</a></li>
+<li><a class="reference internal" href="#id2">Литература:</a></li>
+<li><a class="reference internal" href="#id3">Подготовка к работе:</a></li>
+<li><a class="reference internal" href="#id4">Основное оборудование:</a></li>
+<li><a class="reference internal" href="#id5">Задание:</a></li>
+<li><a class="reference internal" href="#id6">Порядок выполнения работы:</a></li>
+<li><a class="reference internal" href="#id7">Содержание отчета:</a></li>
+<li><a class="reference internal" href="#id8">Контрольные вопросы:</a></li>
+<li><a class="reference internal" href="#id9">Приложение:</a></li>
+</ul>
+</li>
+</ul>
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="index.html">Documentation overview</a><ul>
+      <li>Previous: <a href="pz6.html" title="предыдущая глава">Практическое занятие №6 Настройка систем обнаружения вторжений для обнаружения сетевых атак.</a></li>
+      <li>Next: <a href="pz8.html" title="следующая глава">Практическое занятие №8 Тестирования аппаратных межсетевых экранов.</a></li>
+  </ul></li>
+</ul>
+</div>
+  <div role="note" aria-label="source link">
+    <h3>Эта страница</h3>
+    <ul class="this-page-menu">
+      <li><a href="_sources/pz7.txt"
+            rel="nofollow">Исходный текст</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3>Быстрый поиск</h3>
+    <form class="search" action="search.html" method="get">
+      <div><input type="text" name="q" /></div>
+      <div><input type="submit" value="Искать" /></div>
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2016, Vladimir Dushkevich.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 1.4.8</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.9</a>
+      
+      |
+      <a href="_sources/pz7.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

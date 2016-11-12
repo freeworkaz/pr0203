@@ -1,0 +1,234 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ru">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Практическое занятие №1 Работа с программными средствами анализа рисков &#8212; Документация course0203 1</title>
+    
+    <link rel="stylesheet" href="_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    './',
+        VERSION:     '1',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <script type="text/javascript" src="_static/translations.js"></script>
+    <link rel="index" title="Алфавитный указатель" href="genindex.html" />
+    <link rel="search" title="Поиск" href="search.html" />
+    <link rel="top" title="Документация course0203 1" href="index.html" />
+    <link rel="next" title="Практическое занятие №2 Составление концепции управления рисками в области информационной безопасности предприятия." href="pz2.html" />
+    <link rel="prev" title="Welcome to course0203’s documentation!" href="index.html" />
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head>
+  <body role="document">
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="o1">
+<h1>Практическое занятие №1 Работа с программными средствами анализа рисков<a class="headerlink" href="#o1" title="Ссылка на этот заголовок">¶</a></h1>
+<div class="section" id="id1">
+<h2>Цель работы:<a class="headerlink" href="#id1" title="Ссылка на этот заголовок">¶</a></h2>
+<ol class="arabic simple">
+<li>получить практический опыт применения программно-аппаратных средств обеспечения информационной безопасности телекоммуникационных систем;</li>
+<li>Получить практический опыт выявления технических каналов утечки информации.</li>
+</ol>
+</div>
+<div class="section" id="id2">
+<h2>Литература:<a class="headerlink" href="#id2" title="Ссылка на этот заголовок">¶</a></h2>
+<ol class="arabic simple">
+<li>Мельников, В.П. Информационная безопасность учебное пособие для студентов учреждений среднего профессионального образования. В.П. Мельников, С.А. Клейменов, А.М. Петраков. Москва: Академия, 2012г. стр. 194-202;</li>
+</ol>
+</div>
+<div class="section" id="id3">
+<h2>Подготовка к работе:<a class="headerlink" href="#id3" title="Ссылка на этот заголовок">¶</a></h2>
+<ol class="arabic simple">
+<li>Подготовить бланк отчета;</li>
+<li>Изучить предложенную литературу.</li>
+</ol>
+</div>
+<div class="section" id="id4">
+<h2>Основное оборудование:<a class="headerlink" href="#id4" title="Ссылка на этот заголовок">¶</a></h2>
+<ol class="arabic simple">
+<li>Программа OpenVAS;</li>
+<li>Виртуальные машины в программе VirtualBox на основе Ubuntu Linux с различными компонентоми;</li>
+<li>Пакеты прикладных программ LibreOffice.</li>
+</ol>
+</div>
+<div class="section" id="id5">
+<h2>Задание:<a class="headerlink" href="#id5" title="Ссылка на этот заголовок">¶</a></h2>
+<ol class="arabic simple">
+<li>Проанализировать уязвимости предложенных ресурсов, выделить и описать угрозы активам, составив отчет о проделанной работе.</li>
+</ol>
+</div>
+<div class="section" id="id6">
+<h2>Порядок выполнения работы:<a class="headerlink" href="#id6" title="Ссылка на этот заголовок">¶</a></h2>
+<ol class="arabic simple">
+<li>Изучить теоретический материал по данной теме (15-20 минут);</li>
+<li>Изучить интерфейс сканера OpenVAS;</li>
+<li>Подготовить необходимый набор виртуальных машин;</li>
+<li>Запустить сканер сети OpenVAS. Выяснить ip адрес сканера сети;</li>
+<li>Запустить виртуальную машину с тестируемым компонентом. Выяснить ip адрес исследуемой машины. Проверить, что исследуемая  машина располагается в одном сегменте сети со сканером сети OpenVAS;</li>
+<li>При помощи браузера подключиться к веб интерфейсу сканера сети. Выполнить сканирование исследуемой машины. Параллельно запустить сканирование следующей виртуальной машины;</li>
+<li>Оформить разультаты сканирования в виде отета, в котором указать найденные уязвимости и рекомендации по их устранения;</li>
+<li>Просканировать все имеющиеся на ПК виртуальные машины. По результатам сканирования оформить общий отчет об уязвимостях систем;</li>
+<li>Выработать рекомендации по улучшению системы безопасности с учетом проведенного мониторинга;</li>
+<li>Разработать шаблон политики обновлений в рамках составленного отчета. Шаблон  оформить документально в произвольной форме;</li>
+<li>Продемонстрировать результаты работы преподавателю.</li>
+</ol>
+</div>
+<div class="section" id="id7">
+<h2>Содержание отчета:<a class="headerlink" href="#id7" title="Ссылка на этот заголовок">¶</a></h2>
+<ol class="arabic simple">
+<li>Цель работы;</li>
+<li>Содержание действий по выполнению данной работы;</li>
+<li>Ответы на контрольные вопросы;</li>
+<li>Вывод.</li>
+</ol>
+</div>
+<div class="section" id="id8">
+<h2>Контрольные вопросы:<a class="headerlink" href="#id8" title="Ссылка на этот заголовок">¶</a></h2>
+<ol class="arabic simple">
+<li>Что понимают под уязвимостью?</li>
+<li>Что понимают под угрозой?</li>
+<li>Что понимают под риском в рамках информационной безопасности?</li>
+</ol>
+</div>
+<div class="section" id="id9">
+<h2>Приложение:<a class="headerlink" href="#id9" title="Ссылка на этот заголовок">¶</a></h2>
+<p>Сканеры уязвимостей — это программные или аппаратные средства, служащие для осуществления диагностики и мониторинга сетевых компьютеров, позволяющее сканировать сети, компьютеры и приложения на предмет обнаружения возможных проблем в системе безопасности, оценивать и устранять уязвимости. (Википедия).
+Известными коммерческими сканерами являются Nessus, GFI LANguard, XSpider.
+В отличии от прочих, OpenVAS бесплатен, работает без каких либо ограничений и может пригодится как сетевым администраторам, так и специалистам ИБ для выявления актуальных проблем своей инфраструктуры.
+Интерфейс GSA вообще не сложен, и хотя не локализован сориентироваться в настройках очень легко. В самом верху расположено меню содержащее 7 пунктов соответствующих определенной задаче или настройкам. После регистрации можно сразу приступить к проверке, в этом поможет мастер встречающий в окне приветствия, по нажатию на фиолетовый значок в панели Tasks. Поле «Quick start: Immediately scan an IP address» (рисунок.1) позволяет сразу же создать задачу для проверки узла или сети. Для этого нужно просто указать IP или имя. Сканирование производится с настройками по умолчанию (Full and fast), выбрав гиперссылку рядом сразу можем просмотреть установки.</p>
+<div class="figure align-center" id="id10">
+<a class="reference internal image-reference" href="_images/openvas_quick_start.png"><img alt="интерфейс openvas_quick_start" src="_images/openvas_quick_start.png" style="width: 1024.0px; height: 672.0px;" /></a>
+<p class="caption"><span class="caption-text">Рисунок 1 Интерфейс openvas_quick_start</span></p>
+</div>
+<p>Сами политики сканирования настраиваются в Configuration – Scan Configs. Здесь уже имеется 5 политик: одна пустая (empty) и 4 преднастроенные. По количеству тестов (на момент написания этих строк 33144) преднастроенные политики между собой не отличаются. Разница лишь в настройках сканера. Готовые политики делятся также на fast и deep. Вторые не учитывают результаты предыдущих тестов и вся процедура каждый раз повторяется сначала. По опыту скажу что deep редко когда выдает что-то особенное, но вот время сканирования увеличивается в разы. Поэтому при первом сканировании достаточно использовать Full and fast или Full and fast ultimate, в последующем критические системы можно (для самоуспокоения) дополнительно проверить deep политиками. Настройки конкретной политики легко узнать выбрав в поле Actions фиолетовую кнопку «Scan Config Detail» (рисунок.2).</p>
+<div class="figure align-center" id="id11">
+<a class="reference internal image-reference" href="_images/Scan_Config_Detail.jpg"><img alt="интерфейс openvas_quick_start" src="_images/Scan_Config_Detail.jpg" style="width: 1012.0px; height: 800.0px;" /></a>
+<p class="caption"><span class="caption-text">Рисунок 2 Scan Config Detail</span></p>
+</div>
+<p>Настройки готовых политик менять нельзя, но их можно экспортировать (зеленая Export Scan Config) или клонировать чтобы создать на их основе свою, для просто нажимаем оранжевую Clone. В результате появляется еще одна политика с окончанием Clone 1. Используя кнопку Edit Scan Config изменяем параметры. Их здесь очень много, все NVT тесты сгруппированы по различным типам операционных систем и сетевого оборудования, содержат настройки nmap, ping, snmpwal, настройки логина, использование ARP, проверки паролей и много другого. Конечно некоторое время потребуется чтобы во всем разобраться (если нет желания использовать установки по умолчанию). Сами тесты могут быть динамическими (добавляются самостоятельно) или статическими.
+В подразделе Configuration имеется еще ряд полезных пунктов с которым следует ознакомится, так как затем настройки будут фигурировать в задании. Например, в Targets – Port List задается список портов, которые будут проверяться на конечных узлах. Здесь 9 преднастроек, по умолчанию в задании используется OpenVAS Default. В Targets – Credential указываются учетные записи пользователей от имени которых будет производится подключение к удаленным узлам и проверка системы (если пользователь доменный, то логин указываем в формате доменлогин). Для аутентификации можно использовать как логин и пароль, так и публичный/приватный ключ. В Configuration – Slave добавляются дополнительные OpenVAS Manager, который будет использоваться для проверки узлов. Задания можно запускать вручную, но лучше это производить автоматически во время меньшей загруженности систем. Для этого следует в Configuration – Schedules создать задачи. Выбираем New Schedule и в предложенных полях указываем название, время первого запуска, часовой пояс (если не совпадает с текущим), и периодичность.
+Теперь настраиваем узлы которые будут сканироваться. Переходим в Configuration – Target, здесь находим готовое задание для проверки локальной системы и созданное при помощи Quick start. Нажимаем New Target (звездочка) и указываем название, вписываем узлы ( IP, диапазон, имя узла), Port List, подключаем Credential. Возможно прописать все узлы в текстовый файл, который и указать при помощи «From file».
+Чтобы создать новую задачу проверки безопасности переходим в раздел Scan Management — New Task, и заполняем поля (рисунок.3): указываем имя и описание, в выпадающих списках выбраем все, что мы раньше настраивали — политику сканирования, узлы, расписание и т. д.</p>
+<blockquote>
+<div><div class="figure align-center" id="id12">
+<a class="reference internal image-reference" href="_images/new_task.jpg"><img alt="интерфейс openvas_quick_start" src="_images/new_task.jpg" style="width: 1001.0px; height: 800.0px;" /></a>
+<p class="caption"><span class="caption-text">Рисунок 3 New task</span></p>
+</div>
+</div></blockquote>
+<p>Некоторые параметры подписаны как optional их можно не трогать. Нажимаем Create Task, задача появляется в Scan Management — Task. Текущее состояние отображается в поле Status, в поле Actions находятся кнопки позволяющие управлять задачей: запустить, остановить, изменить настройки, клонировать, экспортировать и т. д. Нажимаем Start и ожидаем окончания сканирования (перед этим лучше установить автообновление окна, чтобы видеть прогресс). По окончании сканирования можем просмотреть отчет, для этого следует нажать на Task Detail (рисунок.4).</p>
+<blockquote>
+<div><div class="figure align-center" id="id13">
+<a class="reference internal image-reference" href="_images/task_detail.jpg"><img alt="интерфейс openvas_quick_start" src="_images/task_detail.jpg" style="width: 995.0px; height: 798.0px;" /></a>
+<p class="caption"><span class="caption-text">Рисунок 4 Task detail</span></p>
+</div>
+</div></blockquote>
+<p>Отчет содержит две позиции Threat (угрозы) и Scan Results. Все предупреждения разбиты на 4 позиций по уровню опасности. Основное внимание следует обратить на High, Medium и Low, которые собственно и указывают на проблемы. Отчеты None, Log и False Pos показывают обычно предупреждения о неудачных операциях. Подробный отчет можно увидеть нажав Details, и затем выбрать формат для экспорта (PDF, TXT, HTML, XML и другие) и при необходимости фильтры. Кнопка Compare позволяет сравнить отчеты. Это очень полезная операция, позволяющая увидеть что изменилось со времени последнего сканирования, например оценить эффективность принятых мер безопасности.
+В Asset Management — Hosts доступен еще один вид отчета Prognostic Report позволяющий оценить все предупреждения относящиеся к конкретнуму узлу полученные в ходе предыдущих проверок. Вполне вероятно что некоторые отчеты сканера могут содержать ложные срабатывания, чтобы они не мешали используется раздел Override В Note можно прописывать некоторое объяснение которое привязывается к NVT тесту.
+Периодически следует обновлять NVT/SCAP/CERT базы, все настройки находятся в Administration, в трех одноименных разделах. Кроме этого можно использовать консольные команды:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">openvas</span><span class="o">-</span><span class="n">nvt</span><span class="o">-</span><span class="n">sync</span>
+<span class="n">openvas</span><span class="o">-</span><span class="n">scapdata</span><span class="o">-</span><span class="n">sync</span>
+<span class="n">openvas</span><span class="o">-</span><span class="n">certdata</span><span class="o">-</span><span class="n">sync</span>
+<span class="n">openvassd</span>
+<span class="n">openvasmd</span> <span class="o">--</span><span class="n">rebuild</span>
+<span class="n">killall</span> <span class="n">openvassd</span>
+<span class="o">/</span><span class="n">etc</span><span class="o">/</span><span class="n">init</span><span class="o">.</span><span class="n">d</span><span class="o">/</span><span class="n">openvas</span><span class="o">-</span><span class="n">scanner</span> <span class="n">restart</span>
+<span class="o">/</span><span class="n">etc</span><span class="o">/</span><span class="n">init</span><span class="o">.</span><span class="n">d</span><span class="o">/</span><span class="n">openvas</span><span class="o">-</span><span class="n">manager</span> <span class="n">restart</span>
+<span class="o">/</span><span class="n">etc</span><span class="o">/</span><span class="n">init</span><span class="o">.</span><span class="n">d</span><span class="o">/</span><span class="n">openvas</span><span class="o">-</span><span class="n">administrator</span> <span class="n">restart</span>
+<span class="o">/</span><span class="n">etc</span><span class="o">/</span><span class="n">init</span><span class="o">.</span><span class="n">d</span><span class="o">/</span><span class="n">greenbone</span><span class="o">-</span><span class="n">security</span><span class="o">-</span><span class="n">assistant</span> <span class="n">restart</span>
+</pre></div>
+</div>
+<p>Демонстрация работы с OpenVAS представлена на видео ниже</p>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <h3><a href="index.html">Оглавление</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">Практическое занятие №1 Работа с программными средствами анализа рисков</a><ul>
+<li><a class="reference internal" href="#id1">Цель работы:</a></li>
+<li><a class="reference internal" href="#id2">Литература:</a></li>
+<li><a class="reference internal" href="#id3">Подготовка к работе:</a></li>
+<li><a class="reference internal" href="#id4">Основное оборудование:</a></li>
+<li><a class="reference internal" href="#id5">Задание:</a></li>
+<li><a class="reference internal" href="#id6">Порядок выполнения работы:</a></li>
+<li><a class="reference internal" href="#id7">Содержание отчета:</a></li>
+<li><a class="reference internal" href="#id8">Контрольные вопросы:</a></li>
+<li><a class="reference internal" href="#id9">Приложение:</a></li>
+</ul>
+</li>
+</ul>
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="index.html">Documentation overview</a><ul>
+      <li>Previous: <a href="index.html" title="предыдущая глава">Welcome to course0203&#8217;s documentation!</a></li>
+      <li>Next: <a href="pz2.html" title="следующая глава">Практическое занятие №2 Составление концепции управления рисками в области информационной безопасности предприятия.</a></li>
+  </ul></li>
+</ul>
+</div>
+  <div role="note" aria-label="source link">
+    <h3>Эта страница</h3>
+    <ul class="this-page-menu">
+      <li><a href="_sources/pz1.txt"
+            rel="nofollow">Исходный текст</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3>Быстрый поиск</h3>
+    <form class="search" action="search.html" method="get">
+      <div><input type="text" name="q" /></div>
+      <div><input type="submit" value="Искать" /></div>
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2016, Vladimir Dushkevich.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 1.4.8</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.9</a>
+      
+      |
+      <a href="_sources/pz1.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

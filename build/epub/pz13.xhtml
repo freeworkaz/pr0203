@@ -1,0 +1,364 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+  "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ru">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Практическое занятие №13 Моделирование работы межсетевых экранов в крупных сетях.</title>
+    
+    <link rel="stylesheet" href="_static/epub.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" /> 
+  </head>
+  <body role="document">
+
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Навигация</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.xhtml" title="Алфавитный указатель"
+             accesskey="I">указатель</a></li>
+        <li class="right" >
+          <a href="pz14.xhtml" title="Практическое занятие №14 Моделирование защищенных каналов связи в различных сетях"
+             accesskey="N">вперёд</a> |</li>
+        <li class="right" >
+          <a href="pz12.xhtml" title="Практическое занятие №12 Настройка и конфигурирование межсетевых экранов в средних сетях."
+             accesskey="P">назад</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.xhtml">Документация course0203 1</a> &#187;</li> 
+      </ul>
+    </div>
+
+    <div class="document">
+      <div class="documentwrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="o13">
+<h1>Практическое занятие №13 Моделирование работы межсетевых экранов в крупных сетях.</h1>
+<div class="section" id="id1">
+<h2>Цель работы:</h2>
+<ol class="arabic simple">
+<li>Получить практический опыт применения программно-аппаратных средств обеспечения информационной безопасности телекоммуникационных систем;</li>
+<li>Получить практический опыт выявления технических каналов утечки информации.</li>
+</ol>
+</div>
+<div class="section" id="id2">
+<h2>Литература:</h2>
+<ol class="arabic simple">
+<li>Шаньгин, В. Ф. Информационная безопасность и защита информации [Электронный ресурс]: учебное пособие. - Москва: ДМК Пресс, 2014. - &nbsp;Режим доступа: <a class="reference external" href="http://www.iprbookshop.ru/29257">http://www.iprbookshop.ru/29257</a>, по запросу, стр 552-556;</li>
+</ol>
+</div>
+<div class="section" id="id3">
+<h2>Подготовка к работе:</h2>
+<ol class="arabic simple">
+<li>Подготовить бланк отчета;</li>
+<li>Изучить предложенную литературу.</li>
+</ol>
+</div>
+<div class="section" id="id4">
+<h2>Основное оборудование:</h2>
+<ol class="arabic simple">
+<li>Компьютер под управлением ОС Windows Server 2008 R2;</li>
+<li>Программа Cisco Packet Tracer.</li>
+</ol>
+</div>
+<div class="section" id="id5">
+<h2>Задание:</h2>
+<ol class="arabic simple">
+<li>Выполнить конфигурирование МЭ в крупной сети с настройкой ACL в среде моделирования Cisco Packet Tracer.</li>
+</ol>
+</div>
+<div class="section" id="id6">
+<h2>Порядок выполнения работы:</h2>
+<ol class="arabic simple">
+<li>Составить в Cisco Packet Tracer схему следующей сети:</li>
+</ol>
+<div class="figure align-center" id="id21">
+<img alt="Схема сети для настройки ACL" src="_images/network_schema_ACL.png" style="width: 923.0px; height: 599.0px;" />
+<p class="caption"><span class="caption-text">Рисунок 1 Схема сети для настройки ACL</span></p>
+</div>
+<ol class="arabic simple">
+<li>Создать список ACL:</li>
+</ol>
+<blockquote>
+<div><ol class="arabic simple">
+<li>Войти в режим конфигурирования коммутатора или маршрутизатора;</li>
+<li>Для создания простого списка доступа необходимо выполнить команду #ip access-list standart 10. При этом создается стандартный список доступа под номером 10;</li>
+<li>Для создания простого списка доступа необходимо выполнить команду # ip access-list extended 100. При этом создается расширенный список доступа под номером 100;</li>
+</ol>
+</div></blockquote>
+<ol class="arabic simple">
+<li>Наполнить список правилами обработки трафика. В правилах задать протокол, порт и направление трафика. Каждое, правило в списке доступа сдержит три важных элемента:</li>
+</ol>
+<blockquote>
+<div><ol class="arabic simple">
+<li>Число, идентифицирующее список при обращении к нему в других частях конфигурации маршрутизатора или коммутатора третьего уровня;</li>
+<li>Инструкцию deny (запретить) или permit (разрешить);</li>
+<li>Идентификатор пакета, который задается по одному из трех вариантов:адрес сети (например 192.168.2.0  0.0.0.255), адрес хоста (host 192.168.2.1) или любой IP адрес (any);</li>
+<li>Применить список доступа к интерфейсу устройства на вход или на выход этого интерфейса. Пример стандартного списка доступа №10:</li>
+</ol>
+</div></blockquote>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">access</span><span class="o">-</span><span class="nb">list</span> <span class="mi">10</span> <span class="n">deny</span> <span class="n">host</span> <span class="mf">11.0</span><span class="o">.</span><span class="mf">0.5</span> <span class="n">access</span><span class="o">-</span><span class="nb">list</span> <span class="mi">10</span> <span class="n">deny</span> <span class="mf">12.0</span><span class="o">.</span><span class="mf">0.0</span>  <span class="mf">0.255</span><span class="o">.</span><span class="mf">255.255</span> <span class="n">access</span><span class="o">-</span><span class="nb">list</span> <span class="mi">10</span> <span class="n">permit</span> <span class="nb">any</span>
+</pre></div>
+</div>
+<dl class="docutils">
+<dt>В этом списке:</dt>
+<dd><ul class="first last simple">
+<li>запрещен весь трафик хосту с IP адресом 11.0.0.5;</li>
+<li>запрещен весь трафик в сети 12.0.0.0/8 (в правиле указывается не реальная маска подсети, а ее шаблон); - весь остальной трафик разрешен;</li>
+</ul>
+</dd>
+</dl>
+<ol class="arabic simple">
+<li>Реализовать указанный выше пример в созданной модели сети. Продемонстрировать результаты работы преподавателю;</li>
+<li>Выполнить настройку фильтрации по «белому списку» адресов. Компьютеры comp1 и comp2 должны открывать все сайты, но им запрещено входить на компьютеры comp3 и comp4;</li>
+<li>Выполнить настройку фильтрации по «черному списку» адресов. Компьютеры comp3 и comp4 доступны друг для друга и должны открывать только сайт своей сети, сеть 11.0.0.0 для них недоступна;</li>
+<li>Продемонстрировать результаты работы преподавателю.</li>
+</ol>
+</div>
+<div class="section" id="id7">
+<h2>Содержание отчета:</h2>
+<ol class="arabic simple">
+<li>Цель работы;</li>
+<li>Содержание действий по выполнению данной работы;</li>
+<li>Ответы на контрольные вопросы;</li>
+<li>Вывод.</li>
+</ol>
+</div>
+<div class="section" id="id8">
+<h2>Контрольные вопросы:</h2>
+<ol class="arabic simple">
+<li>Как реализуется на практике методика сканирования портов?</li>
+<li>Как реализуется на практике методика проведения DOS атак?</li>
+<li>Какие существуют методы защиты от сканирования портов?</li>
+</ol>
+</div>
+<div class="section" id="id9">
+<h2>Приложение:</h2>
+<p>ACL (Access Control List) — это набор текстовых выражений, которые что-то разрешают, либо что-то запрещают. Обычно ACL разрешает или запрещает IP-пакеты, но помимо всего прочего он может заглядывать внутрь IP-пакета, просматривать тип пакета, TCP и UDP порты. Также ACL существует для различных сетевых протоколов (IP, IPX, AppleTalk и так далее). В основном применение списков доступа рассматривают с точки зрения пакетной фильтрации, то есть пакетная фильтрация необходима в тех ситуациях, когда у вас стоит оборудование на границе Интернет и вашей частной сети и нужно отфильтровать ненужный трафик.
+Вы размещаете ACL на входящем направлении и блокируете избыточные виды трафика.</p>
+<div class="section" id="id10">
+<h3>Теория</h3>
+<p>Функционал ACL состоит в классификации трафика, нужно его проверить сначала, а потом что-то с ним сделать в зависимости от того, куда ACL применяется. ACL применяется везде, например:</p>
+<blockquote>
+<div><ul class="simple">
+<li>На интерфейсе: пакетная фильтрация</li>
+<li>На линии Telnet: ограничения доступа к маршрутизатору</li>
+<li>VPN: какой трафик нужно шифровать</li>
+<li>QoS: какой трафик обрабатывать приоритетнее</li>
+<li>NAT: какие адреса транслировать</li>
+</ul>
+</div></blockquote>
+<p>Для применения ACL для всех этих компонентов нужно понять как они работают. И мы в первую очередь будем касаться пакетной фильтрации. Применительно к пакетной фильтрации, ACL размещаются на интерфейсах, сами они создаются независимо, а уже потом они прикручиваются к интерфейсу. Как только вы его прикрутили к интерфейсу маршрутизатор начинает просматривать трафик. Маршрутизатор рассматривает трафик как входящий и исходящий. Тот трафик, который входит в маршрутизатор называется входящим, тот который из него выходит — исходящий. Соответственно ACL размещаются на входящем или на исходящем направлении.</p>
+<div class="figure align-center" id="id22">
+<img alt="Сеть с одним МЭ" src="_images/acl1.jpg" style="width: 760.0px; height: 213.0px;" />
+<p class="caption"><span class="caption-text">Рисунок 2 Сеть с одним МЭ</span></p>
+</div>
+<p>Из вашей частной сети приходит пакет на интерфейс маршрутизатора fa0/1, маршрутизатор проверяет есть ли ACL на интерфейсе или нет, если он есть, то дальше обработка ведется по правилам списка доступа строго в том порядке, в котором записаны выражения, если список доступа разрешает проходить пакету, то в данном случае маршрутизатор отправляет пакет провайдеру через интерфейс fa0/0, если список доступа не разрешает проходить пакету, пакет уничтожается. Если списка доступа нет — пакет пролетает без всяких ограничений. Перед тем как отправить пакет провайдеру, маршрутизатор ещё проверяет интерфейс fa0/0 на наличие исходящего ACL. Дело в том, что ACL может быть прикреплен на интерфейсе как входящий или исходящий. К примеру у нас есть ACL с правилом запретить всем узлам в Интернете посылать в нашу сеть пакеты.
+На какой интерфейс прикрепить данную ACL?
+Если мы прикрепим ACL на интерфейс fa0/1 как исходящий, это будет не совсем верно, хотя и ACL работать будет. На маршрутизатор приходит эхо-запрос для какого-то узла в частной сети, он проверяет на интерфейсе fa0/0 есть ли ACL, его нет, дальше проверяет интерфейс fa0/1, на данном интерфейсе есть ACL, он настроен как исходящий, всё верно пакет не проникает в сеть, а уничтожается маршрутизатором. Но если мы прикрепим ACL за интерфейсом fa0/0 как входящий, то пакет будет уничтожатся сразу как пришел на маршрутизатор. Последнее решение является правильным, так как маршрутизатор меньше нагружает свои вычислительные ресурсы. Расширенные ACL нужно размещать как можно ближе к источнику, стандартные же как можно ближе к получателю. Это нужно для того, чтобы не гонять пакеты по всей сети зря.</p>
+<p>Сам же ACL представляет собой набор текстовых выражений, в которых написано permit (разрешить) либо deny (запретить), и обработка ведется строго в том порядке в котором заданы выражения. Соответственно когда пакет попадает на интерфейс он проверяется на первое условие, если первое условие совпадает с пакетом, дальнейшая его обработка прекращается. Пакет либо перейдет дальше, либо уничтожится.
+Ещё раз, если пакет совпал с условием, дальше он не обрабатывается. Если первое условие не совпало, идет обработка второго условия, если оно совпало, обработка прекращается, если нет, идет обработка третьего условия и так дальше пока не проверятся все условия, если никакое из условий не совпадает, пакет просто уничтожается. Помните, в каждом конце списка стоит неявный deny any (запретить весь трафик). Будьте очень внимательны с этими правилами, которые я выделил, потому что очень часто происходят ошибки при конфигурации.</p>
+<p>ACL разделяются на два типа:</p>
+<blockquote>
+<div><ul class="simple">
+<li>Стандартные (Standard): могут проверять только адреса источников</li>
+<li>Расширенные (Extended): могут проверять адреса источников, а также адреса получателей, в случае IP ещё тип протокола и TCP/UDP порты</li>
+</ul>
+</div></blockquote>
+<p>Обозначаются списки доступа либо номерами, либо символьными именами. ACL также используются для разных сетевых протоколов. Мы в свою очередь будем работать с IP. Обозначаются они следующим образом, нумерованные списки доступа:</p>
+<blockquote>
+<div><ul class="simple">
+<li>Стандартные: от 1 до 99</li>
+<li>Расширенные: от 100 до 199</li>
+</ul>
+</div></blockquote>
+<p>Символьные ACL разделяются тоже на стандартные и расширенные. Расширенные напомню могут проверять гораздо больше, нежели стандартные, но и работают они медленнее, так как придется заглядывать внутрь пакета, в отличии от стандартных где мы смотрим только поле Source Address (Адрес отправителя). При создании ACL каждая запись списка доступа обозначается порядковым номером, по умолчанию в рамках десяти (10, 20, 30 и т.д). Благодаря чему, можно удалить конкретную запись и на её место вставить другую, но эта возможность появилась в Cisco IOS 12.3, до 12.3 приходилось ACL удалять, а потом создать заново полностью. Нельзя разместить более 1 списка доступа на интерфейс, на протокол, на направление. Объясняю: если у нас есть маршрутизатор и у него есть интерфейс, мы можем на входящее направление для IP-протокола разместить только один список доступа, например под номером 10. Ещё одно правило, касающееся самих маршрутизаторов, ACL не действует на трафик, сгенерированный самим маршрутизатором.</p>
+<p>Для фильтрации адресов в ACL используется WildCard-маска. Это обратная маска. Берем шаблонное выражение: 255.255.255.255 и отнимаем от шаблона обычную маску.
+255.255.255.255-255.255.255.0, у нас получается маска 0.0.0.255, что является обычной маски 255.255.255.0, только 0.0.0.255 является WildCard маской.</p>
+</div>
+<div class="section" id="acl">
+<h3>Виды ACL</h3>
+</div>
+<div class="section" id="dynamic-acl">
+<h3>Динамический (Dynamic ACL)</h3>
+<p>Позволяет сделать следующее, например у вас есть маршрутизатор, который подключен к какому-то серверу и нам нужно закрыть доступ к нему из внешнего мира, но в тоже время есть несколько человек, которые могут подключаться к серверу.
+Мы настраиваем динамический список доступа, прикрепляем его на входящем направлении, а дальше людям, которым нужно подключиться, подключаться через Telnet к данному устройству, в результате динамический ACL открывает проход к серверу, и уже человек может зайти скажем через HTTP попасть на сервер. По умолчанию через 10 минут этот проход закрывается и пользователь вынужден ещё раз выполнить Telnet чтобы подключиться к устройству.</p>
+</div>
+<div class="section" id="reflexive-acl">
+<h3>Рефлексивный (Reflexive ACL)</h3>
+<p>Здесь ситуация немножко отличается, когда узел в локальной сети отправляет TCP запрос в Интернет, у нас должен быть открытый проход, чтобы пришел TCP ответ для установки соединения. Если прохода не будет — мы не сможем установить соединение, и вот этим проходом могут воспользоваться злоумышленники, например проникнуть в сеть. Рефлексивные ACL работают таким образом, блокируется полностью доступ (deny any) но формируется ещё один специальный ACL, который может читать параметры пользовательских сессий, которые сгенерированны из локальной сети и для них открывать проход в deny any, в результате получается что из Интернета не смогут установить соединение. А на сессии сгенерированны из локальной сети будут приходить ответы.</p>
+</div>
+<div class="section" id="time-based-acl">
+<h3>Ограничение по времени (Time-based ACL)</h3>
+<p>Обычный ACL, но с ограничением по времени, вы можете ввести специальное расписание, которое активирует ту или иную запись списка доступа. И сделать такой фокус, например пишем список доступа, в котором запрещаем HTTP-доступ в течении рабочего дня и вешаем его на интерфейс маршрутизатора, то есть, сотрудники предприятия пришли на работу, им закрывается HTTP-доступ, рабочий день закончился, HTTP-доступ открывается,
+пожалуйста, если хотите — сидите в Интернете.</p>
+</div>
+<div class="section" id="id11">
+<h3>Настройка</h3>
+<p>Сами ACL создаются отдельно, то есть это просто некий список, который создается в глобальном конфиге, потом он присваивается к интерфейсу и только тогда он и начинает работать. Необходимо помнить некоторые моменты, для того, чтобы правильно настроить списки доступа:</p>
+<blockquote>
+<div><ul class="simple">
+<li>Обработка ведется строго в том порядке, в котором записаны условия</li>
+<li>Если пакет совпал с условием, дальше он не обрабатывается</li>
+<li>В конце каждого списка доступа стоит неявный deny any (запретить всё)</li>
+<li>Расширенные ACL нужно размещать как можно ближе к источнику, стандартные же как можно ближе к получателю</li>
+<li>Нельзя разместить более 1 списка доступа на интерфейс, на протокол, на направление</li>
+<li>ACL не действует на трафик, сгенерированный самим маршрутизатором</li>
+<li>Для фильтрации адресов используется WildCard маска</li>
+</ul>
+</div></blockquote>
+</div>
+<div class="section" id="id12">
+<h3>Стандартный список доступа</h3>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">Router</span><span class="p">(</span><span class="n">config</span><span class="p">)</span><span class="c1">#access-list &lt;номер списка от 1 до 99&gt; {permit | deny | remark} {address | any | host} [source-wildcard] [log]</span>
+
+<span class="o">*</span> <span class="n">permit</span><span class="p">:</span> <span class="n">разрешить</span>
+<span class="o">*</span> <span class="n">deny</span><span class="p">:</span> <span class="n">запретить</span>
+<span class="o">*</span> <span class="n">remark</span><span class="p">:</span> <span class="n">комментарий</span> <span class="n">о</span> <span class="n">списке</span> <span class="n">доступа</span>
+<span class="o">*</span> <span class="n">address</span><span class="p">:</span> <span class="n">запрещаем</span> <span class="n">или</span> <span class="n">разрешаем</span> <span class="n">сеть</span>
+<span class="o">*</span> <span class="nb">any</span><span class="p">:</span> <span class="n">разрешаем</span> <span class="n">или</span> <span class="n">запрещаем</span> <span class="n">всё</span>
+<span class="o">*</span> <span class="n">host</span><span class="p">:</span> <span class="n">разрешаем</span> <span class="n">или</span> <span class="n">запрещаем</span> <span class="n">хосту</span>
+<span class="o">*</span> <span class="n">source</span><span class="o">-</span><span class="n">wildcard</span><span class="p">:</span> <span class="n">WildCard</span> <span class="n">маска</span> <span class="n">сети</span>
+<span class="o">*</span> <span class="n">log</span><span class="p">:</span> <span class="n">включаем</span> <span class="n">логгирование</span> <span class="n">пакеты</span> <span class="n">проходящие</span> <span class="n">через</span> <span class="n">данную</span> <span class="n">запись</span> <span class="n">ACL</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="id13">
+<h3>Расширенный список доступа</h3>
+<dl class="docutils">
+<dt>::</dt>
+<dd><p class="first">Router(config)#access-list &lt;номер списка от 100 до 199&gt; {permit | deny | remark} protocol source [source-wildcard] [operator operand] [port &lt;порт или название протокола&gt; [established]</p>
+<ul class="last simple">
+<li>protocol source: какой протокол будем разрешать или закрывать (ICMP, TCP, UDP, IP, OSPF и т.д)</li>
+<li>deny: запретить</li>
+<li>operator:</li>
+<li>A.B.C.D — адрес получателя</li>
+<li>any — любой конечный хост</li>
+<li>eq — только пакеты на этом порте</li>
+<li>gt — только пакеты с большим номером порта</li>
+<li>host — единственный конечный хост</li>
+<li>lt — только пакеты с более низким номером порта</li>
+<li>neq — только пакеты не на данном номере порта</li>
+<li>range — диапазон портов</li>
+<li>port: номер порта (TCP или UDP), можно указать имя</li>
+<li>established: разрешаем прохождение TCP-сегментов, которые являются частью уже созданной TCP-сессии</li>
+</ul>
+</dd>
+</dl>
+</div>
+<div class="section" id="id14">
+<h3>Прикрепляем к интерфейсу</h3>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">Router</span><span class="p">(</span><span class="n">config</span><span class="o">-</span><span class="k">if</span><span class="p">)</span><span class="c1">#ip access-group &lt;номер списка или имя ACL&gt; {in | out}</span>
+
+ <span class="o">*</span> <span class="ow">in</span><span class="p">:</span> <span class="n">входящее</span> <span class="n">направление</span>
+ <span class="o">*</span> <span class="n">out</span><span class="p">:</span> <span class="n">исходящее</span> <span class="n">направление</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="id15">
+<h3>Именованные списки доступа</h3>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">Router</span><span class="p">(</span><span class="n">config</span><span class="p">)</span><span class="c1">#ip access-list {standard | extended} {&lt;номер ACL&gt; | &lt;имя ACL&gt;}</span>
+<span class="n">Router</span><span class="p">(</span><span class="n">config</span><span class="o">-</span><span class="n">ext</span><span class="o">-</span><span class="n">nacl</span><span class="p">)</span><span class="c1"># {default | deny | exit | no | permit | remark}</span>
+
+
+ <span class="o">*</span> <span class="n">standard</span><span class="p">:</span> <span class="n">стандартный</span> <span class="n">ACL</span>
+ <span class="o">*</span> <span class="n">extended</span><span class="p">:</span> <span class="n">расширенный</span> <span class="n">ACL</span>
+ <span class="o">*</span> <span class="n">default</span><span class="p">:</span> <span class="n">установить</span> <span class="n">команду</span> <span class="n">в</span> <span class="n">значение</span> <span class="n">по</span> <span class="n">умолчанию</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="id16">
+<h3>Ограничение доступа к маршрутизатору</h3>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">R</span><span class="p">(</span><span class="n">config</span><span class="p">)</span><span class="c1">#line vty 0 4 — переходим в режим настройки виртуальных линий.</span>
+<span class="n">R</span><span class="p">(</span><span class="n">config</span><span class="o">-</span><span class="n">line</span><span class="p">)</span><span class="c1">#password &lt;пароль&gt;</span>
+<span class="n">R</span><span class="p">(</span><span class="n">config</span><span class="o">-</span><span class="n">line</span><span class="p">)</span><span class="c1">#login</span>
+<span class="n">R</span><span class="p">(</span><span class="n">config</span><span class="o">-</span><span class="n">line</span><span class="p">)</span><span class="c1">#access-class 21 in — настраиваем логин и пароль, а также закрепляем список доступа с разрешенными IP-адресами.</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="id17">
+<h3>Динамические списки доступа</h3>
+<p>Схема сети имеет следующую структуру</p>
+<div class="figure align-center" id="id23">
+<img alt="Сеть ACL2" src="_images/acl2.png" style="width: 807.0px; height: 415.0px;" />
+<p class="caption"><span class="caption-text">Рисунок 3 Схема сети для настройки динамических списков доступа</span></p>
+</div>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">R3</span><span class="p">(</span><span class="n">config</span><span class="p">)</span><span class="c1">#username Student password 0 cisco — создаем пользователей для подключения через Telnet.</span>
+<span class="n">R3</span><span class="p">(</span><span class="n">config</span><span class="p">)</span><span class="c1">#access-list 101 permit tcp any host 10.2.2.2 eq telnet</span>
+<span class="n">R3</span><span class="p">(</span><span class="n">config</span><span class="p">)</span><span class="c1">#access-list 101 dynamic testlist timeout 15 permit ip 192.168.10.0 0.0.0.255 192.168.30.0 0.0.0.255 — разрешаем подключаться к серверу по Telnet всем узлам.</span>
+<span class="n">R3</span><span class="p">(</span><span class="n">config</span><span class="p">)</span><span class="c1">#interface serial 0/0/1</span>
+<span class="n">R3</span><span class="p">(</span><span class="n">config</span><span class="o">-</span><span class="k">if</span><span class="p">)</span><span class="c1">#ip access-group 101 in — закрепляем 101 ACL за интерфейсом в входящем направлении.</span>
+<span class="n">R3</span><span class="p">(</span><span class="n">config</span><span class="p">)</span><span class="c1">#line vty 0 4</span>
+<span class="n">R3</span><span class="p">(</span><span class="n">config</span><span class="o">-</span><span class="n">line</span><span class="p">)</span><span class="c1">#login local</span>
+<span class="n">R3</span><span class="p">(</span><span class="n">config</span><span class="o">-</span><span class="n">line</span><span class="p">)</span><span class="c1">#autocommand access-enable host timeout 5 — как только пользователь аутентифицируеться, сеть 192.168.30.0 будет доступна, через 5 минут бездействия сеанс закроется.</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="id18">
+<h3>Рефлексивные списки доступа</h3>
+<p>Схема сети имеет следующую структуру</p>
+<div class="figure align-center" id="id24">
+<img alt="Сеть ACL3" src="_images/acl3.png" style="width: 780.0px; height: 554.0px;" />
+<p class="caption"><span class="caption-text">Рисунок 3 Схема сети для настройки рефлексивных списков доступа</span></p>
+</div>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">R2</span><span class="p">(</span><span class="n">config</span><span class="p">)</span><span class="c1">#ip access-list extended OUTBOUNDFILTERS</span>
+<span class="n">R2</span><span class="p">(</span><span class="n">config</span><span class="o">-</span><span class="n">ext</span><span class="o">-</span><span class="n">nacl</span><span class="p">)</span><span class="c1">#permit tcp 192.168.0.0 0.0.255.255 any reflect TCPTRAFFIC</span>
+<span class="n">R2</span><span class="p">(</span><span class="n">config</span><span class="o">-</span><span class="n">ext</span><span class="o">-</span><span class="n">nacl</span><span class="p">)</span><span class="c1">#permit icmp 192.168.0.0 0.0.255.255 any reflect ICMPTRAFFIC — заставляем маршрутизатор отслеживать трафик, который инициировался изнутри.</span>
+<span class="n">R2</span><span class="p">(</span><span class="n">config</span><span class="p">)</span><span class="c1">#ip access-list extended INBOUNDFILTERS</span>
+<span class="n">R2</span><span class="p">(</span><span class="n">config</span><span class="o">-</span><span class="n">ext</span><span class="o">-</span><span class="n">nacl</span><span class="p">)</span><span class="c1">#evaluate TCPTRAFFIC</span>
+<span class="n">R2</span><span class="p">(</span><span class="n">config</span><span class="o">-</span><span class="n">ext</span><span class="o">-</span><span class="n">nacl</span><span class="p">)</span><span class="c1">#evaluate ICMPTRAFFIC — создаем входящую политику, которая требует, чтобы маршрутизатор проверял входящий трафик, чтобы видеть инициировался ли изнутри и связываем TCPTRAFFIC к INBOUNDFILTERS.</span>
+<span class="n">R2</span><span class="p">(</span><span class="n">config</span><span class="p">)</span><span class="c1">#interface serial 0/1/0</span>
+<span class="n">R2</span><span class="p">(</span><span class="n">config</span><span class="o">-</span><span class="k">if</span><span class="p">)</span><span class="c1">#ip access-group INBOUNDFILTERS in</span>
+<span class="n">R2</span><span class="p">(</span><span class="n">config</span><span class="o">-</span><span class="k">if</span><span class="p">)</span><span class="c1">#ip access-group OUTBOUNDFILTERS out — применяем входящий и исходящий ACL на интерфейс.</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="id19">
+<h3>Ограничение по времени</h3>
+<p>Схема сети имеет следующую структуру</p>
+<div class="figure align-center" id="id25">
+<img alt="Сеть ACL3" src="_images/acl4.png" style="width: 625.0px; height: 395.0px;" />
+<p class="caption"><span class="caption-text">Рисунок 4 Схема сети для настройки time-based списков доступа</span></p>
+</div>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">R1</span><span class="p">(</span><span class="n">config</span><span class="p">)</span><span class="c1">#time-range EVERYOTHERDAY</span>
+<span class="n">R1</span><span class="p">(</span><span class="n">config</span><span class="o">-</span><span class="n">time</span><span class="o">-</span><span class="nb">range</span><span class="p">)</span><span class="c1">#periodic Monday Wednesday Friday 8:00 to 17:00 — создаем список времени, в котором добавляем дни недели и время.</span>
+<span class="n">R1</span><span class="p">(</span><span class="n">config</span><span class="p">)</span><span class="c1">#access-list 101 permit tcp 192.168.10.0 0.0.0.255 any eq telnet time-range EVERYOTHERDAY — применяем time-range к ACL.</span>
+<span class="n">R1</span><span class="p">(</span><span class="n">config</span><span class="p">)</span><span class="c1">#interface s0/0/0</span>
+<span class="n">R1</span><span class="p">(</span><span class="n">config</span><span class="o">-</span><span class="k">if</span><span class="p">)</span><span class="c1">#ip access-group 101 out — закрепляем ACL за интерфейсом.</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="id20">
+<h3>Поиск проблем</h3>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">R</span><span class="c1">#show access-lists {ACL номер | имя} — смотрим информацию о списке доступа.</span>
+<span class="n">R</span><span class="c1">#show access-lists — смотрим все списки доступа на маршрутизаторе.</span>
+</pre></div>
+</div>
+<p>Пример</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">Router</span><span class="c1">#show access-lists</span>
+<span class="n">Extended</span> <span class="n">IP</span> <span class="n">access</span> <span class="nb">list</span> <span class="n">nick</span>
+<span class="n">permit</span> <span class="n">ip</span> <span class="n">host</span> <span class="mf">172.168</span><span class="o">.</span><span class="mf">1.1</span> <span class="n">host</span> <span class="mf">10.0</span><span class="o">.</span><span class="mf">0.5</span>
+<span class="n">deny</span> <span class="n">ip</span> <span class="nb">any</span> <span class="nb">any</span> <span class="p">(</span><span class="mi">16</span> <span class="n">match</span><span class="p">(</span><span class="n">es</span><span class="p">))</span>
+<span class="n">Standard</span> <span class="n">IP</span> <span class="n">access</span> <span class="nb">list</span> <span class="n">nick5</span>
+<span class="n">permit</span> <span class="mf">172.16</span><span class="o">.</span><span class="mf">0.0</span> <span class="mf">0.0</span><span class="o">.</span><span class="mf">255.255</span>
+</pre></div>
+</div>
+<p>Мы видим что у нас есть два ACL (стандартный и расширенный) под названиями nick и nick5. Первый список разрешает хосту 172.16.1.1 обращаться по IP (это значит что разрешены все протоколы работающие поверх IP) к хосту 10.0.0.5. Весь остальной трафик запрещен показывает команда deny ip any any. Рядом с этим условием в нашем примере пишет (16 match(es)). Это показывает что 16 пакетов попали под это условие.
+Второй ACL разрешает проходить трафик от любого источника в сети 172.16.0.0/16.</p>
+</div>
+</div>
+</div>
+
+
+          </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+
+    <div class="footer" role="contentinfo">
+        &#169; Copyright 2016, Vladimir Dushkevich.
+      Создано с помощью <a href="http://sphinx-doc.org/">Sphinx</a> 1.4.8.
+    </div>
+  </body>
+</html>

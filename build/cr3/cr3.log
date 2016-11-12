@@ -1,0 +1,1430 @@
+﻿2385/10/14 16:12:09.7540 WARN Changing log level from 3 to 5
+2385/10/14 16:12:09.7590 INFO Downloads path: C:\Users\подкаблучник\Downloads
+2385/10/14 16:12:09.7590 INFO Fonts path: C:\Windows\Fonts
+2385/10/14 16:12:09.7640 INFO Home path: C:/Users/подкаблучник/
+2385/10/14 16:12:09.7640 INFO Exe path: J:\course0203\build\cr3\
+2385/10/14 16:12:09.7640 TRACE LVCreateDirectory(C:/Users/подкаблучник/.cr3)
+2385/10/14 16:12:09.7640 TRACE Directory C:/Users/подкаблучник/.cr3 not found
+2385/10/14 16:12:09.7640 TRACE Checking base directory C:/Users/подкаблучник/
+2385/10/14 16:12:09.7640 TRACE LVCreateDirectory(C:/Users/подкаблучник/)
+2385/10/14 16:12:09.7650 TRACE Directory C:/Users/подкаблучник/ exists
+2385/10/14 16:12:09.7650 INFO Setting up user directory: C:/Users/подкаблучник/.cr3/
+2385/10/14 16:12:09.7650 INFO Setting up resources directory: J:\course0203\build\cr3\res\
+2385/10/14 16:12:09.7660 INFO resourceDir=J:\course0203\build\cr3\res\
+2385/10/14 16:12:09.7660 INFO i18nDir=J:\course0203\build\cr3\res\i18n\
+2385/10/14 16:12:09.7660 INFO hyphDir=J:\course0203\build\cr3\res\hyph\
+2385/10/14 16:12:09.7660 INFO cssDir=J:\course0203\build\cr3\res\css\
+2385/10/14 16:12:09.7660 INFO themesDir=J:\course0203\build\cr3\res\themes\
+2385/10/14 16:12:09.7660 INFO manualsDir=J:\course0203\build\cr3\res\manuals\
+2385/10/14 16:12:09.7660 WARN Changing log level from 5 to 5
+2385/10/14 16:12:09.7660 DEBUG Created GL Font Manager
+2385/10/14 16:12:09.7720 TRACE font definition is duplicate
+2385/10/14 16:12:09.7760 DEBUG Loaded font C:\Windows\Fonts\arial.ttf [0]: faceName=Arial, 
+2385/10/14 16:12:09.7760 INFO uiFontFace: Arial, monoFontFace: Courier New, fallbackFontFace: 
+2385/10/14 16:12:09.7760 INFO Created CRCoverFileCache - maxItems=10000 maxFiles=2000 maxSize=33554432 at C:/Users/подкаблучник/.cr3/coverpages/
+2385/10/14 16:12:09.7760 TRACE LVCreateDirectory(C:/Users/подкаблучник/.cr3/coverpages/)
+2385/10/14 16:12:09.7760 TRACE Directory C:/Users/подкаблучник/.cr3/coverpages/ not found
+2385/10/14 16:12:09.7760 TRACE Checking base directory C:/Users/подкаблучник/.cr3/
+2385/10/14 16:12:09.7760 TRACE LVCreateDirectory(C:/Users/подкаблучник/.cr3/)
+2385/10/14 16:12:09.7760 TRACE Directory C:/Users/подкаблучник/.cr3/ exists
+2385/10/14 16:12:09.7770 INFO CRCoverImageCache:: maxitems=200 maxsize=16777216
+2385/10/14 16:12:09.7770 INFO Initialize document cache at C:/Users/подкаблучник/.cr3/cache/ (max size = 33554432)
+2385/10/14 16:12:09.7770 TRACE ldomDocCacheImpl(C:/Users/подкаблучник/.cr3/cache/ maxSize=33554432)
+2385/10/14 16:12:09.7770 INFO Initialize document cache in directory C:/Users/подкаблучник/.cr3/cache/
+2385/10/14 16:12:09.7770 ERROR Document cache index file cannot be read
+2385/10/14 16:12:09.7770 TRACE LVCreateDirectory(C:/Users/подкаблучник/.cr3/cache/)
+2385/10/14 16:12:09.7770 TRACE Directory C:/Users/подкаблучник/.cr3/cache/ not found
+2385/10/14 16:12:09.7770 TRACE Checking base directory C:/Users/подкаблучник/.cr3/
+2385/10/14 16:12:09.7770 TRACE LVCreateDirectory(C:/Users/подкаблучник/.cr3/)
+2385/10/14 16:12:09.7770 TRACE Directory C:/Users/подкаблучник/.cr3/ exists
+2385/10/14 16:12:09.7770 TRACE Writing cache index
+2385/10/14 16:12:09.7790 INFO HyphDictionaryList::open()
+2385/10/14 16:12:09.7790 TRACE HyphDictionaryList::activate(Russian_EnUS_hyphen_(Alan).pdb)
+2385/10/14 16:12:09.7790 TRACE HyphDictionaryList::activate(ru.pattern)
+2385/10/14 16:12:09.7790 TRACE HyphDictionaryList::activate(@algorithm)
+2385/10/14 16:12:09.7790 INFO Turn on algorythmic hyphenation
+2385/10/14 16:12:09.7790 INFO Opening Book DB
+2385/10/14 16:12:09.7790 INFO Opening database C:/Users/подкаблучник/.cr3/cr3db.sqlite
+2385/10/14 16:12:09.9670 TRACE Filling caches
+2385/10/14 16:12:09.9670 TRACE Filling series cache
+2385/10/14 16:12:09.9670 TRACE Filling folder cache
+2385/10/14 16:12:09.9670 TRACE Filling folder bookmark cache
+2385/10/14 16:12:09.9670 TRACE Filling author cache
+2385/10/14 16:12:09.9670 TRACE Filling catalogs cache
+2385/10/14 16:12:09.9670 INFO DB::fillCaches - 0 authors, 0 series, 0 folders, 0 folder bookmarks, 6 opds catalogs
+2385/10/14 16:12:09.9670 INFO Book DB opened
+2385/10/14 16:12:09.9670 INFO Setting up dir cache manager
+2385/10/14 16:12:09.9670 INFO Setting up resource resolver
+2385/10/14 16:12:09.9670 INFO Setting theme to Light
+2385/10/14 16:12:09.9670 INFO Setting up resources
+2385/10/14 16:12:09.9670 TRACE setupResourcesForScreenSize(600,800) dpi=300, min item size=100 (8mm), physical size: (50mm x 66mm)
+2385/10/14 16:12:09.9670 INFO screen density normal
+2385/10/14 16:12:09.9680 INFO Loading theme J:\course0203\build\cr3\res\themes\light\cr3theme.xml
+2385/10/14 16:12:09.9680 INFO Loading theme J:\course0203\build\cr3\res\themes\base\cr3theme.xml
+2385/10/14 16:12:09.9690 INFO CRResourceResolver::clearImageCache()
+2385/10/14 16:12:09.9700 DEBUG loading image from file J:\course0203\build\cr3\res\screen-density-xhigh\hardcover.png
+2385/10/14 16:12:09.9700 TRACE CRCoverPageManager::clearImageCache()
+2385/10/14 16:12:09.9700 INFO CRCoverImageCache::clear()
+2385/10/14 16:12:09.9700 TRACE setupResourcesForScreenSize(500,800) dpi=120, min item size=40 (8mm), physical size: (104mm x 166mm)
+2385/10/14 16:12:09.9700 INFO screen density normal
+2385/10/14 16:12:09.9700 INFO Loading theme J:\course0203\build\cr3\res\themes\light\cr3theme.xml
+2385/10/14 16:12:09.9700 INFO Loading theme J:\course0203\build\cr3\res\themes\base\cr3theme.xml
+2385/10/14 16:12:09.9720 INFO CRResourceResolver::clearImageCache()
+2385/10/14 16:12:09.9720 DEBUG loading image from file J:\course0203\build\cr3\res\screen-density-xhigh\hardcover.png
+2385/10/14 16:12:09.9720 TRACE CRCoverPageManager::clearImageCache()
+2385/10/14 16:12:09.9720 INFO CRCoverImageCache::clear()
+2385/10/14 16:12:10.7430 DEBUG TTS Voices available: 1
+2385/10/14 16:12:10.7430 DEBUG TTS Voice: id:'HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Speech\Voices\Tokens\MS-Anna-1033-20-DSK'' name:'Microsoft Anna - English (United States)' lang: en_US
+2385/10/14 16:12:10.7430 INFO Current TTS Voice: 'Microsoft Anna - English (United States)' lang: en_US
+2385/10/14 16:12:10.7430 INFO CRUIMainWidget::CRUIMainWidget
+2385/10/14 16:12:10.7430 INFO Loading settings from C:/Users/подкаблучник/.cr3/cr3.ini
+2385/10/14 16:12:10.7430 TRACE Applying default settings.
+2385/10/14 16:12:10.7440 TRACE Starting thread executor
+2385/10/14 16:12:10.7440 TRACE Saving settings
+2385/10/14 16:12:10.7440 TRACE Creating Settings UI objects: browser settings
+2385/10/14 16:12:10.7450 TRACE Creating Settings UI objects: reader settings
+2385/10/14 16:12:10.7450 TRACE Creating text to speech options
+2385/10/14 16:12:10.7450 TRACE Creating CRUIHomeWidget
+2385/10/14 16:12:10.7450 INFO Setting up Downloads dir to C:\Users\подкаблучник\Downloads
+2385/10/14 16:12:10.8200 TRACE Creating CRUIReadWidget
+2385/10/14 16:12:10.8210 INFO ldomNode::registerDocument() - new index = 0
+2385/10/14 16:12:10.8210 DEBUG setDocFlags(0000)
+2385/10/14 16:12:10.8210 DEBUG setDocFlag(0004, false)
+2385/10/14 16:12:10.8210 DEBUG setDocFlag(0002, true)
+2385/10/14 16:12:10.8210 DEBUG setDocFlag(0001, true)
+2385/10/14 16:12:10.8210 DEBUG setDocFlag(0008, true)
+2385/10/14 16:12:10.8210 DEBUG New stylesheet hash: 8931c16e
+2385/10/14 16:12:10.8220 DEBUG Loaded font C:\Windows\Fonts\arial.ttf [0]: faceName=Arial, 
+2385/10/14 16:12:10.8220 DEBUG Loaded font C:\Windows\Fonts\arialbd.ttf [0]: faceName=Arial, 
+2385/10/14 16:12:10.8220 DEBUG New font size: 25 requested: 25
+2385/10/14 16:12:10.8230 DEBUG Loaded font C:\Windows\Fonts\arial.ttf [0]: faceName=Arial, 
+2385/10/14 16:12:10.8250 DEBUG LVDocView::setStatusMode(0,  title  marks)
+2385/10/14 16:12:10.8250 INFO New battery state: 100
+2385/10/14 16:12:10.8250 TRACE Applying settings
+2385/10/14 16:12:10.8250 DEBUG LVDocView::setStatusMode(0,  title  marks)
+2385/10/14 16:12:10.8250 TRACE checking TOC
+2385/10/14 16:12:10.8260 TRACE remove old hyphenation method
+2385/10/14 16:12:10.8260 TRACE creating new TexHyph method
+2385/10/14 16:12:10.8260 TRACE loading from file
+2385/10/14 16:12:10.8370 DEBUG Dictionary is loaded successfully. Activating.
+2385/10/14 16:12:10.8370 TRACE Activation is done
+2385/10/14 16:12:10.8370 TRACE LVDocView::propsApply( 22 items )
+2385/10/14 16:12:10.8370 TRACE Setting normal colors
+2385/10/14 16:12:10.8370 DEBUG New font size: 17 requested: 17
+2385/10/14 16:12:10.8380 DEBUG Loaded font C:\Windows\Fonts\arial.ttf [0]: faceName=Arial, 
+2385/10/14 16:12:10.8400 TRACE Setting normal colors
+2385/10/14 16:12:10.8400 TRACE Setting normal colors
+2385/10/14 16:12:10.8410 DEBUG loading image from file J:\course0203\build\cr3\res\screen-density-xhigh\tx_sand.jpg
+2385/10/14 16:12:10.8410 TRACE setupResourcesForScreenSize(500,800) dpi=120, min item size=40 (8mm), physical size: (104mm x 166mm)
+2385/10/14 16:12:10.8410 INFO screen density normal
+2385/10/14 16:12:10.8420 INFO Loading theme J:\course0203\build\cr3\res\themes\light\cr3theme.xml
+2385/10/14 16:12:10.8420 INFO Loading theme J:\course0203\build\cr3\res\themes\base\cr3theme.xml
+2385/10/14 16:12:10.8430 INFO CRResourceResolver::clearImageCache()
+2385/10/14 16:12:10.8430 DEBUG loading image from file J:\course0203\build\cr3\res\screen-density-xhigh\hardcover.png
+2385/10/14 16:12:10.8440 TRACE CRCoverPageManager::clearImageCache()
+2385/10/14 16:12:10.8440 INFO CRCoverImageCache::clear()
+2385/10/14 16:12:10.8440 TRACE Exiting CRUIMainWidget::CRUIMainWidget
+2385/10/14 16:12:10.8450 TRACE Starting thread executor
+2385/10/14 16:12:10.9050 INFO Pausing coverpage manager on start
+2385/10/14 16:12:10.9050 TRACE CRCoverPageManager::pause()
+2385/10/14 16:12:10.9050 TRACE No active coverpage task
+2385/10/14 16:12:10.9100 TRACE OpenGLWindow::resizeEvent
+2385/10/14 16:12:10.9100 TRACE OpenGLWindow::moveEvent
+2385/10/14 16:12:10.9110 TRACE OpenGLWindow::renderNow()
+2385/10/14 16:12:11.6400 TRACE updateLastBook
+2385/10/14 16:12:11.6410 DEBUG loading image from file J:\course0203\build\cr3\res\icons/32x32\menu_more.png
+2385/10/14 16:12:11.6410 DEBUG Loaded font C:\Windows\Fonts\arial.ttf [0]: faceName=Arial, 
+2385/10/14 16:12:11.6440 DEBUG Loaded font C:\Windows\Fonts\arial.ttf [0]: faceName=Arial, 
+2385/10/14 16:12:11.6460 DEBUG loading image from file J:\course0203\build\cr3\res\screen-density-xhigh\home_frame.9.png
+2385/10/14 16:12:11.6460 DEBUG Loaded font C:\Windows\Fonts\arial.ttf [0]: faceName=Arial, 
+2385/10/14 16:12:11.6470 DEBUG loading image from file J:\course0203\build\cr3\res\screen-density-normal\scrollbar_handle_horizontal.9.png
+2385/10/14 16:12:11.6470 DEBUG loading image from file J:\course0203\build\cr3\res\folder_icons/64x64\downloads.png
+2385/10/14 16:12:11.6510 DEBUG loading image from file J:\course0203\build\cr3\res\folder_icons/64x64\folder.png
+2385/10/14 16:12:11.6520 DEBUG loading image from file J:\course0203\build\cr3\res\folder_icons/64x64\book_stack.png
+2385/10/14 16:12:11.6530 DEBUG loading image from file J:\course0203\build\cr3\res\folder_icons/64x64\internet_add.png
+2385/10/14 16:12:11.6530 DEBUG loading image from file J:\course0203\build\cr3\res\folder_icons/64x64\internet.png
+2385/10/14 16:12:11.6550 DEBUG loading image from file J:\course0203\build\cr3\res\screen-density-xhigh\tx_wood_v3.jpg
+2385/10/14 16:12:11.6550 TRACE Creating CRGLSupport instance
+2385/10/14 16:12:11.6550 TRACE CRGLSupportImpl::init() -- calling initializeOpenGLFunctions()
+2385/10/14 16:12:11.6550 TRACE CRDirCache::scan - adding new task @recent queueLength was 0
+2385/10/14 16:12:11.6550 INFO 2385/10/14 16:12:11.6550 TRACE CRDirCache::scan - added new task @recent queueLength = 1. Calling notifyAll
+CRDirCache thread started
+2385/10/14 16:12:11.6550 TRACE CRDirCache::run - before popFront queueLength was 1
+2385/10/14 16:12:11.6560 TRACE CRDirCache::run - after popFront queueLength is 0
+2385/10/14 16:12:11.6560 TRACE CRDirCache::run :: calling refresh()
+2385/10/14 16:12:11.6560 INFO 2385/10/14 16:12:11.6560 TRACE CRBookDB::loadRecentBooks enteredCRCoverPageManager::run thread started
+
+2385/10/14 16:12:11.6560 TRACE CRCoverPageManager::run :: paused. Waiting...
+2385/10/14 16:12:11.6560 INFO Loaded 0 last position items
+2385/10/14 16:12:11.6560 TRACE CRBookDB::loadRecentBooks exiting
+2385/10/14 16:12:11.6560 TRACE CRDirCache::run :: posting callback to GUI thread
+2385/10/14 16:12:11.6560 TRACE CRDirCache::run :: no tasks - calling monitor wait
+2385/10/14 16:12:11.6560 DEBUG loading image from file J:\course0203\build\cr3\res\screen-density-xhigh\list_shadow_vertical.9.png
+2385/10/14 16:12:11.6560 INFO Max OpenGL texture size: 16384
+2385/10/14 16:12:11.6560 TRACE created image cache page 440 x 768
+2385/10/14 16:12:11.6760 TRACE created image cache page 1024 x 1024
+2385/10/14 16:12:11.6850 DEBUG loading image from file J:\course0203\build\cr3\res\screen-density-normal\scrollbar_background_horizontal.9.png
+2385/10/14 16:12:11.7430 INFO Resuming coverpage manager after draw
+2385/10/14 16:12:11.7430 TRACE CRCoverPageManager::resume()
+2385/10/14 16:12:11.7430 TRACE CRUIMainWidget::onDirectoryScanFinished
+2385/10/14 16:12:11.7430 TRACE Recent books list is empty: creating manual book item
+2385/10/14 16:12:11.7460 DEBUG Manual template size is 9824
+2385/10/14 16:12:11.7470 TRACE Writing new manual file contents to C:/Users/подкаблучник/.cr3/cr3_manual.fb2
+2385/10/14 16:12:11.7480 TRACE Creating DB record for manual book C:/Users/подкаблучник/.cr3/cr3_manual.fb2
+2385/10/14 16:12:11.8490 TRACE Just saved book is loaded ok: id=1
+2385/10/14 16:12:11.8490 TRACE New manual book entry: id=1
+2385/10/14 16:12:11.8490 TRACE Manual book id=1 path=C:/Users/подкаблучник/.cr3/cr3_manual.fb2
+2385/10/14 16:12:11.8490 TRACE Existing last position bookmark not found for book 1
+2385/10/14 16:12:11.9160 TRACE CRUIMainWidget::onDirectoryScanFinished
+2385/10/14 16:12:11.9160 TRACE OpenGLWindow::renderNow()
+2385/10/14 16:12:11.9160 TRACE updateLastBook
+2385/10/14 16:12:11.9180 TRACE CRCoverImageCache::draw called for C:/Users/подкаблучник/.cr3/cr3_manual.fb2
+2385/10/14 16:12:11.9180 DEBUG scanBookCoverInternal(C:/Users/подкаблучник/.cr3/cr3_manual.fb2) called
+2385/10/14 16:12:11.9210 TRACE FB2 Cover stream size = 0
+2385/10/14 16:12:11.9210 DEBUG scanBookCoverInternal() : returned cover page stream
+2385/10/14 16:12:11.9210 TRACE Adding item C:/Users/подкаблучник/.cr3/cr3_manual.fb2 type=2 size=0
+2385/10/14 16:12:11.9280 TRACE drawing default cover page 231 x 330
+2385/10/14 16:12:11.9290 DEBUG Loaded font C:\Windows\Fonts\arialbd.ttf [0]: faceName=Arial, 
+2385/10/14 16:12:11.9350 TRACE OpenGLWindow::renderNow()
+2385/10/14 16:12:14.9300 TRACE OpenGLWindow::renderNow()
+2385/10/14 16:12:16.7840 TRACE OpenGLWindow::renderNow()
+2385/10/14 16:12:16.8800 TRACE CRUIMainWidget::showSlowOperationPopup()
+2385/10/14 16:12:16.8840 DEBUG loading image from file J:\course0203\build\cr3\res\screen-density-xhigh\spinner_white_48.png
+2385/10/14 16:12:16.8840 INFO Starting background directory scan for J:\
+2385/10/14 16:12:16.8850 TRACE CRDirCache::scan - adding new task J:\ queueLength was 0
+2385/10/14 16:12:16.8850 TRACE CRDirCache::scan - added new task J:\ queueLength = 1. Calling notifyAll
+2385/10/14 16:12:16.8850 TRACE CRDirCache::run :: done monitor wait - queue length = 1
+2385/10/14 16:12:16.8850 TRACE CRDirCache::run - before popFront queueLength was 1
+2385/10/14 16:12:16.8850 TRACE CRDirCache::run - after popFront queueLength is 0
+2385/10/14 16:12:16.8850 TRACE CRDirCache::run :: calling refresh()
+2385/10/14 16:12:16.8850 TRACE Scanning directory J:\
+2385/10/14 16:12:16.8850 TRACE OpenGLWindow::renderNow()
+2385/10/14 16:12:16.8850 TRACE subdir: J:\$RECYCLE.BIN
+2385/10/14 16:12:16.8850 TRACE subdir: J:\ChromiumPortable
+2385/10/14 16:12:16.8850 TRACE subdir: J:\course0203
+2385/10/14 16:12:16.8850 TRACE subdir: J:\ffmpeg
+2385/10/14 16:12:16.8870 TRACE subdir: J:\ffmpeg-20161011-8063978-win64-static
+2385/10/14 16:12:16.9290 TRACE subdir: J:\lighttpd-1.4.41
+2385/10/14 16:12:16.9300 TRACE subdir: J:\sqlmap
+2385/10/14 16:12:16.9380 TRACE subdir: J:\System Volume Information
+2385/10/14 16:12:16.9380 TRACE subdir: J:\Tasks SQL
+2385/10/14 16:12:16.9380 TRACE subdir: J:\xampp
+2385/10/14 16:12:16.9380 TRACE subdir: J:\xampp - копия
+2385/10/14 16:12:16.9390 TRACE 0 entries for load
+2385/10/14 16:12:16.9390 TRACE 0 entries loaded, 0 unknown
+2385/10/14 16:12:16.9390 TRACE 0 entries for parse
+2385/10/14 16:12:16.9390 TRACE 0 entries for save
+2385/10/14 16:12:16.9390 TRACE done scanning of directory
+2385/10/14 16:12:16.9390 TRACE CRDirCache::run :: posting callback to GUI thread
+2385/10/14 16:12:16.9390 TRACE CRDirCache::run :: no tasks - calling monitor wait
+2385/10/14 16:12:16.9400 TRACE CRUIMainWidget::onDirectoryScanFinished
+2385/10/14 16:12:16.9400 TRACE CRUIMainWidget::onDirectoryScanFinished -- scan finished for pending folder
+2385/10/14 16:12:16.9400 INFO Directory J:\ is ready
+2385/10/14 16:12:16.9410 DEBUG loading image from file J:\course0203\build\cr3\res\icons/32x32\back.png
+2385/10/14 16:12:16.9410 DEBUG loading image from file J:\course0203\build\cr3\res\screen-density-normal\scrollbar_handle_vertical.9.png
+2385/10/14 16:12:16.9420 DEBUG loading image from file J:\course0203\build\cr3\res\screen-density-xhigh\divider_light_v3.png
+2385/10/14 16:12:16.9460 TRACE CRCoverPageManager::cancelAll
+2385/10/14 16:12:16.9460 TRACE starting animation 0 -> 1
+2385/10/14 16:12:16.9500 DEBUG loading image from file J:\course0203\build\cr3\res\screen-density-xhigh\toolbar_shadow.9.png
+2385/10/14 16:12:16.9510 DEBUG loading image from file J:\course0203\build\cr3\res\screen-density-normal\scrollbar_background_vertical.9.png
+2385/10/14 16:12:16.9520 TRACE created image cache page 502 x 10
+2385/10/14 16:12:16.9790 TRACE OpenGLWindow::renderNow()
+2385/10/14 16:12:16.9840 TRACE OpenGLWindow::renderNow()
+2385/10/14 16:12:16.9850 TRACE OpenGLWindow::renderNow()
+2385/10/14 16:12:16.9860 TRACE OpenGLWindow::renderNow()
+2385/10/14 16:12:17.0000 TRACE OpenGLWindow::renderNow()
+2385/10/14 16:12:17.0150 TRACE OpenGLWindow::renderNow()
+2385/10/14 16:12:17.0320 TRACE OpenGLWindow::renderNow()
+2385/10/14 16:12:17.0490 TRACE OpenGLWindow::renderNow()
+2385/10/14 16:12:17.0660 TRACE OpenGLWindow::renderNow()
+2385/10/14 16:12:17.0830 TRACE OpenGLWindow::renderNow()
+2385/10/14 16:12:17.0990 TRACE OpenGLWindow::renderNow()
+2385/10/14 16:12:17.1160 TRACE OpenGLWindow::renderNow()
+2385/10/14 16:12:17.1320 TRACE OpenGLWindow::renderNow()
+2385/10/14 16:12:17.1490 TRACE OpenGLWindow::renderNow()
+2385/10/14 16:12:17.1490 TRACE stopping animation 0, 1
+2385/10/14 16:12:17.1660 TRACE OpenGLWindow::renderNow()
+2385/10/14 16:12:17.1820 TRACE OpenGLWindow::renderNow()
+2385/10/14 16:12:18.1750 TRACE OpenGLWindow::renderNow()
+2385/10/14 16:12:18.3030 TRACE CRUIMainWidget::showSlowOperationPopup()
+2385/10/14 16:12:18.3060 INFO Starting background directory scan for J:\course0203
+2385/10/14 16:12:18.3060 TRACE CRDirCache::scan - adding new task J:\course0203 queueLength was 0
+2385/10/14 16:12:18.3060 TRACE CRDirCache::scan - added new task J:\course0203 queueLength = 1. Calling notifyAll
+2385/10/14 16:12:18.3060 TRACE CRDirCache::run :: done monitor wait - queue length = 1
+2385/10/14 16:12:18.3060 TRACE CRDirCache::run - before popFront queueLength was 1
+2385/10/14 16:12:18.3060 TRACE CRDirCache::run - after popFront queueLength is 0
+2385/10/14 16:12:18.3060 TRACE CRDirCache::run :: calling refresh()
+2385/10/14 16:12:18.3060 TRACE Scanning directory J:\course0203
+2385/10/14 16:12:18.3070 TRACE OpenGLWindow::renderNow()
+2385/10/14 16:12:18.3070 TRACE subdir: J:\course0203\build
+2385/10/14 16:12:18.3070 TRACE subdir: J:\course0203\source
+2385/10/14 16:12:18.3070 TRACE 0 entries for load
+2385/10/14 16:12:18.3070 TRACE 0 entries loaded, 0 unknown
+2385/10/14 16:12:18.3070 TRACE 0 entries for parse
+2385/10/14 16:12:18.3070 TRACE 0 entries for save
+2385/10/14 16:12:18.3070 TRACE done scanning of directory
+2385/10/14 16:12:18.3070 TRACE CRDirCache::run :: posting callback to GUI thread
+2385/10/14 16:12:18.3070 TRACE CRDirCache::run :: no tasks - calling monitor wait
+2385/10/14 16:12:18.3570 TRACE CRUIMainWidget::onDirectoryScanFinished
+2385/10/14 16:12:18.3570 TRACE CRUIMainWidget::onDirectoryScanFinished -- scan finished for pending folder
+2385/10/14 16:12:18.3570 INFO Directory J:\course0203 is ready
+2385/10/14 16:12:18.3570 TRACE CRCoverPageManager::cancelAll
+2385/10/14 16:12:18.3570 TRACE starting animation 1 -> 2
+2385/10/14 16:12:18.3620 TRACE OpenGLWindow::renderNow()
+2385/10/14 16:12:18.3640 TRACE OpenGLWindow::renderNow()
+2385/10/14 16:12:18.3650 TRACE OpenGLWindow::renderNow()
+2385/10/14 16:12:18.3680 TRACE OpenGLWindow::renderNow()
+2385/10/14 16:12:18.3850 TRACE OpenGLWindow::renderNow()
+2385/10/14 16:12:18.4010 TRACE OpenGLWindow::renderNow()
+2385/10/14 16:12:18.4180 TRACE OpenGLWindow::renderNow()
+2385/10/14 16:12:18.4350 TRACE OpenGLWindow::renderNow()
+2385/10/14 16:12:18.4510 TRACE OpenGLWindow::renderNow()
+2385/10/14 16:12:18.4680 TRACE OpenGLWindow::renderNow()
+2385/10/14 16:12:18.4850 TRACE OpenGLWindow::renderNow()
+2385/10/14 16:12:18.5010 TRACE OpenGLWindow::renderNow()
+2385/10/14 16:12:18.5180 TRACE OpenGLWindow::renderNow()
+2385/10/14 16:12:18.5350 TRACE OpenGLWindow::renderNow()
+2385/10/14 16:12:18.5510 TRACE OpenGLWindow::renderNow()
+2385/10/14 16:12:18.5680 TRACE OpenGLWindow::renderNow()
+2385/10/14 16:12:18.5680 TRACE stopping animation 1, 2
+2385/10/14 16:12:18.5850 TRACE OpenGLWindow::renderNow()
+2385/10/14 16:12:18.6020 TRACE OpenGLWindow::renderNow()
+2385/10/14 16:12:19.4550 TRACE OpenGLWindow::renderNow()
+2385/10/14 16:12:19.5510 TRACE CRUIMainWidget::showSlowOperationPopup()
+2385/10/14 16:12:19.5520 INFO Starting background directory scan for J:\course0203\build
+2385/10/14 16:12:19.5530 TRACE CRDirCache::scan - adding new task J:\course0203\build queueLength was 0
+2385/10/14 16:12:19.5530 TRACE CRDirCache::scan - added new task J:\course0203\build queueLength = 1. Calling notifyAll
+2385/10/14 16:12:19.5530 TRACE CRDirCache::run :: done monitor wait - queue length = 1
+2385/10/14 16:12:19.5530 TRACE CRDirCache::run - before popFront queueLength was 1
+2385/10/14 16:12:19.5530 TRACE CRDirCache::run - after popFront queueLength is 0
+2385/10/14 16:12:19.5530 TRACE CRDirCache::run :: calling refresh()
+2385/10/14 16:12:19.5530 TRACE Scanning directory J:\course0203\build
+2385/10/14 16:12:19.5530 TRACE OpenGLWindow::renderNow()
+2385/10/14 16:12:19.5530 TRACE subdir: J:\course0203\build\cr3
+2385/10/14 16:12:19.5630 TRACE subdir: J:\course0203\build\doctrees
+2385/10/14 16:12:19.5630 TRACE subdir: J:\course0203\build\epub
+2385/10/14 16:12:19.5640 TRACE subdir: J:\course0203\build\html
+2385/10/14 16:12:19.5820 TRACE 0 entries for load
+2385/10/14 16:12:19.5820 TRACE 0 entries loaded, 0 unknown
+2385/10/14 16:12:19.5820 TRACE 0 entries for parse
+2385/10/14 16:12:19.5820 TRACE 0 entries for save
+2385/10/14 16:12:19.5820 TRACE done scanning of directory
+2385/10/14 16:12:19.5820 TRACE CRDirCache::run :: posting callback to GUI thread
+2385/10/14 16:12:19.5820 TRACE CRDirCache::run :: no tasks - calling monitor wait
+2385/10/14 16:12:19.6040 TRACE CRUIMainWidget::onDirectoryScanFinished
+2385/10/14 16:12:19.6040 TRACE CRUIMainWidget::onDirectoryScanFinished -- scan finished for pending folder
+2385/10/14 16:12:19.6040 INFO Directory J:\course0203\build is ready
+2385/10/14 16:12:19.6050 TRACE CRCoverPageManager::cancelAll
+2385/10/14 16:12:19.6050 TRACE starting animation 2 -> 3
+2385/10/14 16:12:19.6090 TRACE OpenGLWindow::renderNow()
+2385/10/14 16:12:19.6100 TRACE OpenGLWindow::renderNow()
+2385/10/14 16:12:19.6110 TRACE OpenGLWindow::renderNow()
+2385/10/14 16:12:19.6190 TRACE OpenGLWindow::renderNow()
+2385/10/14 16:12:19.6360 TRACE OpenGLWindow::renderNow()
+2385/10/14 16:12:19.6520 TRACE OpenGLWindow::renderNow()
+2385/10/14 16:12:19.6690 TRACE OpenGLWindow::renderNow()
+2385/10/14 16:12:19.6860 TRACE OpenGLWindow::renderNow()
+2385/10/14 16:12:19.7020 TRACE OpenGLWindow::renderNow()
+2385/10/14 16:12:19.7190 TRACE OpenGLWindow::renderNow()
+2385/10/14 16:12:19.7360 TRACE OpenGLWindow::renderNow()
+2385/10/14 16:12:19.7520 TRACE OpenGLWindow::renderNow()
+2385/10/14 16:12:19.7690 TRACE OpenGLWindow::renderNow()
+2385/10/14 16:12:19.7860 TRACE OpenGLWindow::renderNow()
+2385/10/14 16:12:19.8030 TRACE OpenGLWindow::renderNow()
+2385/10/14 16:12:19.8200 TRACE OpenGLWindow::renderNow()
+2385/10/14 16:12:19.8200 TRACE stopping animation 2, 3
+2385/10/14 16:12:19.8360 TRACE OpenGLWindow::renderNow()
+2385/10/14 16:12:19.8530 TRACE OpenGLWindow::renderNow()
+2385/10/14 16:12:20.8060 TRACE OpenGLWindow::renderNow()
+2385/10/14 16:12:20.8940 TRACE CRUIMainWidget::showSlowOperationPopup()
+2385/10/14 16:12:20.8960 INFO Starting background directory scan for J:\course0203\build\epub
+2385/10/14 16:12:20.8960 TRACE CRDirCache::scan - adding new task J:\course0203\build\epub queueLength was 0
+2385/10/14 16:12:20.8960 TRACE CRDirCache::scan - added new task J:\course0203\build\epub queueLength = 1. Calling notifyAll
+2385/10/14 16:12:20.8960 TRACE CRDirCache::run :: done monitor wait - queue length = 1
+2385/10/14 16:12:20.8960 TRACE CRDirCache::run - before popFront queueLength was 1
+2385/10/14 16:12:20.8960 TRACE CRDirCache::run - after popFront queueLength is 0
+2385/10/14 16:12:20.8960 TRACE CRDirCache::run :: calling refresh()
+2385/10/14 16:12:20.8960 TRACE Scanning directory J:\course0203\build\epub
+2385/10/14 16:12:20.8970 TRACE OpenGLWindow::renderNow()
+2385/10/14 16:12:20.8970 TRACE subdir: J:\course0203\build\epub\META-INF
+2385/10/14 16:12:20.8990 TRACE subdir: J:\course0203\build\epub\_images
+2385/10/14 16:12:20.8990 TRACE subdir: J:\course0203\build\epub\_static
+2385/10/14 16:12:20.8990 TRACE 21 entries for load
+2385/10/14 16:12:20.9000 TRACE 0 entries loaded, 21 unknown
+2385/10/14 16:12:20.9000 TRACE 21 entries for parse
+2385/10/14 16:12:20.9000 TRACE going to parse J:\course0203\build\epub\course0203.epub
+2385/10/14 16:12:20.9010 TRACE parsing book properties for J:\course0203\build\epub\course0203.epub
+2385/10/14 16:12:20.9010 TRACE GetBookProperties() : epub format detected
+2385/10/14 16:12:20.9020 INFO ldomNode::registerDocument() - new index = 1
+2385/10/14 16:12:20.9020 DEBUG setDocFlags(0000)
+2385/10/14 16:12:20.9020 INFO ldomNode::unregisterDocument() - for index 1
+2385/10/14 16:12:20.9030 INFO ldomNode::registerDocument() - new index = 2
+2385/10/14 16:12:20.9030 DEBUG setDocFlags(0000)
+2385/10/14 16:12:20.9040 INFO ldomNode::unregisterDocument() - for index 2
+2385/10/14 16:12:20.9040 TRACE going to parse J:\course0203\build\epub\genindex.xhtml
+2385/10/14 16:12:20.9040 TRACE parsing book properties for J:\course0203\build\epub\genindex.xhtml
+2385/10/14 16:12:20.9040 TRACE GetBookProperties() : trying to parse as FB2
+2385/10/14 16:12:20.9040 INFO ldomNode::registerDocument() - new index = 3
+2385/10/14 16:12:20.9040 TRACE checking format...
+2385/10/14 16:12:20.9040 TRACE parsing...
+2385/10/14 16:12:20.9050 DEBUG Internal stylesheet file: _static/epub.css
+2385/10/14 16:12:20.9050 DEBUG Internal stylesheet file: _static/pygments.css
+2385/10/14 16:12:20.9050 TRACE parsed
+2385/10/14 16:12:20.9050 INFO ldomNode::unregisterDocument() - for index 3
+2385/10/14 16:12:20.9050 TRACE going to parse J:\course0203\build\epub\index.xhtml
+2385/10/14 16:12:20.9050 TRACE parsing book properties for J:\course0203\build\epub\index.xhtml
+2385/10/14 16:12:20.9050 TRACE GetBookProperties() : trying to parse as FB2
+2385/10/14 16:12:20.9050 INFO ldomNode::registerDocument() - new index = 4
+2385/10/14 16:12:20.9050 TRACE checking format...
+2385/10/14 16:12:20.9060 TRACE parsing...
+2385/10/14 16:12:20.9060 DEBUG Internal stylesheet file: _static/epub.css
+2385/10/14 16:12:20.9060 DEBUG Internal stylesheet file: _static/pygments.css
+2385/10/14 16:12:20.9060 TRACE parsed
+2385/10/14 16:12:20.9070 INFO ldomNode::unregisterDocument() - for index 4
+2385/10/14 16:12:20.9070 TRACE going to parse J:\course0203\build\epub\pz1.xhtml
+2385/10/14 16:12:20.9070 TRACE parsing book properties for J:\course0203\build\epub\pz1.xhtml
+2385/10/14 16:12:20.9070 TRACE GetBookProperties() : trying to parse as FB2
+2385/10/14 16:12:20.9070 INFO ldomNode::registerDocument() - new index = 5
+2385/10/14 16:12:20.9070 TRACE checking format...
+2385/10/14 16:12:20.9070 TRACE parsing...
+2385/10/14 16:12:20.9080 DEBUG Internal stylesheet file: _static/epub.css
+2385/10/14 16:12:20.9080 DEBUG Internal stylesheet file: _static/pygments.css
+2385/10/14 16:12:20.9090 TRACE parsed
+2385/10/14 16:12:20.9090 INFO ldomNode::unregisterDocument() - for index 5
+2385/10/14 16:12:20.9090 TRACE going to parse J:\course0203\build\epub\pz10.xhtml
+2385/10/14 16:12:20.9090 TRACE parsing book properties for J:\course0203\build\epub\pz10.xhtml
+2385/10/14 16:12:20.9090 TRACE GetBookProperties() : trying to parse as FB2
+2385/10/14 16:12:20.9090 INFO ldomNode::registerDocument() - new index = 6
+2385/10/14 16:12:20.9090 TRACE checking format...
+2385/10/14 16:12:20.9100 TRACE parsing...
+2385/10/14 16:12:20.9100 DEBUG Internal stylesheet file: _static/epub.css
+2385/10/14 16:12:20.9100 DEBUG Internal stylesheet file: _static/pygments.css
+2385/10/14 16:12:20.9120 TRACE parsed
+2385/10/14 16:12:20.9120 INFO ldomNode::unregisterDocument() - for index 6
+2385/10/14 16:12:20.9120 TRACE going to parse J:\course0203\build\epub\pz11.xhtml
+2385/10/14 16:12:20.9120 TRACE parsing book properties for J:\course0203\build\epub\pz11.xhtml
+2385/10/14 16:12:20.9120 TRACE GetBookProperties() : trying to parse as FB2
+2385/10/14 16:12:20.9120 INFO ldomNode::registerDocument() - new index = 7
+2385/10/14 16:12:20.9120 TRACE checking format...
+2385/10/14 16:12:20.9130 TRACE parsing...
+2385/10/14 16:12:20.9130 DEBUG Internal stylesheet file: _static/epub.css
+2385/10/14 16:12:20.9130 DEBUG Internal stylesheet file: _static/pygments.css
+2385/10/14 16:12:20.9170 TRACE parsed
+2385/10/14 16:12:20.9170 INFO ldomNode::unregisterDocument() - for index 7
+2385/10/14 16:12:20.9170 TRACE going to parse J:\course0203\build\epub\pz12.xhtml
+2385/10/14 16:12:20.9180 TRACE parsing book properties for J:\course0203\build\epub\pz12.xhtml
+2385/10/14 16:12:20.9180 TRACE GetBookProperties() : trying to parse as FB2
+2385/10/14 16:12:20.9180 INFO ldomNode::registerDocument() - new index = 8
+2385/10/14 16:12:20.9180 TRACE checking format...
+2385/10/14 16:12:20.9180 TRACE parsing...
+2385/10/14 16:12:20.9180 DEBUG Internal stylesheet file: _static/epub.css
+2385/10/14 16:12:20.9180 DEBUG Internal stylesheet file: _static/pygments.css
+2385/10/14 16:12:20.9190 TRACE parsed
+2385/10/14 16:12:20.9190 INFO ldomNode::unregisterDocument() - for index 8
+2385/10/14 16:12:20.9190 TRACE going to parse J:\course0203\build\epub\pz13.xhtml
+2385/10/14 16:12:20.9190 TRACE parsing book properties for J:\course0203\build\epub\pz13.xhtml
+2385/10/14 16:12:20.9190 TRACE GetBookProperties() : trying to parse as FB2
+2385/10/14 16:12:20.9190 INFO ldomNode::registerDocument() - new index = 9
+2385/10/14 16:12:20.9190 TRACE checking format...
+2385/10/14 16:12:20.9200 TRACE parsing...
+2385/10/14 16:12:20.9200 DEBUG Internal stylesheet file: _static/epub.css
+2385/10/14 16:12:20.9200 DEBUG Internal stylesheet file: _static/pygments.css
+2385/10/14 16:12:20.9240 TRACE parsed
+2385/10/14 16:12:20.9240 INFO ldomNode::unregisterDocument() - for index 9
+2385/10/14 16:12:20.9240 TRACE going to parse J:\course0203\build\epub\pz14.xhtml
+2385/10/14 16:12:20.9240 TRACE parsing book properties for J:\course0203\build\epub\pz14.xhtml
+2385/10/14 16:12:20.9240 TRACE GetBookProperties() : trying to parse as FB2
+2385/10/14 16:12:20.9240 INFO ldomNode::registerDocument() - new index = 10
+2385/10/14 16:12:20.9240 TRACE checking format...
+2385/10/14 16:12:20.9240 TRACE parsing...
+2385/10/14 16:12:20.9250 DEBUG Internal stylesheet file: _static/epub.css
+2385/10/14 16:12:20.9250 DEBUG Internal stylesheet file: _static/pygments.css
+2385/10/14 16:12:20.9250 TRACE parsed
+2385/10/14 16:12:20.9250 INFO ldomNode::unregisterDocument() - for index 10
+2385/10/14 16:12:20.9250 TRACE going to parse J:\course0203\build\epub\pz15.xhtml
+2385/10/14 16:12:20.9260 TRACE parsing book properties for J:\course0203\build\epub\pz15.xhtml
+2385/10/14 16:12:20.9260 TRACE GetBookProperties() : trying to parse as FB2
+2385/10/14 16:12:20.9260 INFO ldomNode::registerDocument() - new index = 11
+2385/10/14 16:12:20.9260 TRACE checking format...
+2385/10/14 16:12:20.9260 TRACE parsing...
+2385/10/14 16:12:20.9260 DEBUG Internal stylesheet file: _static/epub.css
+2385/10/14 16:12:20.9260 DEBUG Internal stylesheet file: _static/pygments.css
+2385/10/14 16:12:20.9270 TRACE parsed
+2385/10/14 16:12:20.9270 INFO ldomNode::unregisterDocument() - for index 11
+2385/10/14 16:12:20.9270 TRACE going to parse J:\course0203\build\epub\pz16.xhtml
+2385/10/14 16:12:20.9270 TRACE parsing book properties for J:\course0203\build\epub\pz16.xhtml
+2385/10/14 16:12:20.9270 TRACE GetBookProperties() : trying to parse as FB2
+2385/10/14 16:12:20.9270 INFO ldomNode::registerDocument() - new index = 12
+2385/10/14 16:12:20.9270 TRACE checking format...
+2385/10/14 16:12:20.9280 TRACE parsing...
+2385/10/14 16:12:20.9280 DEBUG Internal stylesheet file: _static/epub.css
+2385/10/14 16:12:20.9280 DEBUG Internal stylesheet file: _static/pygments.css
+2385/10/14 16:12:20.9290 TRACE parsed
+2385/10/14 16:12:20.9290 INFO ldomNode::unregisterDocument() - for index 12
+2385/10/14 16:12:20.9290 TRACE going to parse J:\course0203\build\epub\pz17.xhtml
+2385/10/14 16:12:20.9290 TRACE parsing book properties for J:\course0203\build\epub\pz17.xhtml
+2385/10/14 16:12:20.9290 TRACE GetBookProperties() : trying to parse as FB2
+2385/10/14 16:12:20.9290 INFO ldomNode::registerDocument() - new index = 13
+2385/10/14 16:12:20.9290 TRACE checking format...
+2385/10/14 16:12:20.9300 TRACE parsing...
+2385/10/14 16:12:20.9300 DEBUG Internal stylesheet file: _static/epub.css
+2385/10/14 16:12:20.9300 DEBUG Internal stylesheet file: _static/pygments.css
+2385/10/14 16:12:20.9320 TRACE parsed
+2385/10/14 16:12:20.9320 INFO ldomNode::unregisterDocument() - for index 13
+2385/10/14 16:12:20.9320 TRACE going to parse J:\course0203\build\epub\pz18.xhtml
+2385/10/14 16:12:20.9320 TRACE parsing book properties for J:\course0203\build\epub\pz18.xhtml
+2385/10/14 16:12:20.9320 TRACE GetBookProperties() : trying to parse as FB2
+2385/10/14 16:12:20.9320 INFO ldomNode::registerDocument() - new index = 14
+2385/10/14 16:12:20.9330 TRACE checking format...
+2385/10/14 16:12:20.9330 TRACE parsing...
+2385/10/14 16:12:20.9330 DEBUG Internal stylesheet file: _static/epub.css
+2385/10/14 16:12:20.9330 DEBUG Internal stylesheet file: _static/pygments.css
+2385/10/14 16:12:20.9340 TRACE parsed
+2385/10/14 16:12:20.9340 INFO ldomNode::unregisterDocument() - for index 14
+2385/10/14 16:12:20.9340 TRACE going to parse J:\course0203\build\epub\pz2.xhtml
+2385/10/14 16:12:20.9340 TRACE parsing book properties for J:\course0203\build\epub\pz2.xhtml
+2385/10/14 16:12:20.9340 TRACE GetBookProperties() : trying to parse as FB2
+2385/10/14 16:12:20.9340 INFO ldomNode::registerDocument() - new index = 15
+2385/10/14 16:12:20.9340 TRACE checking format...
+2385/10/14 16:12:20.9350 TRACE parsing...
+2385/10/14 16:12:20.9350 DEBUG Internal stylesheet file: _static/epub.css
+2385/10/14 16:12:20.9350 DEBUG Internal stylesheet file: _static/pygments.css
+2385/10/14 16:12:20.9370 TRACE parsed
+2385/10/14 16:12:20.9370 INFO ldomNode::unregisterDocument() - for index 15
+2385/10/14 16:12:20.9370 TRACE going to parse J:\course0203\build\epub\pz3.xhtml
+2385/10/14 16:12:20.9370 TRACE parsing book properties for J:\course0203\build\epub\pz3.xhtml
+2385/10/14 16:12:20.9370 TRACE GetBookProperties() : trying to parse as FB2
+2385/10/14 16:12:20.9370 INFO ldomNode::registerDocument() - new index = 16
+2385/10/14 16:12:20.9370 TRACE checking format...
+2385/10/14 16:12:20.9380 TRACE parsing...
+2385/10/14 16:12:20.9380 DEBUG Internal stylesheet file: _static/epub.css
+2385/10/14 16:12:20.9380 DEBUG Internal stylesheet file: _static/pygments.css
+2385/10/14 16:12:20.9400 TRACE parsed
+2385/10/14 16:12:20.9400 INFO ldomNode::unregisterDocument() - for index 16
+2385/10/14 16:12:20.9400 TRACE going to parse J:\course0203\build\epub\pz4.xhtml
+2385/10/14 16:12:20.9400 TRACE parsing book properties for J:\course0203\build\epub\pz4.xhtml
+2385/10/14 16:12:20.9400 TRACE GetBookProperties() : trying to parse as FB2
+2385/10/14 16:12:20.9400 INFO ldomNode::registerDocument() - new index = 17
+2385/10/14 16:12:20.9400 TRACE checking format...
+2385/10/14 16:12:20.9410 TRACE parsing...
+2385/10/14 16:12:20.9410 DEBUG Internal stylesheet file: _static/epub.css
+2385/10/14 16:12:20.9410 DEBUG Internal stylesheet file: _static/pygments.css
+2385/10/14 16:12:20.9450 TRACE parsed
+2385/10/14 16:12:20.9450 INFO ldomNode::unregisterDocument() - for index 17
+2385/10/14 16:12:20.9450 TRACE going to parse J:\course0203\build\epub\pz5.xhtml
+2385/10/14 16:12:20.9450 TRACE parsing book properties for J:\course0203\build\epub\pz5.xhtml
+2385/10/14 16:12:20.9450 TRACE GetBookProperties() : trying to parse as FB2
+2385/10/14 16:12:20.9450 INFO ldomNode::registerDocument() - new index = 18
+2385/10/14 16:12:20.9450 TRACE checking format...
+2385/10/14 16:12:20.9460 TRACE parsing...
+2385/10/14 16:12:20.9460 DEBUG Internal stylesheet file: _static/epub.css
+2385/10/14 16:12:20.9460 DEBUG Internal stylesheet file: _static/pygments.css
+2385/10/14 16:12:20.9470 TRACE parsed
+2385/10/14 16:12:20.9470 INFO ldomNode::unregisterDocument() - for index 18
+2385/10/14 16:12:20.9470 TRACE going to parse J:\course0203\build\epub\pz6.xhtml
+2385/10/14 16:12:20.9470 TRACE parsing book properties for J:\course0203\build\epub\pz6.xhtml
+2385/10/14 16:12:20.9470 TRACE GetBookProperties() : trying to parse as FB2
+2385/10/14 16:12:20.9470 INFO ldomNode::registerDocument() - new index = 19
+2385/10/14 16:12:20.9470 TRACE checking format...
+2385/10/14 16:12:20.9480 TRACE OpenGLWindow::renderNow()
+2385/10/14 16:12:20.9480 TRACE parsing...
+2385/10/14 16:12:20.9480 DEBUG Internal stylesheet file: _static/epub.css
+2385/10/14 16:12:20.9480 DEBUG Internal stylesheet file: _static/pygments.css
+2385/10/14 16:12:20.9500 TRACE parsed
+2385/10/14 16:12:20.9500 INFO ldomNode::unregisterDocument() - for index 19
+2385/10/14 16:12:20.9500 TRACE going to parse J:\course0203\build\epub\pz7.xhtml
+2385/10/14 16:12:20.9500 TRACE parsing book properties for J:\course0203\build\epub\pz7.xhtml
+2385/10/14 16:12:20.9500 TRACE GetBookProperties() : trying to parse as FB2
+2385/10/14 16:12:20.9500 INFO ldomNode::registerDocument() - new index = 20
+2385/10/14 16:12:20.9500 TRACE checking format...
+2385/10/14 16:12:20.9500 TRACE parsing...
+2385/10/14 16:12:20.9510 DEBUG Internal stylesheet file: _static/epub.css
+2385/10/14 16:12:20.9510 DEBUG Internal stylesheet file: _static/pygments.css
+2385/10/14 16:12:20.9510 TRACE parsed
+2385/10/14 16:12:20.9510 INFO ldomNode::unregisterDocument() - for index 20
+2385/10/14 16:12:20.9510 TRACE going to parse J:\course0203\build\epub\pz8.xhtml
+2385/10/14 16:12:20.9520 TRACE parsing book properties for J:\course0203\build\epub\pz8.xhtml
+2385/10/14 16:12:20.9520 TRACE GetBookProperties() : trying to parse as FB2
+2385/10/14 16:12:20.9520 INFO ldomNode::registerDocument() - new index = 21
+2385/10/14 16:12:20.9520 TRACE checking format...
+2385/10/14 16:12:20.9530 TRACE parsing...
+2385/10/14 16:12:20.9530 DEBUG Internal stylesheet file: _static/epub.css
+2385/10/14 16:12:20.9530 DEBUG Internal stylesheet file: _static/pygments.css
+2385/10/14 16:12:20.9550 TRACE parsed
+2385/10/14 16:12:20.9550 INFO ldomNode::unregisterDocument() - for index 21
+2385/10/14 16:12:20.9550 TRACE going to parse J:\course0203\build\epub\pz9.xhtml
+2385/10/14 16:12:20.9550 TRACE parsing book properties for J:\course0203\build\epub\pz9.xhtml
+2385/10/14 16:12:20.9550 TRACE GetBookProperties() : trying to parse as FB2
+2385/10/14 16:12:20.9550 INFO ldomNode::registerDocument() - new index = 22
+2385/10/14 16:12:20.9560 TRACE checking format...
+2385/10/14 16:12:20.9560 TRACE parsing...
+2385/10/14 16:12:20.9560 DEBUG Internal stylesheet file: _static/epub.css
+2385/10/14 16:12:20.9560 DEBUG Internal stylesheet file: _static/pygments.css
+2385/10/14 16:12:20.9570 TRACE parsed
+2385/10/14 16:12:20.9570 INFO ldomNode::unregisterDocument() - for index 22
+2385/10/14 16:12:20.9570 TRACE 21 entries for save
+2385/10/14 16:12:20.9590 TRACE inserting authors
+2385/10/14 16:12:20.9980 TRACE OpenGLWindow::renderNow()
+2385/10/14 16:12:21.0480 TRACE OpenGLWindow::renderNow()
+2385/10/14 16:12:21.0980 TRACE OpenGLWindow::renderNow()
+2385/10/14 16:12:21.1490 TRACE OpenGLWindow::renderNow()
+2385/10/14 16:12:21.1800 TRACE done scanning of directory
+2385/10/14 16:12:21.1800 TRACE CRDirCache::run :: posting callback to GUI thread
+2385/10/14 16:12:21.1800 TRACE CRDirCache::run :: no tasks - calling monitor wait
+2385/10/14 16:12:21.1990 TRACE CRUIMainWidget::onDirectoryScanFinished
+2385/10/14 16:12:21.2000 TRACE CRUIMainWidget::onDirectoryScanFinished -- scan finished for pending folder
+2385/10/14 16:12:21.2000 INFO Directory J:\course0203\build\epub is ready
+2385/10/14 16:12:21.2020 TRACE CRCoverPageManager::cancelAll
+2385/10/14 16:12:21.2020 TRACE OpenGLWindow::renderNow()
+2385/10/14 16:12:21.2020 TRACE CRCoverImageCache::draw called for J:\course0203\build\epub\course0203.epub
+2385/10/14 16:12:21.2020 DEBUG scanBookCoverInternal(J:\course0203\build\epub\course0203.epub) called
+2385/10/14 16:12:21.2040 INFO ldomNode::registerDocument() - new index = 23
+2385/10/14 16:12:21.2040 DEBUG setDocFlags(0000)
+2385/10/14 16:12:21.2040 INFO ldomNode::unregisterDocument() - for index 23
+2385/10/14 16:12:21.2040 TRACE codeBase=
+2385/10/14 16:12:21.2040 INFO ldomNode::registerDocument() - new index = 24
+2385/10/14 16:12:21.2040 DEBUG setDocFlags(0000)
+2385/10/14 16:12:21.2060 INFO ldomNode::unregisterDocument() - for index 24
+2385/10/14 16:12:21.2060 DEBUG scanBookCoverInternal() : cover page data not found
+2385/10/14 16:12:21.2060 TRACE Adding item J:\course0203\build\epub\course0203.epub type=2 size=0
+2385/10/14 16:12:21.2120 TRACE drawing default cover page 198 x 285
+2385/10/14 16:12:21.2130 DEBUG Loaded font C:\Windows\Fonts\arialbd.ttf [0]: faceName=Arial, 
+2385/10/14 16:12:21.2190 TRACE CRCoverImageCache::draw called for J:\course0203\build\epub\genindex.xhtml
+2385/10/14 16:12:21.2190 DEBUG scanBookCoverInternal(J:\course0203\build\epub\genindex.xhtml) called
+2385/10/14 16:12:21.2190 DEBUG scanBookCoverInternal() : cover page data not found
+2385/10/14 16:12:21.2190 TRACE Adding item J:\course0203\build\epub\genindex.xhtml type=2 size=0
+2385/10/14 16:12:21.2200 TRACE drawing default cover page 198 x 285
+2385/10/14 16:12:21.2240 TRACE CRCoverImageCache::draw called for J:\course0203\build\epub\index.xhtml
+2385/10/14 16:12:21.2240 DEBUG scanBookCoverInternal(J:\course0203\build\epub\index.xhtml) called
+2385/10/14 16:12:21.2250 DEBUG scanBookCoverInternal() : cover page data not found
+2385/10/14 16:12:21.2250 TRACE Adding item J:\course0203\build\epub\index.xhtml type=2 size=0
+2385/10/14 16:12:21.2250 TRACE drawing default cover page 198 x 285
+2385/10/14 16:12:21.2290 TRACE CRCoverImageCache::draw called for J:\course0203\build\epub\pz1.xhtml
+2385/10/14 16:12:21.2290 DEBUG scanBookCoverInternal(J:\course0203\build\epub\pz1.xhtml) called
+2385/10/14 16:12:21.2290 DEBUG scanBookCoverInternal() : cover page data not found
+2385/10/14 16:12:21.2290 TRACE Adding item J:\course0203\build\epub\pz1.xhtml type=2 size=0
+2385/10/14 16:12:21.2300 TRACE drawing default cover page 198 x 285
+2385/10/14 16:12:21.2340 TRACE CRCoverImageCache::draw called for J:\course0203\build\epub\pz10.xhtml
+2385/10/14 16:12:21.2340 DEBUG scanBookCoverInternal(J:\course0203\build\epub\pz10.xhtml) called
+2385/10/14 16:12:21.2340 DEBUG scanBookCoverInternal() : cover page data not found
+2385/10/14 16:12:21.2340 TRACE Adding item J:\course0203\build\epub\pz10.xhtml type=2 size=0
+2385/10/14 16:12:21.2350 TRACE drawing default cover page 198 x 285
+2385/10/14 16:12:21.2530 TRACE starting animation 3 -> 4
+2385/10/14 16:12:21.2850 TRACE OpenGLWindow::renderNow()
+2385/10/14 16:12:21.2860 TRACE OpenGLWindow::renderNow()
+2385/10/14 16:12:21.2870 TRACE OpenGLWindow::renderNow()
+2385/10/14 16:12:21.2880 TRACE OpenGLWindow::renderNow()
+2385/10/14 16:12:21.3060 TRACE OpenGLWindow::renderNow()
+2385/10/14 16:12:21.3220 TRACE OpenGLWindow::renderNow()
+2385/10/14 16:12:21.3380 TRACE OpenGLWindow::renderNow()
+2385/10/14 16:12:21.3550 TRACE OpenGLWindow::renderNow()
+2385/10/14 16:12:21.3720 TRACE OpenGLWindow::renderNow()
+2385/10/14 16:12:21.3880 TRACE OpenGLWindow::renderNow()
+2385/10/14 16:12:21.4050 TRACE OpenGLWindow::renderNow()
+2385/10/14 16:12:21.4220 TRACE OpenGLWindow::renderNow()
+2385/10/14 16:12:21.4390 TRACE OpenGLWindow::renderNow()
+2385/10/14 16:12:21.4550 TRACE OpenGLWindow::renderNow()
+2385/10/14 16:12:21.4550 TRACE stopping animation 3, 4
+2385/10/14 16:12:21.4720 TRACE OpenGLWindow::renderNow()
+2385/10/14 16:12:21.4890 TRACE OpenGLWindow::renderNow()
+2385/10/14 16:12:22.3830 TRACE OpenGLWindow::renderNow()
+2385/10/14 16:12:22.5020 DEBUG Opening book J:\course0203\build\epub\course0203.epub
+2385/10/14 16:12:22.5030 DEBUG loading image from file J:\course0203\build\cr3\res\icons/32x32\left_circular.png
+2385/10/14 16:12:22.5080 TRACE LVDocView::checkRender() : render is required
+2385/10/14 16:12:22.5090 DEBUG Loaded font C:\Windows\Fonts\arial.ttf [0]: faceName=Arial, 
+2385/10/14 16:12:22.5090 TRACE ldomDocument::setRenderProps() - doc flags changed
+2385/10/14 16:12:22.5090 TRACE ldomDocument::setRenderProps() - style is changed
+2385/10/14 16:12:22.5090 TRACE ldomDocument::setRenderProps() - font is changed
+2385/10/14 16:12:22.5090 TRACE ldomDocument::setRenderProps() - page height is changed
+2385/10/14 16:12:22.5090 TRACE ldomDocument::setRenderProps() - page width is changed
+2385/10/14 16:12:22.5090 DEBUG Render(width=150, height=147, fontSize=17, currentFontSize=17, 0 char width=9)
+2385/10/14 16:12:22.5090 INFO Render is called for width 150, pageHeight=147, fontFace=Arial, docFlags=11
+2385/10/14 16:12:22.5090 TRACE initializing default style...
+2385/10/14 16:12:22.5090 INFO checkRenderContext: style is not set for root node
+2385/10/14 16:12:22.5090 INFO Calculating style hash...  elemCount=11, globalHash=91de7b9e, docFlags=0000000b, nodeStyleHash=b977a19b
+2385/10/14 16:12:22.5090 INFO checkRenderContext: Style hash doesn't match 78b52db0!=0
+2385/10/14 16:12:22.5090 INFO rendering context is changed - full render required...
+2385/10/14 16:12:22.5090 TRACE init format data...
+2385/10/14 16:12:22.5090 TRACE Dropping existing styles...
+2385/10/14 16:12:22.5090 TRACE Save stylesheet...
+2385/10/14 16:12:22.5090 TRACE Init node styles...
+2385/10/14 16:12:22.5090 TRACE applyDocumentStyleSheet() : No internal FB2 stylesheet found under /FictionBook/stylesheet
+2385/10/14 16:12:22.5100 DEBUG Loaded font C:\Windows\Fonts\timesbd.ttf [0]: faceName=Times New Roman, 
+2385/10/14 16:12:22.5100 TRACE Restoring stylesheet...
+2385/10/14 16:12:22.5100 TRACE init render method...
+2385/10/14 16:12:22.5100 INFO Calculating style hash...  elemCount=11, globalHash=91de7b9e, docFlags=0000000b, nodeStyleHash=c4c90aa9
+2385/10/14 16:12:22.5100 INFO Updating render properties: styleHash=3bef5fbe, stylesheetHash=49e86368, docflags=b, width=96, height=93
+2385/10/14 16:12:22.5100 INFO Final block count: 2
+2385/10/14 16:12:22.5100 TRACE rendering...
+2385/10/14 16:12:22.5140 DEBUG LVFontCache::gc() : 12 fonts still used, 0 fonts dropped
+2385/10/14 16:12:22.5140 TRACE finalizing... fonts.length=2
+2385/10/14 16:12:22.5140 INFO Calculating style hash...  elemCount=11, globalHash=91de7b9e, docFlags=0000000b, nodeStyleHash=c4c90aa9
+2385/10/14 16:12:22.5140 INFO Updating render properties: styleHash=3bef5fbe, stylesheetHash=49e86368, docflags=b, width=96, height=93
+2385/10/14 16:12:22.5140 INFO *** Document memory usage: elements:11, textNodes:3, ptext=(32768 uncompressed), ptelems=(16384 uncompressed), rects=(32768 uncompressed), nodestyles=(16384 uncompressed), styles:6, fonts:2, renderedNodes:2, totalNodes:14(0Kb), mutableElements:0(~0Kb)
+2385/10/14 16:12:22.5140 DEBUG LVFontCache::gc() : 12 fonts still used, 0 fonts dropped
+2385/10/14 16:12:22.5140 DEBUG Updating selections...
+2385/10/14 16:12:22.5140 TRACE updateSelections() : selection count = 0
+2385/10/14 16:12:22.5140 DEBUG Render is finished
+2385/10/14 16:12:22.5140 INFO Check whether to swap: file size = 0, min size to cache = 300000
+2385/10/14 16:12:22.5140 DEBUG loading image from file J:\course0203\build\cr3\res\icons/32x32\fantasy.png
+2385/10/14 16:12:22.5150 DEBUG loading image from file J:\course0203\build\cr3\res\icons/32x32\moon.png
+2385/10/14 16:12:22.5160 DEBUG loading image from file J:\course0203\build\cr3\res\icons/32x32\document.png
+2385/10/14 16:12:22.5180 DEBUG loading image from file J:\course0203\build\cr3\res\icons/32x32\arrow.png
+2385/10/14 16:12:22.5180 DEBUG loading image from file J:\course0203\build\cr3\res\icons/32x32\bookmark.png
+2385/10/14 16:12:22.5280 DEBUG loading image from file J:\course0203\build\cr3\res\icons/32x32\google_web_search.png
+2385/10/14 16:12:22.5290 DEBUG loading image from file J:\course0203\build\cr3\res\icons/32x32\listen.png
+2385/10/14 16:12:22.5300 DEBUG loading image from file J:\course0203\build\cr3\res\icons/32x32\up_circular.png
+2385/10/14 16:12:22.5300 DEBUG loading image from file J:\course0203\build\cr3\res\icons/32x32\down_circular.png
+2385/10/14 16:12:22.5310 DEBUG loading image from file J:\course0203\build\cr3\res\icons/32x32\help.png
+2385/10/14 16:12:22.5310 DEBUG loading image from file J:\course0203\build\cr3\res\icons/32x32\expand.png
+2385/10/14 16:12:22.5320 TRACE LVDocView:Resize(749x435)
+2385/10/14 16:12:22.5320 TRACE LVDocView:Resize() :  new size: 749x435
+2385/10/14 16:12:22.5320 TRACE CRUIReadWidget::updatePosition()
+2385/10/14 16:12:22.5320 INFO ldomNode::unregisterDocument() - for index 0
+2385/10/14 16:12:22.5320 INFO ldomNode::registerDocument() - new index = 25
+2385/10/14 16:12:22.5320 DEBUG setDocFlags(0000)
+2385/10/14 16:12:22.5320 DEBUG setDocFlag(0004, false)
+2385/10/14 16:12:22.5320 DEBUG setDocFlag(0002, true)
+2385/10/14 16:12:22.5320 DEBUG setDocFlag(0001, true)
+2385/10/14 16:12:22.5320 DEBUG setDocFlag(0008, true)
+2385/10/14 16:12:22.5330 DEBUG New stylesheet hash: 8931c16e
+2385/10/14 16:12:22.5330 TRACE CRUIMainWidget::showSlowOperationPopup()
+2385/10/14 16:12:22.5360 DEBUG setLastBookFilename(J:\course0203\build\epub\course0203.epub)
+2385/10/14 16:12:22.5360 INFO Loading book in background thread
+2385/10/14 16:12:22.5360 INFO ldomNode::unregisterDocument() - for index 25
+2385/10/14 16:12:22.5360 DEBUG LoadDocument(J:\course0203\build\epub\course0203.epub) textMode=autoformat
+2385/10/14 16:12:22.5360 INFO Loading document J:\course0203\build\epub\course0203.epub : fn=course0203.epub, dir=J:\course0203\build\epub\
+2385/10/14 16:12:22.5380 TRACE OpenGLWindow::renderNow()
+2385/10/14 16:12:22.5880 TRACE OpenGLWindow::renderNow()
+2385/10/14 16:12:22.6160 INFO EPUB format detected
+2385/10/14 16:12:22.6160 INFO ldomNode::registerDocument() - new index = 26
+2385/10/14 16:12:22.6160 DEBUG setDocFlags(0000)
+2385/10/14 16:12:22.6160 DEBUG setDocFlag(0004, false)
+2385/10/14 16:12:22.6160 DEBUG setDocFlag(0002, true)
+2385/10/14 16:12:22.6160 DEBUG setDocFlag(0001, true)
+2385/10/14 16:12:22.6160 DEBUG setDocFlag(0008, true)
+2385/10/14 16:12:22.6160 DEBUG New stylesheet hash: 8931c16e
+2385/10/14 16:12:22.6160 TRACE ldomDocument::setRenderProps() - doc flags changed
+2385/10/14 16:12:22.6160 TRACE ldomDocument::setRenderProps() - style is changed
+2385/10/14 16:12:22.6160 TRACE ldomDocument::setRenderProps() - font is changed
+2385/10/14 16:12:22.6160 TRACE ldomDocument::setRenderProps() - page height is changed
+2385/10/14 16:12:22.6160 TRACE ldomDocument::setRenderProps() - page width is changed
+2385/10/14 16:12:22.6160 TRACE OnLoadFileFormatDetected cssFile=J:\course0203\build\cr3\res\css\epub.css
+2385/10/14 16:12:22.6260 DEBUG New stylesheet hash: 7736c184
+2385/10/14 16:12:22.6270 INFO ldomNode::registerDocument() - new index = 27
+2385/10/14 16:12:22.6270 DEBUG setDocFlags(0000)
+2385/10/14 16:12:22.6270 INFO ldomNode::unregisterDocument() - for index 27
+2385/10/14 16:12:22.6270 TRACE codeBase=
+2385/10/14 16:12:22.6270 INFO ldomNode::registerDocument() - new index = 28
+2385/10/14 16:12:22.6270 DEBUG setDocFlags(0000)
+2385/10/14 16:12:22.6290 INFO Author: Vladimir Dushkevich Title: course0203
+2385/10/14 16:12:22.6390 INFO ldomNode::unregisterDocument() - for index 28
+2385/10/14 16:12:22.6390 TRACE OpenGLWindow::renderNow()
+2385/10/14 16:12:22.6390 INFO ldomDocument::openCacheFile() - looking for cache file
+2385/10/14 16:12:22.6390 TRACE getPersistenceFlags() returned 0
+2385/10/14 16:12:22.6390 DEBUG ldomDocCache::openExisting(course0203.epub.1a145575.0.cr3)
+2385/10/14 16:12:22.6390 ERROR ldomDocCache::openExisting - File course0203.epub.1a145575.0.cr3 is not found in cache index
+2385/10/14 16:12:22.6390 INFO Cannot open document from cache. Need to read fully
+2385/10/14 16:12:22.6390 DEBUG setDocFlags(000b)
+2385/10/14 16:12:22.6390 TRACE codeBasePrefix is empty for path 
+2385/10/14 16:12:22.6390 DEBUG Checking fragment: index.xhtml
+2385/10/14 16:12:22.6400 TRACE http-equiv content-type:  content="text/html; charset=utf-8" /
+2385/10/14 16:12:22.6400 TRACE CSS file href: _static\epub.css
+2385/10/14 16:12:22.6400 TRACE CSS file href: _static\epub.css
+2385/10/14 16:12:22.6400 TRACE ldomNode::applyNodeStylesheet()
+2385/10/14 16:12:22.6400 DEBUG Setting StyleSheet attribute to _static\epub.css for document fragment
+2385/10/14 16:12:22.6410 DEBUG Loaded font C:\Windows\Fonts\ariali.ttf [0]: faceName=Arial, 
+2385/10/14 16:12:22.6420 DEBUG Loaded font C:\Windows\Fonts\arialbd.ttf [0]: faceName=Arial, 
+2385/10/14 16:12:22.6440 DEBUG Checking fragment: pz1.xhtml
+2385/10/14 16:12:22.6450 TRACE http-equiv content-type:  content="text/html; charset=utf-8" /
+2385/10/14 16:12:22.6460 TRACE CSS file href: _static\epub.css
+2385/10/14 16:12:22.6460 TRACE CSS file href: _static\epub.css
+2385/10/14 16:12:22.6460 TRACE ldomNode::applyNodeStylesheet()
+2385/10/14 16:12:22.6460 DEBUG Setting StyleSheet attribute to _static\epub.css for document fragment
+2385/10/14 16:12:22.6510 DEBUG Loaded font C:\Windows\Fonts\cour.ttf [0]: faceName=Courier New, 
+2385/10/14 16:12:22.6530 DEBUG Checking fragment: pz2.xhtml
+2385/10/14 16:12:22.6550 TRACE http-equiv content-type:  content="text/html; charset=utf-8" /
+2385/10/14 16:12:22.6550 TRACE CSS file href: _static\epub.css
+2385/10/14 16:12:22.6550 TRACE CSS file href: _static\epub.css
+2385/10/14 16:12:22.6550 TRACE ldomNode::applyNodeStylesheet()
+2385/10/14 16:12:22.6550 DEBUG Setting StyleSheet attribute to _static\epub.css for document fragment
+2385/10/14 16:12:22.6580 DEBUG Loaded font C:\Windows\Fonts\arialbd.ttf [0]: faceName=Arial, 
+2385/10/14 16:12:22.6640 DEBUG Checking fragment: pz3.xhtml
+2385/10/14 16:12:22.6650 TRACE http-equiv content-type:  content="text/html; charset=utf-8" /
+2385/10/14 16:12:22.6660 TRACE CSS file href: _static\epub.css
+2385/10/14 16:12:22.6660 TRACE CSS file href: _static\epub.css
+2385/10/14 16:12:22.6660 TRACE ldomNode::applyNodeStylesheet()
+2385/10/14 16:12:22.6660 DEBUG Setting StyleSheet attribute to _static\epub.css for document fragment
+2385/10/14 16:12:22.6730 DEBUG Checking fragment: pz4.xhtml
+2385/10/14 16:12:22.6750 TRACE http-equiv content-type:  content="text/html; charset=utf-8" /
+2385/10/14 16:12:22.6750 TRACE CSS file href: _static\epub.css
+2385/10/14 16:12:22.6750 TRACE CSS file href: _static\epub.css
+2385/10/14 16:12:22.6750 TRACE ldomNode::applyNodeStylesheet()
+2385/10/14 16:12:22.6750 DEBUG Setting StyleSheet attribute to _static\epub.css for document fragment
+2385/10/14 16:12:22.6900 TRACE OpenGLWindow::renderNow()
+2385/10/14 16:12:22.6910 DEBUG Checking fragment: pz5.xhtml
+2385/10/14 16:12:22.6920 TRACE http-equiv content-type:  content="text/html; charset=utf-8" /
+2385/10/14 16:12:22.6930 TRACE CSS file href: _static\epub.css
+2385/10/14 16:12:22.6930 TRACE CSS file href: _static\epub.css
+2385/10/14 16:12:22.6930 TRACE ldomNode::applyNodeStylesheet()
+2385/10/14 16:12:22.6930 DEBUG Setting StyleSheet attribute to _static\epub.css for document fragment
+2385/10/14 16:12:22.6960 DEBUG Checking fragment: pz6.xhtml
+2385/10/14 16:12:22.6980 TRACE http-equiv content-type:  content="text/html; charset=utf-8" /
+2385/10/14 16:12:22.6980 TRACE CSS file href: _static\epub.css
+2385/10/14 16:12:22.6980 TRACE CSS file href: _static\epub.css
+2385/10/14 16:12:22.6980 TRACE ldomNode::applyNodeStylesheet()
+2385/10/14 16:12:22.6980 DEBUG Setting StyleSheet attribute to _static\epub.css for document fragment
+2385/10/14 16:12:22.7040 DEBUG Checking fragment: pz7.xhtml
+2385/10/14 16:12:22.7040 TRACE http-equiv content-type:  content="text/html; charset=utf-8" /
+2385/10/14 16:12:22.7050 TRACE CSS file href: _static\epub.css
+2385/10/14 16:12:22.7050 TRACE CSS file href: _static\epub.css
+2385/10/14 16:12:22.7050 TRACE ldomNode::applyNodeStylesheet()
+2385/10/14 16:12:22.7050 DEBUG Setting StyleSheet attribute to _static\epub.css for document fragment
+2385/10/14 16:12:22.7080 DEBUG Checking fragment: pz8.xhtml
+2385/10/14 16:12:22.7100 TRACE http-equiv content-type:  content="text/html; charset=utf-8" /
+2385/10/14 16:12:22.7100 TRACE CSS file href: _static\epub.css
+2385/10/14 16:12:22.7100 TRACE CSS file href: _static\epub.css
+2385/10/14 16:12:22.7100 TRACE ldomNode::applyNodeStylesheet()
+2385/10/14 16:12:22.7110 DEBUG Setting StyleSheet attribute to _static\epub.css for document fragment
+2385/10/14 16:12:22.7190 DEBUG Checking fragment: pz9.xhtml
+2385/10/14 16:12:22.7200 TRACE http-equiv content-type:  content="text/html; charset=utf-8" /
+2385/10/14 16:12:22.7210 TRACE CSS file href: _static\epub.css
+2385/10/14 16:12:22.7210 TRACE CSS file href: _static\epub.css
+2385/10/14 16:12:22.7210 TRACE ldomNode::applyNodeStylesheet()
+2385/10/14 16:12:22.7210 DEBUG Setting StyleSheet attribute to _static\epub.css for document fragment
+2385/10/14 16:12:22.7290 DEBUG Checking fragment: pz10.xhtml
+2385/10/14 16:12:22.7300 TRACE http-equiv content-type:  content="text/html; charset=utf-8" /
+2385/10/14 16:12:22.7310 TRACE CSS file href: _static\epub.css
+2385/10/14 16:12:22.7310 TRACE CSS file href: _static\epub.css
+2385/10/14 16:12:22.7310 TRACE ldomNode::applyNodeStylesheet()
+2385/10/14 16:12:22.7310 DEBUG Setting StyleSheet attribute to _static\epub.css for document fragment
+2385/10/14 16:12:22.7390 DEBUG Checking fragment: pz11.xhtml
+2385/10/14 16:12:22.7400 TRACE http-equiv content-type:  content="text/html; charset=utf-8" /
+2385/10/14 16:12:22.7410 TRACE CSS file href: _static\epub.css
+2385/10/14 16:12:22.7410 TRACE CSS file href: _static\epub.css
+2385/10/14 16:12:22.7410 TRACE ldomNode::applyNodeStylesheet()
+2385/10/14 16:12:22.7410 TRACE OpenGLWindow::renderNow()
+2385/10/14 16:12:22.7410 DEBUG Setting StyleSheet attribute to _static\epub.css for document fragment
+2385/10/14 16:12:22.7610 DEBUG Checking fragment: pz12.xhtml
+2385/10/14 16:12:22.7620 TRACE http-equiv content-type:  content="text/html; charset=utf-8" /
+2385/10/14 16:12:22.7620 TRACE CSS file href: _static\epub.css
+2385/10/14 16:12:22.7620 TRACE CSS file href: _static\epub.css
+2385/10/14 16:12:22.7620 TRACE ldomNode::applyNodeStylesheet()
+2385/10/14 16:12:22.7630 DEBUG Setting StyleSheet attribute to _static\epub.css for document fragment
+2385/10/14 16:12:22.7650 DEBUG Checking fragment: pz13.xhtml
+2385/10/14 16:12:22.7670 TRACE http-equiv content-type:  content="text/html; charset=utf-8" /
+2385/10/14 16:12:22.7670 TRACE CSS file href: _static\epub.css
+2385/10/14 16:12:22.7670 TRACE CSS file href: _static\epub.css
+2385/10/14 16:12:22.7670 TRACE ldomNode::applyNodeStylesheet()
+2385/10/14 16:12:22.7670 DEBUG Setting StyleSheet attribute to _static\epub.css for document fragment
+2385/10/14 16:12:22.7840 DEBUG Checking fragment: pz14.xhtml
+2385/10/14 16:12:22.7840 TRACE http-equiv content-type:  content="text/html; charset=utf-8" /
+2385/10/14 16:12:22.7850 TRACE CSS file href: _static\epub.css
+2385/10/14 16:12:22.7850 TRACE CSS file href: _static\epub.css
+2385/10/14 16:12:22.7850 TRACE ldomNode::applyNodeStylesheet()
+2385/10/14 16:12:22.7850 DEBUG Setting StyleSheet attribute to _static\epub.css for document fragment
+2385/10/14 16:12:22.7870 DEBUG Checking fragment: pz15.xhtml
+2385/10/14 16:12:22.7880 TRACE http-equiv content-type:  content="text/html; charset=utf-8" /
+2385/10/14 16:12:22.7880 TRACE CSS file href: _static\epub.css
+2385/10/14 16:12:22.7880 TRACE CSS file href: _static\epub.css
+2385/10/14 16:12:22.7880 TRACE ldomNode::applyNodeStylesheet()
+2385/10/14 16:12:22.7880 DEBUG Setting StyleSheet attribute to _static\epub.css for document fragment
+2385/10/14 16:12:22.7900 DEBUG Checking fragment: pz16.xhtml
+2385/10/14 16:12:22.7920 TRACE http-equiv content-type:  content="text/html; charset=utf-8" /
+2385/10/14 16:12:22.7920 TRACE OpenGLWindow::renderNow()
+2385/10/14 16:12:22.7920 TRACE CSS file href: _static\epub.css
+2385/10/14 16:12:22.7920 TRACE CSS file href: _static\epub.css
+2385/10/14 16:12:22.7920 TRACE ldomNode::applyNodeStylesheet()
+2385/10/14 16:12:22.7920 DEBUG Setting StyleSheet attribute to _static\epub.css for document fragment
+2385/10/14 16:12:22.7960 DEBUG Checking fragment: pz17.xhtml
+2385/10/14 16:12:22.7980 TRACE http-equiv content-type:  content="text/html; charset=utf-8" /
+2385/10/14 16:12:22.7980 TRACE CSS file href: _static\epub.css
+2385/10/14 16:12:22.7980 TRACE CSS file href: _static\epub.css
+2385/10/14 16:12:22.7980 TRACE ldomNode::applyNodeStylesheet()
+2385/10/14 16:12:22.7980 DEBUG Setting StyleSheet attribute to _static\epub.css for document fragment
+2385/10/14 16:12:22.8060 DEBUG Checking fragment: pz18.xhtml
+2385/10/14 16:12:22.8070 TRACE http-equiv content-type:  content="text/html; charset=utf-8" /
+2385/10/14 16:12:22.8080 TRACE CSS file href: _static\epub.css
+2385/10/14 16:12:22.8080 TRACE CSS file href: _static\epub.css
+2385/10/14 16:12:22.8080 TRACE ldomNode::applyNodeStylesheet()
+2385/10/14 16:12:22.8080 DEBUG Setting StyleSheet attribute to _static\epub.css for document fragment
+2385/10/14 16:12:22.8100 DEBUG Checking fragment: genindex.xhtml
+2385/10/14 16:12:22.8100 TRACE http-equiv content-type:  content="text/html; charset=utf-8" /
+2385/10/14 16:12:22.8110 TRACE CSS file href: _static\epub.css
+2385/10/14 16:12:22.8110 TRACE CSS file href: _static\epub.css
+2385/10/14 16:12:22.8110 TRACE ldomNode::applyNodeStylesheet()
+2385/10/14 16:12:22.8110 DEBUG Setting StyleSheet attribute to _static\epub.css for document fragment
+2385/10/14 16:12:22.8110 TRACE codeBasePrefix is empty for path .\/
+2385/10/14 16:12:22.8110 INFO ldomNode::registerDocument() - new index = 29
+2385/10/14 16:12:22.8110 DEBUG setDocFlags(0000)
+2385/10/14 16:12:22.8190 INFO ldomNode::unregisterDocument() - for index 29
+2385/10/14 16:12:22.8190 DEBUG EPUB: 20 documents merged
+2385/10/14 16:12:22.8200 DEBUG url is res:///Data/fonts/LiberationNarrow-BoldItalic.otf
+
+2385/10/14 16:12:22.8200 ERROR Failed to register external font face: LiberationNarrow file: res:///Data/fonts/LiberationNarrow-BoldItalic.otf
+2385/10/14 16:12:22.8200 DEBUG url is res:///Data/fonts/LiberationNarrow-Bold.otf
+
+2385/10/14 16:12:22.8200 ERROR Failed to register external font face: LiberationNarrow file: res:///Data/fonts/LiberationNarrow-Bold.otf
+2385/10/14 16:12:22.8200 DEBUG url is res:///Data/fonts/LiberationNarrow-Italic.otf
+
+2385/10/14 16:12:22.8200 ERROR Failed to register external font face: LiberationNarrow file: res:///Data/fonts/LiberationNarrow-Italic.otf
+2385/10/14 16:12:22.8200 DEBUG url is res:///Data/fonts/LiberationNarrow-Regular.otf
+
+2385/10/14 16:12:22.8200 ERROR Failed to register external font face: LiberationNarrow file: res:///Data/fonts/LiberationNarrow-Regular.otf
+2385/10/14 16:12:22.8200 INFO ldomDocument::createCacheFile() - initialized swapping of document course0203.epub to cache file
+2385/10/14 16:12:22.8200 TRACE getPersistenceFlags() returned 0
+2385/10/14 16:12:22.8210 TRACE cache item: course0203.epub.1a145575.0.cr3 2393204
+2385/10/14 16:12:22.8210 TRACE Writing cache index
+2385/10/14 16:12:22.8220 ERROR CacheFile::read: Block 15:0 not found in file
+2385/10/14 16:12:22.8430 TRACE OpenGLWindow::renderNow()
+2385/10/14 16:12:22.8540 INFO *** Document memory usage: elements:4449, textNodes:3866, ptext=(32768 uncompressed), ptelems=(16384 uncompressed), rects=(0 uncompressed), nodestyles=(0 uncompressed), styles:0, fonts:0, renderedNodes:0, totalNodes:8312(129Kb), mutableElements:483(~32Kb)
+2385/10/14 16:12:22.8560 INFO Calculating style hash...  elemCount=4449, globalHash=91de7b9e, docFlags=0000000b, nodeStyleHash=455dddaf
+2385/10/14 16:12:22.8560 INFO Updating render properties: styleHash=f0373fc4, stylesheetHash=caadb5fe, docflags=b, width=144, height=18a
+2385/10/14 16:12:22.8560 INFO *** Document memory usage: elements:4449, textNodes:3866, ptext=(32768 uncompressed), ptelems=(16384 uncompressed), rects=(0 uncompressed), nodestyles=(32768 uncompressed), styles:1, fonts:0, renderedNodes:0, totalNodes:8312(129Kb), mutableElements:483(~32Kb)
+2385/10/14 16:12:22.8570 INFO *** Document memory usage: elements:4449, textNodes:3866, ptext=(32768 uncompressed), ptelems=(16384 uncompressed), rects=(0 uncompressed), nodestyles=(32768 uncompressed), styles:1, fonts:0, renderedNodes:0, totalNodes:8312(129Kb), mutableElements:483(~32Kb)
+2385/10/14 16:12:22.8570 INFO Loading is finished successfully
+2385/10/14 16:12:22.8570 INFO Rendering book in background thread
+2385/10/14 16:12:22.8580 DEBUG Render(width=324, height=394, fontSize=17, currentFontSize=17, 0 char width=9)
+2385/10/14 16:12:22.8580 INFO Render is called for width 324, pageHeight=394, fontFace=Arial, docFlags=11
+2385/10/14 16:12:22.8580 TRACE initializing default style...
+2385/10/14 16:12:22.8580 INFO checkRenderContext: style is not set for root node
+2385/10/14 16:12:22.8590 INFO Calculating style hash...  elemCount=4449, globalHash=91de7b9e, docFlags=0000000b, nodeStyleHash=455dddaf
+2385/10/14 16:12:22.8590 INFO rendering context is changed - full render required...
+2385/10/14 16:12:22.8590 TRACE init format data...
+2385/10/14 16:12:22.8590 TRACE Dropping existing styles...
+2385/10/14 16:12:22.8590 TRACE Save stylesheet...
+2385/10/14 16:12:22.8590 TRACE Init node styles...
+2385/10/14 16:12:22.8630 TRACE applyDocumentStyleSheet() : No internal FB2 stylesheet found under /FictionBook/stylesheet
+2385/10/14 16:12:22.8630 TRACE ldomNode::applyNodeStylesheet()
+2385/10/14 16:12:22.8660 TRACE ldomNode::applyNodeStylesheet()
+2385/10/14 16:12:22.8690 TRACE ldomNode::applyNodeStylesheet()
+2385/10/14 16:12:22.8750 TRACE ldomNode::applyNodeStylesheet()
+2385/10/14 16:12:22.8800 TRACE ldomNode::applyNodeStylesheet()
+2385/10/14 16:12:22.8910 TRACE ldomNode::applyNodeStylesheet()
+2385/10/14 16:12:22.8940 TRACE ldomNode::applyNodeStylesheet()
+2385/10/14 16:12:22.8940 TRACE BookLoadedNotificationTask.run()
+2385/10/14 16:12:22.8940 INFO Document loaded: J:\course0203\build\epub\course0203.epub successfully
+2385/10/14 16:12:22.8940 TRACE OpenGLWindow::renderNow()
+2385/10/14 16:12:22.8980 TRACE ldomNode::applyNodeStylesheet()
+2385/10/14 16:12:22.9000 TRACE ldomNode::applyNodeStylesheet()
+2385/10/14 16:12:22.9060 TRACE ldomNode::applyNodeStylesheet()
+2385/10/14 16:12:22.9110 TRACE ldomNode::applyNodeStylesheet()
+2385/10/14 16:12:22.9160 TRACE ldomNode::applyNodeStylesheet()
+2385/10/14 16:12:22.9320 TRACE ldomNode::applyNodeStylesheet()
+2385/10/14 16:12:22.9350 TRACE ldomNode::applyNodeStylesheet()
+2385/10/14 16:12:22.9450 TRACE OpenGLWindow::renderNow()
+2385/10/14 16:12:22.9470 TRACE ldomNode::applyNodeStylesheet()
+2385/10/14 16:12:22.9500 TRACE ldomNode::applyNodeStylesheet()
+2385/10/14 16:12:22.9510 TRACE ldomNode::applyNodeStylesheet()
+2385/10/14 16:12:22.9550 TRACE ldomNode::applyNodeStylesheet()
+2385/10/14 16:12:22.9610 TRACE ldomNode::applyNodeStylesheet()
+2385/10/14 16:12:22.9620 TRACE ldomNode::applyNodeStylesheet()
+2385/10/14 16:12:22.9630 TRACE Restoring stylesheet...
+2385/10/14 16:12:22.9630 TRACE init render method...
+2385/10/14 16:12:22.9710 INFO Calculating style hash...  elemCount=4449, globalHash=91de7b9e, docFlags=0000000b, nodeStyleHash=41c57751
+2385/10/14 16:12:22.9710 INFO Updating render properties: styleHash=d6153866, stylesheetHash=caadb5fe, docflags=b, width=144, height=18a
+2385/10/14 16:12:22.9710 INFO Final block count: 976
+2385/10/14 16:12:22.9710 TRACE rendering...
+2385/10/14 16:12:22.9960 TRACE OpenGLWindow::renderNow()
+2385/10/14 16:12:23.0130 ERROR Cannot open stream by name _images\openvas_quick_start.png
+2385/10/14 16:12:23.0130 ERROR ObjectImageSource cannot be opened by name _images\openvas_quick_start.png
+2385/10/14 16:12:23.0140 ERROR Cannot open stream by name _images\Scan_Config_Detail.jpg
+2385/10/14 16:12:23.0140 ERROR ObjectImageSource cannot be opened by name _images\Scan_Config_Detail.jpg
+2385/10/14 16:12:23.0150 ERROR Cannot open stream by name _images\new_task.jpg
+2385/10/14 16:12:23.0150 ERROR ObjectImageSource cannot be opened by name _images\new_task.jpg
+2385/10/14 16:12:23.0150 ERROR Cannot open stream by name _images\task_detail.jpg
+2385/10/14 16:12:23.0150 ERROR ObjectImageSource cannot be opened by name _images\task_detail.jpg
+2385/10/14 16:12:23.0470 TRACE OpenGLWindow::renderNow()
+2385/10/14 16:12:23.0980 TRACE OpenGLWindow::renderNow()
+2385/10/14 16:12:23.1490 TRACE OpenGLWindow::renderNow()
+2385/10/14 16:12:23.1810 ERROR Cannot open stream by name _images\network_schema_ACL.png
+2385/10/14 16:12:23.1810 ERROR ObjectImageSource cannot be opened by name _images\network_schema_ACL.png
+2385/10/14 16:12:23.1830 ERROR Cannot open stream by name _images\acl1.jpg
+2385/10/14 16:12:23.1830 ERROR ObjectImageSource cannot be opened by name _images\acl1.jpg
+2385/10/14 16:12:23.1890 ERROR Cannot open stream by name _images\acl2.png
+2385/10/14 16:12:23.1890 ERROR ObjectImageSource cannot be opened by name _images\acl2.png
+2385/10/14 16:12:23.1900 ERROR Cannot open stream by name _images\acl3.png
+2385/10/14 16:12:23.1900 ERROR ObjectImageSource cannot be opened by name _images\acl3.png
+2385/10/14 16:12:23.1900 ERROR Cannot open stream by name _images\acl4.png
+2385/10/14 16:12:23.1910 ERROR ObjectImageSource cannot be opened by name _images\acl4.png
+2385/10/14 16:12:23.2070 DEBUG LVFontCache::gc() : 16 fonts still used, 0 fonts dropped
+2385/10/14 16:12:23.2070 TRACE finalizing... fonts.length=5
+2385/10/14 16:12:23.2090 INFO Calculating style hash...  elemCount=4449, globalHash=91de7b9e, docFlags=0000000b, nodeStyleHash=41c57751
+2385/10/14 16:12:23.2090 INFO Updating render properties: styleHash=d6153866, stylesheetHash=caadb5fe, docflags=b, width=144, height=18a
+2385/10/14 16:12:23.2090 INFO *** Document memory usage: elements:4449, textNodes:3866, ptext=(454096 uncompressed), ptelems=(212832 uncompressed), rects=(98304 uncompressed), nodestyles=(32768 uncompressed), styles:37, fonts:5, renderedNodes:32, totalNodes:8312(129Kb), mutableElements:483(~32Kb)
+2385/10/14 16:12:23.2090 DEBUG LVFontCache::gc() : 16 fonts still used, 0 fonts dropped
+2385/10/14 16:12:23.2090 DEBUG Updating selections...
+2385/10/14 16:12:23.2090 TRACE updateSelections() : selection count = 0
+2385/10/14 16:12:23.2090 DEBUG Render is finished
+2385/10/14 16:12:23.2090 INFO Check whether to swap: file size = 2393204, min size to cache = 300000
+2385/10/14 16:12:23.2090 TRACE LVDocView::swapToCache(fs = 2393204)
+2385/10/14 16:12:23.2090 TRACE ldomDocument::swapToCache entered
+2385/10/14 16:12:23.2090 INFO Cache file is created, but document saving is postponed
+2385/10/14 16:12:23.2100 TRACE LVDocView::swapToCache(fs = 2393204)
+2385/10/14 16:12:23.2100 TRACE ldomDocument::swapToCache entered
+2385/10/14 16:12:23.2100 TRACE ldomDocument::saveChanges(timeout=-1 stage=0)
+2385/10/14 16:12:23.2100 INFO lxmlDocBase::persist() invoked - converting all nodes to persistent objects
+2385/10/14 16:12:23.2100 TRACE ldomDocument::saveChanges() - element storage
+2385/10/14 16:12:23.2120 TRACE ldomDocument::saveChanges() - text storage
+2385/10/14 16:12:23.2130 TRACE ldomDocument::saveChanges() - rect storage
+2385/10/14 16:12:23.2160 TRACE ldomDocument::saveChanges() - blob storage data
+2385/10/14 16:12:23.2160 TRACE ldomDocument::saveChanges() - node style storage
+2385/10/14 16:12:23.2170 TRACE ldomDocument::saveChanges() - misc data
+2385/10/14 16:12:23.2170 TRACE ldomDocument::saveChanges() - ID data
+2385/10/14 16:12:23.2190 TRACE ldomDocument::saveChanges() - page data (5109 bytes)
+2385/10/14 16:12:23.2190 TRACE ldomDocument::saveChanges() - node data
+2385/10/14 16:12:23.2260 TRACE ldomDocument::saveChanges() - render info
+2385/10/14 16:12:23.2260 INFO Saving render properties: styleHash=d6153866, stylesheetHash=caadb5fe, docflags=b, width=144, height=18a
+2385/10/14 16:12:23.2260 TRACE ldomDocument::saveChanges() - TOC
+2385/10/14 16:12:23.2260 TRACE Writing style data: 4432 bytes
+2385/10/14 16:12:23.2260 TRACE ldomDocument::saveChanges() - embedded fonts
+2385/10/14 16:12:23.2260 TRACE ldomDocument::saveChanges() - flush
+2385/10/14 16:12:23.2260 INFO CacheFile::clearing Dirty flag
+2385/10/14 16:12:23.2560 TRACE OpenGLWindow::renderNow()
+2385/10/14 16:12:23.2890 TRACE ldomDocument::saveChanges() - done
+2385/10/14 16:12:23.2890 INFO Successfully saved document to cache file: 319K
+2385/10/14 16:12:23.2890 INFO Render is finished
+2385/10/14 16:12:23.3070 TRACE BookRenderedNotificationTask.run()
+2385/10/14 16:12:23.3070 TRACE Render is finished - unlocking document
+2385/10/14 16:12:23.3070 TRACE CRUIReadWidget::postUpdatePosition(1000)
+2385/10/14 16:12:23.3080 INFO Document rendered: J:\course0203\build\epub\course0203.epub
+2385/10/14 16:12:23.3080 TRACE starting animation 4 -> 5
+2385/10/14 16:12:23.3110 TRACE OpenGLWindow::renderNow()
+2385/10/14 16:12:23.3440 TRACE CRUIReadWidget::PagedModePageCache::preparePage page is prepared
+2385/10/14 16:12:23.3590 TRACE OpenGLWindow::renderNow()
+2385/10/14 16:12:23.3600 TRACE OpenGLWindow::renderNow()
+2385/10/14 16:12:23.3610 TRACE OpenGLWindow::renderNow()
+2385/10/14 16:12:23.3750 TRACE OpenGLWindow::renderNow()
+2385/10/14 16:12:23.3910 TRACE OpenGLWindow::renderNow()
+2385/10/14 16:12:23.4080 TRACE OpenGLWindow::renderNow()
+2385/10/14 16:12:23.4240 TRACE OpenGLWindow::renderNow()
+2385/10/14 16:12:23.4410 TRACE OpenGLWindow::renderNow()
+2385/10/14 16:12:23.4580 TRACE OpenGLWindow::renderNow()
+2385/10/14 16:12:23.4740 TRACE OpenGLWindow::renderNow()
+2385/10/14 16:12:23.4910 TRACE OpenGLWindow::renderNow()
+2385/10/14 16:12:23.5080 TRACE OpenGLWindow::renderNow()
+2385/10/14 16:12:23.5080 TRACE stopping animation 4, 5
+2385/10/14 16:12:23.5240 TRACE OpenGLWindow::renderNow()
+2385/10/14 16:12:23.5410 TRACE OpenGLWindow::renderNow()
+2385/10/14 16:12:24.3070 TRACE CRUIReadWidget::updatePosition()
+2385/10/14 16:12:24.3070 TRACE getBookmarkPosText() : getting position text
+2385/10/14 16:12:24.3070 TRACE Existing last position bookmark not found for book 2
+2385/10/14 16:12:24.3800 TRACE CRUIMainWidget::onDirectoryScanFinished
+2385/10/14 16:12:24.3840 TRACE CRUIReadWidget::PagedModePageCache::preparePage page is prepared
+2385/10/14 16:12:24.3850 TRACE OpenGLWindow::renderNow()
+2385/10/14 16:12:24.3890 TRACE CRUIReadWidget::PagedModePageCache::preparePage page is prepared
+2385/10/14 16:12:24.9570 TRACE animatePageFlip( 0 -> 2 )
+2385/10/14 16:12:24.9570 TRACE CRUIReadWidget::prepareScroll(1)
+2385/10/14 16:12:24.9610 TRACE CRUIReadWidget::PagedModePageCache::preparePage page is prepared
+2385/10/14 16:12:24.9700 TRACE CRUIReadWidget::PagedModePageCache::preparePage page is prepared
+2385/10/14 16:12:24.9700 TRACE CRUIReadWidget::prepareScroll(1) - done
+2385/10/14 16:12:24.9700 TRACE OpenGLWindow::renderNow()
+2385/10/14 16:12:24.9740 TRACE CRUIReadWidget::PagedModePageCache::preparePage page is prepared
+2385/10/14 16:12:24.9800 TRACE CRUIReadWidget::PagedModePageCache::preparePage page is prepared
+2385/10/14 16:12:24.9810 TRACE OpenGLWindow::renderNow()
+2385/10/14 16:12:24.9830 TRACE OpenGLWindow::renderNow()
+2385/10/14 16:12:24.9840 TRACE OpenGLWindow::renderNow()
+2385/10/14 16:12:24.9940 TRACE OpenGLWindow::renderNow()
+2385/10/14 16:12:25.0100 TRACE OpenGLWindow::renderNow()
+2385/10/14 16:12:25.0270 TRACE OpenGLWindow::renderNow()
+2385/10/14 16:12:25.0440 TRACE OpenGLWindow::renderNow()
+2385/10/14 16:12:25.0600 TRACE OpenGLWindow::renderNow()
+2385/10/14 16:12:25.0770 TRACE OpenGLWindow::renderNow()
+2385/10/14 16:12:25.0940 TRACE OpenGLWindow::renderNow()
+2385/10/14 16:12:25.1100 TRACE OpenGLWindow::renderNow()
+2385/10/14 16:12:25.1270 TRACE OpenGLWindow::renderNow()
+2385/10/14 16:12:25.1440 TRACE OpenGLWindow::renderNow()
+2385/10/14 16:12:25.1600 TRACE OpenGLWindow::renderNow()
+2385/10/14 16:12:25.1770 TRACE OpenGLWindow::renderNow()
+2385/10/14 16:12:25.1940 TRACE OpenGLWindow::renderNow()
+2385/10/14 16:12:25.2100 TRACE OpenGLWindow::renderNow()
+2385/10/14 16:12:25.2270 TRACE OpenGLWindow::renderNow()
+2385/10/14 16:12:25.2280 TRACE CRUIReadWidget::postUpdatePosition(1000)
+2385/10/14 16:12:25.2440 TRACE OpenGLWindow::renderNow()
+2385/10/14 16:12:25.2610 TRACE OpenGLWindow::renderNow()
+2385/10/14 16:12:25.7090 TRACE animatePageFlip( 2 -> 4 )
+2385/10/14 16:12:25.7090 TRACE CRUIReadWidget::prepareScroll(1)
+2385/10/14 16:12:25.7160 TRACE CRUIReadWidget::PagedModePageCache::preparePage page is prepared
+2385/10/14 16:12:25.7230 TRACE CRUIReadWidget::PagedModePageCache::preparePage page is prepared
+2385/10/14 16:12:25.7230 TRACE CRUIReadWidget::prepareScroll(1) - done
+2385/10/14 16:12:25.7230 TRACE OpenGLWindow::renderNow()
+2385/10/14 16:12:25.7290 TRACE CRUIReadWidget::PagedModePageCache::preparePage page is prepared
+2385/10/14 16:12:25.7330 TRACE CRUIReadWidget::PagedModePageCache::preparePage page is prepared
+2385/10/14 16:12:25.7350 TRACE OpenGLWindow::renderNow()
+2385/10/14 16:12:25.7360 TRACE OpenGLWindow::renderNow()
+2385/10/14 16:12:25.7380 TRACE OpenGLWindow::renderNow()
+2385/10/14 16:12:25.7450 TRACE OpenGLWindow::renderNow()
+2385/10/14 16:12:25.7610 TRACE OpenGLWindow::renderNow()
+2385/10/14 16:12:25.7780 TRACE OpenGLWindow::renderNow()
+2385/10/14 16:12:25.7950 TRACE OpenGLWindow::renderNow()
+2385/10/14 16:12:25.8110 TRACE OpenGLWindow::renderNow()
+2385/10/14 16:12:25.8280 TRACE OpenGLWindow::renderNow()
+2385/10/14 16:12:25.8450 TRACE OpenGLWindow::renderNow()
+2385/10/14 16:12:25.8630 TRACE OpenGLWindow::renderNow()
+2385/10/14 16:12:25.8790 TRACE OpenGLWindow::renderNow()
+2385/10/14 16:12:25.8950 TRACE OpenGLWindow::renderNow()
+2385/10/14 16:12:25.9120 TRACE OpenGLWindow::renderNow()
+2385/10/14 16:12:25.9280 TRACE OpenGLWindow::renderNow()
+2385/10/14 16:12:25.9450 TRACE OpenGLWindow::renderNow()
+2385/10/14 16:12:25.9620 TRACE OpenGLWindow::renderNow()
+2385/10/14 16:12:25.9780 TRACE OpenGLWindow::renderNow()
+2385/10/14 16:12:25.9790 TRACE CRUIReadWidget::postUpdatePosition(1000)
+2385/10/14 16:12:25.9950 TRACE OpenGLWindow::renderNow()
+2385/10/14 16:12:26.0120 TRACE OpenGLWindow::renderNow()
+2385/10/14 16:12:26.4780 TRACE animatePageFlip( 4 -> 6 )
+2385/10/14 16:12:26.4780 TRACE CRUIReadWidget::prepareScroll(1)
+2385/10/14 16:12:26.4820 TRACE CRUIReadWidget::PagedModePageCache::preparePage page is prepared
+2385/10/14 16:12:26.4890 TRACE CRUIReadWidget::PagedModePageCache::preparePage page is prepared
+2385/10/14 16:12:26.4890 TRACE CRUIReadWidget::prepareScroll(1) - done
+2385/10/14 16:12:26.4890 TRACE OpenGLWindow::renderNow()
+2385/10/14 16:12:26.4930 TRACE CRUIReadWidget::PagedModePageCache::preparePage page is prepared
+2385/10/14 16:12:26.4960 TRACE CRUIReadWidget::PagedModePageCache::preparePage page is prepared
+2385/10/14 16:12:26.4980 TRACE OpenGLWindow::renderNow()
+2385/10/14 16:12:26.4990 TRACE OpenGLWindow::renderNow()
+2385/10/14 16:12:26.5010 TRACE OpenGLWindow::renderNow()
+2385/10/14 16:12:26.5130 TRACE OpenGLWindow::renderNow()
+2385/10/14 16:12:26.5290 TRACE OpenGLWindow::renderNow()
+2385/10/14 16:12:26.5460 TRACE OpenGLWindow::renderNow()
+2385/10/14 16:12:26.5630 TRACE OpenGLWindow::renderNow()
+2385/10/14 16:12:26.5800 TRACE OpenGLWindow::renderNow()
+2385/10/14 16:12:26.5960 TRACE OpenGLWindow::renderNow()
+2385/10/14 16:12:26.6130 TRACE OpenGLWindow::renderNow()
+2385/10/14 16:12:26.6290 TRACE OpenGLWindow::renderNow()
+2385/10/14 16:12:26.6460 TRACE OpenGLWindow::renderNow()
+2385/10/14 16:12:26.6630 TRACE OpenGLWindow::renderNow()
+2385/10/14 16:12:26.6800 TRACE OpenGLWindow::renderNow()
+2385/10/14 16:12:26.6970 TRACE OpenGLWindow::renderNow()
+2385/10/14 16:12:26.7130 TRACE OpenGLWindow::renderNow()
+2385/10/14 16:12:26.7300 TRACE OpenGLWindow::renderNow()
+2385/10/14 16:12:26.7460 TRACE OpenGLWindow::renderNow()
+2385/10/14 16:12:26.7470 TRACE CRUIReadWidget::postUpdatePosition(1000)
+2385/10/14 16:12:26.7630 TRACE OpenGLWindow::renderNow()
+2385/10/14 16:12:26.7800 TRACE OpenGLWindow::renderNow()
+2385/10/14 16:12:27.7530 TRACE CRUIReadWidget::updatePosition()
+2385/10/14 16:12:27.7530 TRACE getBookmarkPosText() : getting position text
+2385/10/14 16:12:27.8500 TRACE CRUIReadWidget::PagedModePageCache::preparePage page is prepared
+2385/10/14 16:12:27.8560 TRACE CRUIReadWidget::PagedModePageCache::preparePage page is prepared
+2385/10/14 16:12:28.8220 TRACE animatePageFlip( 6 -> 8 )
+2385/10/14 16:12:28.8220 TRACE CRUIReadWidget::prepareScroll(1)
+2385/10/14 16:12:28.8220 TRACE CRUIReadWidget::prepareScroll(1) - done
+2385/10/14 16:12:28.8220 TRACE OpenGLWindow::renderNow()
+2385/10/14 16:12:28.8250 TRACE CRUIReadWidget::PagedModePageCache::preparePage page is prepared
+2385/10/14 16:12:28.8280 TRACE CRUIReadWidget::PagedModePageCache::preparePage page is prepared
+2385/10/14 16:12:28.8300 TRACE OpenGLWindow::renderNow()
+2385/10/14 16:12:28.8310 TRACE OpenGLWindow::renderNow()
+2385/10/14 16:12:28.8330 TRACE OpenGLWindow::renderNow()
+2385/10/14 16:12:28.8340 TRACE OpenGLWindow::renderNow()
+2385/10/14 16:12:28.8500 TRACE OpenGLWindow::renderNow()
+2385/10/14 16:12:28.8670 TRACE OpenGLWindow::renderNow()
+2385/10/14 16:12:28.8830 TRACE OpenGLWindow::renderNow()
+2385/10/14 16:12:28.9000 TRACE OpenGLWindow::renderNow()
+2385/10/14 16:12:28.9160 TRACE OpenGLWindow::renderNow()
+2385/10/14 16:12:28.9330 TRACE OpenGLWindow::renderNow()
+2385/10/14 16:12:28.9500 TRACE OpenGLWindow::renderNow()
+2385/10/14 16:12:28.9670 TRACE OpenGLWindow::renderNow()
+2385/10/14 16:12:28.9830 TRACE OpenGLWindow::renderNow()
+2385/10/14 16:12:29.0000 TRACE OpenGLWindow::renderNow()
+2385/10/14 16:12:29.0170 TRACE OpenGLWindow::renderNow()
+2385/10/14 16:12:29.0340 TRACE OpenGLWindow::renderNow()
+2385/10/14 16:12:29.0500 TRACE OpenGLWindow::renderNow()
+2385/10/14 16:12:29.0670 TRACE OpenGLWindow::renderNow()
+2385/10/14 16:12:29.0840 TRACE OpenGLWindow::renderNow()
+2385/10/14 16:12:29.0840 TRACE CRUIReadWidget::postUpdatePosition(1000)
+2385/10/14 16:12:29.1000 TRACE OpenGLWindow::renderNow()
+2385/10/14 16:12:29.1170 TRACE OpenGLWindow::renderNow()
+2385/10/14 16:12:30.0940 TRACE CRUIReadWidget::updatePosition()
+2385/10/14 16:12:30.0940 TRACE getBookmarkPosText() : getting position text
+2385/10/14 16:12:30.2250 TRACE CRUIReadWidget::PagedModePageCache::preparePage page is prepared
+2385/10/14 16:12:30.2310 TRACE CRUIReadWidget::PagedModePageCache::preparePage page is prepared
+2385/10/14 16:12:31.9900 TRACE animatePageFlip( 8 -> 10 )
+2385/10/14 16:12:31.9900 TRACE CRUIReadWidget::prepareScroll(1)
+2385/10/14 16:12:31.9900 TRACE CRUIReadWidget::prepareScroll(1) - done
+2385/10/14 16:12:31.9900 TRACE OpenGLWindow::renderNow()
+2385/10/14 16:12:31.9930 TRACE CRUIReadWidget::PagedModePageCache::preparePage page is prepared
+2385/10/14 16:12:31.9960 TRACE CRUIReadWidget::PagedModePageCache::preparePage page is prepared
+2385/10/14 16:12:31.9980 TRACE OpenGLWindow::renderNow()
+2385/10/14 16:12:31.9990 TRACE OpenGLWindow::renderNow()
+2385/10/14 16:12:32.0010 TRACE OpenGLWindow::renderNow()
+2385/10/14 16:12:32.0050 TRACE OpenGLWindow::renderNow()
+2385/10/14 16:12:32.0210 TRACE OpenGLWindow::renderNow()
+2385/10/14 16:12:32.0380 TRACE OpenGLWindow::renderNow()
+2385/10/14 16:12:32.0550 TRACE OpenGLWindow::renderNow()
+2385/10/14 16:12:32.0720 TRACE OpenGLWindow::renderNow()
+2385/10/14 16:12:32.0880 TRACE OpenGLWindow::renderNow()
+2385/10/14 16:12:32.1050 TRACE OpenGLWindow::renderNow()
+2385/10/14 16:12:32.1240 TRACE OpenGLWindow::renderNow()
+2385/10/14 16:12:32.1390 TRACE OpenGLWindow::renderNow()
+2385/10/14 16:12:32.1550 TRACE OpenGLWindow::renderNow()
+2385/10/14 16:12:32.1720 TRACE OpenGLWindow::renderNow()
+2385/10/14 16:12:32.1890 TRACE OpenGLWindow::renderNow()
+2385/10/14 16:12:32.2050 TRACE OpenGLWindow::renderNow()
+2385/10/14 16:12:32.2220 TRACE OpenGLWindow::renderNow()
+2385/10/14 16:12:32.2390 TRACE OpenGLWindow::renderNow()
+2385/10/14 16:12:32.2570 TRACE OpenGLWindow::renderNow()
+2385/10/14 16:12:32.2580 TRACE CRUIReadWidget::postUpdatePosition(1000)
+2385/10/14 16:12:32.2720 TRACE OpenGLWindow::renderNow()
+2385/10/14 16:12:32.2890 TRACE OpenGLWindow::renderNow()
+2385/10/14 16:12:33.2620 TRACE CRUIReadWidget::updatePosition()
+2385/10/14 16:12:33.2620 TRACE getBookmarkPosText() : getting position text
+2385/10/14 16:12:33.3740 TRACE CRUIReadWidget::PagedModePageCache::preparePage page is prepared
+2385/10/14 16:12:33.3790 TRACE CRUIReadWidget::PagedModePageCache::preparePage page is prepared
+2385/10/14 16:12:34.3030 TRACE animatePageFlip( 10 -> 12 )
+2385/10/14 16:12:34.3030 TRACE CRUIReadWidget::prepareScroll(1)
+2385/10/14 16:12:34.3030 TRACE CRUIReadWidget::prepareScroll(1) - done
+2385/10/14 16:12:34.3030 TRACE OpenGLWindow::renderNow()
+2385/10/14 16:12:34.3060 TRACE CRUIReadWidget::PagedModePageCache::preparePage page is prepared
+2385/10/14 16:12:34.3090 TRACE CRUIReadWidget::PagedModePageCache::preparePage page is prepared
+2385/10/14 16:12:34.3110 TRACE OpenGLWindow::renderNow()
+2385/10/14 16:12:34.3120 TRACE OpenGLWindow::renderNow()
+2385/10/14 16:12:34.3140 TRACE OpenGLWindow::renderNow()
+2385/10/14 16:12:34.3250 TRACE OpenGLWindow::renderNow()
+2385/10/14 16:12:34.3420 TRACE OpenGLWindow::renderNow()
+2385/10/14 16:12:34.3590 TRACE OpenGLWindow::renderNow()
+2385/10/14 16:12:34.3750 TRACE OpenGLWindow::renderNow()
+2385/10/14 16:12:34.3920 TRACE OpenGLWindow::renderNow()
+2385/10/14 16:12:34.4090 TRACE OpenGLWindow::renderNow()
+2385/10/14 16:12:34.4260 TRACE OpenGLWindow::renderNow()
+2385/10/14 16:12:34.4420 TRACE OpenGLWindow::renderNow()
+2385/10/14 16:12:34.4590 TRACE OpenGLWindow::renderNow()
+2385/10/14 16:12:34.4760 TRACE OpenGLWindow::renderNow()
+2385/10/14 16:12:34.4930 TRACE OpenGLWindow::renderNow()
+2385/10/14 16:12:34.5090 TRACE OpenGLWindow::renderNow()
+2385/10/14 16:12:34.5260 TRACE OpenGLWindow::renderNow()
+2385/10/14 16:12:34.5430 TRACE OpenGLWindow::renderNow()
+2385/10/14 16:12:34.5590 TRACE OpenGLWindow::renderNow()
+2385/10/14 16:12:34.5600 TRACE CRUIReadWidget::postUpdatePosition(1000)
+2385/10/14 16:12:34.5760 TRACE OpenGLWindow::renderNow()
+2385/10/14 16:12:34.5920 TRACE OpenGLWindow::renderNow()
+2385/10/14 16:12:35.5710 TRACE CRUIReadWidget::updatePosition()
+2385/10/14 16:12:35.5710 TRACE getBookmarkPosText() : getting position text
+2385/10/14 16:12:35.7510 TRACE CRUIReadWidget::PagedModePageCache::preparePage page is prepared
+2385/10/14 16:12:35.7570 TRACE CRUIReadWidget::PagedModePageCache::preparePage page is prepared
+2385/10/14 16:12:36.2230 TRACE animatePageFlip( 12 -> 14 )
+2385/10/14 16:12:36.2230 TRACE CRUIReadWidget::prepareScroll(1)
+2385/10/14 16:12:36.2230 TRACE CRUIReadWidget::prepareScroll(1) - done
+2385/10/14 16:12:36.2230 TRACE OpenGLWindow::renderNow()
+2385/10/14 16:12:36.2260 TRACE CRUIReadWidget::PagedModePageCache::preparePage page is prepared
+2385/10/14 16:12:36.2300 TRACE CRUIReadWidget::PagedModePageCache::preparePage page is prepared
+2385/10/14 16:12:36.2310 TRACE OpenGLWindow::renderNow()
+2385/10/14 16:12:36.2330 TRACE OpenGLWindow::renderNow()
+2385/10/14 16:12:36.2340 TRACE OpenGLWindow::renderNow()
+2385/10/14 16:12:36.2450 TRACE OpenGLWindow::renderNow()
+2385/10/14 16:12:36.2620 TRACE OpenGLWindow::renderNow()
+2385/10/14 16:12:36.2780 TRACE OpenGLWindow::renderNow()
+2385/10/14 16:12:36.2950 TRACE OpenGLWindow::renderNow()
+2385/10/14 16:12:36.3120 TRACE OpenGLWindow::renderNow()
+2385/10/14 16:12:36.3290 TRACE OpenGLWindow::renderNow()
+2385/10/14 16:12:36.3450 TRACE OpenGLWindow::renderNow()
+2385/10/14 16:12:36.3620 TRACE OpenGLWindow::renderNow()
+2385/10/14 16:12:36.3790 TRACE OpenGLWindow::renderNow()
+2385/10/14 16:12:36.3950 TRACE OpenGLWindow::renderNow()
+2385/10/14 16:12:36.4130 TRACE OpenGLWindow::renderNow()
+2385/10/14 16:12:36.4290 TRACE OpenGLWindow::renderNow()
+2385/10/14 16:12:36.4460 TRACE OpenGLWindow::renderNow()
+2385/10/14 16:12:36.4620 TRACE OpenGLWindow::renderNow()
+2385/10/14 16:12:36.4790 TRACE OpenGLWindow::renderNow()
+2385/10/14 16:12:36.4790 TRACE CRUIReadWidget::postUpdatePosition(1000)
+2385/10/14 16:12:36.4960 TRACE OpenGLWindow::renderNow()
+2385/10/14 16:12:36.5120 TRACE OpenGLWindow::renderNow()
+2385/10/14 16:12:37.1270 TRACE animatePageFlip( 14 -> 16 )
+2385/10/14 16:12:37.1270 TRACE CRUIReadWidget::prepareScroll(1)
+2385/10/14 16:12:37.1300 TRACE CRUIReadWidget::PagedModePageCache::preparePage page is prepared
+2385/10/14 16:12:37.1360 TRACE CRUIReadWidget::PagedModePageCache::preparePage page is prepared
+2385/10/14 16:12:37.1360 TRACE CRUIReadWidget::prepareScroll(1) - done
+2385/10/14 16:12:37.1360 TRACE OpenGLWindow::renderNow()
+2385/10/14 16:12:37.1390 TRACE CRUIReadWidget::PagedModePageCache::preparePage page is prepared
+2385/10/14 16:12:37.1420 TRACE CRUIReadWidget::PagedModePageCache::preparePage page is prepared
+2385/10/14 16:12:37.1440 TRACE OpenGLWindow::renderNow()
+2385/10/14 16:12:37.1450 TRACE OpenGLWindow::renderNow()
+2385/10/14 16:12:37.1470 TRACE OpenGLWindow::renderNow()
+2385/10/14 16:12:37.1480 TRACE OpenGLWindow::renderNow()
+2385/10/14 16:12:37.1630 TRACE OpenGLWindow::renderNow()
+2385/10/14 16:12:37.1800 TRACE OpenGLWindow::renderNow()
+2385/10/14 16:12:37.1970 TRACE OpenGLWindow::renderNow()
+2385/10/14 16:12:37.2130 TRACE OpenGLWindow::renderNow()
+2385/10/14 16:12:37.2300 TRACE OpenGLWindow::renderNow()
+2385/10/14 16:12:37.2470 TRACE OpenGLWindow::renderNow()
+2385/10/14 16:12:37.2630 TRACE OpenGLWindow::renderNow()
+2385/10/14 16:12:37.2800 TRACE OpenGLWindow::renderNow()
+2385/10/14 16:12:37.2970 TRACE OpenGLWindow::renderNow()
+2385/10/14 16:12:37.3140 TRACE OpenGLWindow::renderNow()
+2385/10/14 16:12:37.3300 TRACE OpenGLWindow::renderNow()
+2385/10/14 16:12:37.3470 TRACE OpenGLWindow::renderNow()
+2385/10/14 16:12:37.3640 TRACE OpenGLWindow::renderNow()
+2385/10/14 16:12:37.3800 TRACE OpenGLWindow::renderNow()
+2385/10/14 16:12:37.3970 TRACE OpenGLWindow::renderNow()
+2385/10/14 16:12:37.3970 TRACE CRUIReadWidget::postUpdatePosition(1000)
+2385/10/14 16:12:37.4140 TRACE OpenGLWindow::renderNow()
+2385/10/14 16:12:37.4310 TRACE OpenGLWindow::renderNow()
+2385/10/14 16:12:38.4110 TRACE CRUIReadWidget::updatePosition()
+2385/10/14 16:12:38.4120 TRACE getBookmarkPosText() : getting position text
+2385/10/14 16:12:38.5080 TRACE CRUIReadWidget::PagedModePageCache::preparePage page is prepared
+2385/10/14 16:12:38.5140 TRACE CRUIReadWidget::PagedModePageCache::preparePage page is prepared
+2385/10/14 16:12:38.7670 TRACE animatePageFlip( 16 -> 18 )
+2385/10/14 16:12:38.7680 TRACE CRUIReadWidget::prepareScroll(1)
+2385/10/14 16:12:38.7680 TRACE CRUIReadWidget::prepareScroll(1) - done
+2385/10/14 16:12:38.7680 TRACE OpenGLWindow::renderNow()
+2385/10/14 16:12:38.7700 TRACE CRUIReadWidget::PagedModePageCache::preparePage page is prepared
+2385/10/14 16:12:38.7740 TRACE CRUIReadWidget::PagedModePageCache::preparePage page is prepared
+2385/10/14 16:12:38.7760 TRACE OpenGLWindow::renderNow()
+2385/10/14 16:12:38.7770 TRACE OpenGLWindow::renderNow()
+2385/10/14 16:12:38.7790 TRACE OpenGLWindow::renderNow()
+2385/10/14 16:12:38.7830 TRACE OpenGLWindow::renderNow()
+2385/10/14 16:12:38.7990 TRACE OpenGLWindow::renderNow()
+2385/10/14 16:12:38.8160 TRACE OpenGLWindow::renderNow()
+2385/10/14 16:12:38.8330 TRACE animatePageFlip( 16 -> 18 )
+2385/10/14 16:12:38.8330 TRACE CRUIReadWidget::prepareScroll(1)
+2385/10/14 16:12:38.8350 TRACE CRUIReadWidget::PagedModePageCache::preparePage page is prepared
+2385/10/14 16:12:38.8390 TRACE CRUIReadWidget::PagedModePageCache::preparePage page is prepared
+2385/10/14 16:12:38.8390 TRACE CRUIReadWidget::prepareScroll(1) - done
+2385/10/14 16:12:38.8390 TRACE OpenGLWindow::renderNow()
+2385/10/14 16:12:38.8420 TRACE CRUIReadWidget::PagedModePageCache::preparePage page is prepared
+2385/10/14 16:12:38.8470 TRACE CRUIReadWidget::PagedModePageCache::preparePage page is prepared
+2385/10/14 16:12:38.8490 TRACE OpenGLWindow::renderNow()
+2385/10/14 16:12:38.8660 TRACE OpenGLWindow::renderNow()
+2385/10/14 16:12:38.8830 TRACE OpenGLWindow::renderNow()
+2385/10/14 16:12:38.9000 TRACE OpenGLWindow::renderNow()
+2385/10/14 16:12:38.9160 TRACE OpenGLWindow::renderNow()
+2385/10/14 16:12:38.9330 TRACE OpenGLWindow::renderNow()
+2385/10/14 16:12:38.9500 TRACE OpenGLWindow::renderNow()
+2385/10/14 16:12:38.9660 TRACE OpenGLWindow::renderNow()
+2385/10/14 16:12:38.9830 TRACE OpenGLWindow::renderNow()
+2385/10/14 16:12:39.0000 TRACE OpenGLWindow::renderNow()
+2385/10/14 16:12:39.0160 TRACE OpenGLWindow::renderNow()
+2385/10/14 16:12:39.0330 TRACE OpenGLWindow::renderNow()
+2385/10/14 16:12:39.0500 TRACE OpenGLWindow::renderNow()
+2385/10/14 16:12:39.0670 TRACE OpenGLWindow::renderNow()
+2385/10/14 16:12:39.0670 TRACE CRUIReadWidget::postUpdatePosition(1000)
+2385/10/14 16:12:39.0830 TRACE OpenGLWindow::renderNow()
+2385/10/14 16:12:39.1000 TRACE OpenGLWindow::renderNow()
+2385/10/14 16:12:39.5840 TRACE animatePageFlip( 18 -> 20 )
+2385/10/14 16:12:39.5840 TRACE CRUIReadWidget::prepareScroll(1)
+2385/10/14 16:12:39.5870 TRACE CRUIReadWidget::PagedModePageCache::preparePage page is prepared
+2385/10/14 16:12:39.5880 ERROR Cannot open stream by name _images\openvas_quick_start.png
+2385/10/14 16:12:39.5880 ERROR ObjectImageSource cannot be opened by name _images\openvas_quick_start.png
+2385/10/14 16:12:39.5880 ERROR Cannot open stream by name _images\openvas_quick_start.png
+2385/10/14 16:12:39.5880 ERROR ObjectImageSource cannot be opened by name _images\openvas_quick_start.png
+2385/10/14 16:12:39.6180 TRACE CRUIReadWidget::PagedModePageCache::preparePage page is prepared
+2385/10/14 16:12:39.6180 TRACE CRUIReadWidget::prepareScroll(1) - done
+2385/10/14 16:12:39.6190 TRACE OpenGLWindow::renderNow()
+2385/10/14 16:12:39.6240 TRACE CRUIReadWidget::PagedModePageCache::preparePage page is prepared
+2385/10/14 16:12:39.6250 ERROR Cannot open stream by name _images\openvas_quick_start.png
+2385/10/14 16:12:39.6250 ERROR ObjectImageSource cannot be opened by name _images\openvas_quick_start.png
+2385/10/14 16:12:39.6460 TRACE CRUIReadWidget::PagedModePageCache::preparePage page is prepared
+2385/10/14 16:12:39.6480 TRACE OpenGLWindow::renderNow()
+2385/10/14 16:12:39.6500 TRACE OpenGLWindow::renderNow()
+2385/10/14 16:12:39.6520 TRACE OpenGLWindow::renderNow()
+2385/10/14 16:12:39.6540 TRACE OpenGLWindow::renderNow()
+2385/10/14 16:12:39.6670 TRACE OpenGLWindow::renderNow()
+2385/10/14 16:12:39.6840 TRACE OpenGLWindow::renderNow()
+2385/10/14 16:12:39.7010 TRACE OpenGLWindow::renderNow()
+2385/10/14 16:12:39.7180 TRACE OpenGLWindow::renderNow()
+2385/10/14 16:12:39.7340 TRACE OpenGLWindow::renderNow()
+2385/10/14 16:12:39.7510 TRACE OpenGLWindow::renderNow()
+2385/10/14 16:12:39.7680 TRACE OpenGLWindow::renderNow()
+2385/10/14 16:12:39.7840 TRACE OpenGLWindow::renderNow()
+2385/10/14 16:12:39.8010 TRACE OpenGLWindow::renderNow()
+2385/10/14 16:12:39.8180 TRACE OpenGLWindow::renderNow()
+2385/10/14 16:12:39.8340 TRACE animatePageFlip( 18 -> 20 )
+2385/10/14 16:12:39.8340 TRACE CRUIReadWidget::prepareScroll(1)
+2385/10/14 16:12:39.8380 TRACE CRUIReadWidget::PagedModePageCache::preparePage page is prepared
+2385/10/14 16:12:39.8390 ERROR Cannot open stream by name _images\openvas_quick_start.png
+2385/10/14 16:12:39.8390 ERROR ObjectImageSource cannot be opened by name _images\openvas_quick_start.png
+2385/10/14 16:12:39.8660 TRACE CRUIReadWidget::PagedModePageCache::preparePage page is prepared
+2385/10/14 16:12:39.8670 TRACE CRUIReadWidget::prepareScroll(1) - done
+2385/10/14 16:12:39.8670 TRACE OpenGLWindow::renderNow()
+2385/10/14 16:12:39.8700 TRACE CRUIReadWidget::PagedModePageCache::preparePage page is prepared
+2385/10/14 16:12:39.8710 ERROR Cannot open stream by name _images\openvas_quick_start.png
+2385/10/14 16:12:39.8710 ERROR ObjectImageSource cannot be opened by name _images\openvas_quick_start.png
+2385/10/14 16:12:39.9000 TRACE CRUIReadWidget::PagedModePageCache::preparePage page is prepared
+2385/10/14 16:12:39.9020 TRACE OpenGLWindow::renderNow()
+2385/10/14 16:12:39.9050 TRACE OpenGLWindow::renderNow()
+2385/10/14 16:12:39.9080 TRACE OpenGLWindow::renderNow()
+2385/10/14 16:12:39.9180 TRACE OpenGLWindow::renderNow()
+2385/10/14 16:12:39.9350 TRACE OpenGLWindow::renderNow()
+2385/10/14 16:12:39.9510 TRACE OpenGLWindow::renderNow()
+2385/10/14 16:12:39.9680 TRACE OpenGLWindow::renderNow()
+2385/10/14 16:12:39.9850 TRACE OpenGLWindow::renderNow()
+2385/10/14 16:12:40.0010 TRACE OpenGLWindow::renderNow()
+2385/10/14 16:12:40.0180 TRACE OpenGLWindow::renderNow()
+2385/10/14 16:12:40.0350 TRACE OpenGLWindow::renderNow()
+2385/10/14 16:12:40.0520 TRACE OpenGLWindow::renderNow()
+2385/10/14 16:12:40.0680 TRACE OpenGLWindow::renderNow()
+2385/10/14 16:12:40.0690 TRACE CRUIReadWidget::postUpdatePosition(1000)
+2385/10/14 16:12:40.0850 TRACE OpenGLWindow::renderNow()
+2385/10/14 16:12:40.1020 TRACE OpenGLWindow::renderNow()
+2385/10/14 16:12:40.6080 TRACE animatePageFlip( 20 -> 22 )
+2385/10/14 16:12:40.6080 TRACE CRUIReadWidget::prepareScroll(1)
+2385/10/14 16:12:40.6080 ERROR Cannot open stream by name _images\openvas_quick_start.png
+2385/10/14 16:12:40.6080 ERROR ObjectImageSource cannot be opened by name _images\openvas_quick_start.png
+2385/10/14 16:12:40.6320 TRACE CRUIReadWidget::PagedModePageCache::preparePage page is prepared
+2385/10/14 16:12:40.6320 ERROR Cannot open stream by name _images\Scan_Config_Detail.jpg
+2385/10/14 16:12:40.6320 ERROR ObjectImageSource cannot be opened by name _images\Scan_Config_Detail.jpg
+2385/10/14 16:12:40.6320 ERROR Cannot open stream by name _images\Scan_Config_Detail.jpg
+2385/10/14 16:12:40.6320 ERROR ObjectImageSource cannot be opened by name _images\Scan_Config_Detail.jpg
+2385/10/14 16:12:40.6520 TRACE CRUIReadWidget::PagedModePageCache::preparePage page is prepared
+2385/10/14 16:12:40.6520 TRACE CRUIReadWidget::prepareScroll(1) - done
+2385/10/14 16:12:40.6530 TRACE OpenGLWindow::renderNow()
+2385/10/14 16:12:40.6530 ERROR Cannot open stream by name _images\openvas_quick_start.png
+2385/10/14 16:12:40.6530 ERROR ObjectImageSource cannot be opened by name _images\openvas_quick_start.png
+2385/10/14 16:12:40.6660 TRACE CRUIReadWidget::PagedModePageCache::preparePage page is prepared
+2385/10/14 16:12:40.6670 ERROR Cannot open stream by name _images\Scan_Config_Detail.jpg
+2385/10/14 16:12:40.6670 ERROR ObjectImageSource cannot be opened by name _images\Scan_Config_Detail.jpg
+2385/10/14 16:12:40.6800 TRACE CRUIReadWidget::PagedModePageCache::preparePage page is prepared
+2385/10/14 16:12:40.6810 TRACE OpenGLWindow::renderNow()
+2385/10/14 16:12:40.6840 TRACE OpenGLWindow::renderNow()
+2385/10/14 16:12:40.6860 TRACE OpenGLWindow::renderNow()
+2385/10/14 16:12:40.6870 TRACE OpenGLWindow::renderNow()
+2385/10/14 16:12:40.7030 TRACE OpenGLWindow::renderNow()
+2385/10/14 16:12:40.7190 TRACE OpenGLWindow::renderNow()
+2385/10/14 16:12:40.7360 TRACE OpenGLWindow::renderNow()
+2385/10/14 16:12:40.7530 TRACE OpenGLWindow::renderNow()
+2385/10/14 16:12:40.7690 TRACE OpenGLWindow::renderNow()
+2385/10/14 16:12:40.7860 TRACE OpenGLWindow::renderNow()
+2385/10/14 16:12:40.8030 TRACE OpenGLWindow::renderNow()
+2385/10/14 16:12:40.8200 TRACE OpenGLWindow::renderNow()
+2385/10/14 16:12:40.8360 TRACE OpenGLWindow::renderNow()
+2385/10/14 16:12:40.8530 TRACE OpenGLWindow::renderNow()
+2385/10/14 16:12:40.8690 TRACE OpenGLWindow::renderNow()
+2385/10/14 16:12:40.8860 TRACE OpenGLWindow::renderNow()
+2385/10/14 16:12:40.9030 TRACE OpenGLWindow::renderNow()
+2385/10/14 16:12:40.9030 TRACE CRUIReadWidget::postUpdatePosition(1000)
+2385/10/14 16:12:40.9200 TRACE OpenGLWindow::renderNow()
+2385/10/14 16:12:40.9360 TRACE OpenGLWindow::renderNow()
+2385/10/14 16:12:41.9060 TRACE CRUIReadWidget::updatePosition()
+2385/10/14 16:12:41.9060 TRACE getBookmarkPosText() : getting position text
+2385/10/14 16:12:42.0300 ERROR Cannot open stream by name _images\Scan_Config_Detail.jpg
+2385/10/14 16:12:42.0300 ERROR ObjectImageSource cannot be opened by name _images\Scan_Config_Detail.jpg
+2385/10/14 16:12:42.0540 TRACE CRUIReadWidget::PagedModePageCache::preparePage page is prepared
+2385/10/14 16:12:42.0610 TRACE CRUIReadWidget::PagedModePageCache::preparePage page is prepared
+2385/10/14 16:12:45.4030 TRACE OpenGLWindow::resizeEvent
+2385/10/14 16:12:45.4440 TRACE saveWindowStateAndPosition()
+2385/10/14 16:12:45.4530 TRACE PopupControl::close()
+2385/10/14 16:12:45.4530 TRACE PopupControl::close()
+2385/10/14 16:12:45.4540 TRACE Exiting thread executor
+2385/10/14 16:12:45.4540 TRACE PopupControl::close()
+2385/10/14 16:12:45.4540 TRACE PopupControl::close()
+2385/10/14 16:12:45.4540 TRACE PopupControl::close()
+2385/10/14 16:12:45.4540 TRACE PopupControl::close()
+2385/10/14 16:12:45.4540 TRACE Exiting thread executor
+2385/10/14 16:12:45.5040 INFO uninitEngine started
+2385/10/14 16:12:45.5040 INFO Stopping coverpage manager
+2385/10/14 16:12:45.5040 INFO Calling coverPageManager->stop()
+2385/10/14 16:12:45.5040 TRACE CRCoverPageManager::stop() - under lock
+2385/10/14 16:12:45.5040 TRACE CRCoverPageManager::stop() deleting all tasks from queue
+2385/10/14 16:12:45.5040 TRACE CRCoverPageManager::stop() all tasks are deleted, calling notifyAll on monitor
+2385/10/14 16:12:45.5040 TRACE CRCoverPageManager::stop() calling Join
+2385/10/14 16:12:45.5040 INFO CRCoverPageManager thread finished
+2385/10/14 16:12:45.5040 TRACE CRCoverPageManager::stop() joined
+2385/10/14 16:12:45.5040 INFO Returned from coverPageManager->stop(), calling delete coverPageManager
+2385/10/14 16:12:45.5040 TRACE CRCoverPageManager::~CRCoverPageManager
+2385/10/14 16:12:45.5040 TRACE CRCoverPageManager::~CRCoverPageManager deleting monitor
+2385/10/14 16:12:45.5040 TRACE CRCoverPageManager::~CRCoverPageManager deleting thread
+2385/10/14 16:12:45.5040 TRACE Deleting coverImageCache
+2385/10/14 16:12:45.5040 INFO CRCoverImageCache::clear()
+2385/10/14 16:12:45.5040 TRACE Deleting coverCache
+2385/10/14 16:12:45.5050 INFO Stopping directory cache manager
+2385/10/14 16:12:45.5050 TRACE CRDirCache::run :: done monitor wait - queue length = 0
+2385/10/14 16:12:45.5050 INFO CRCoverPageManager thread finished
+2385/10/14 16:12:45.5060 INFO Closing BookDB
+2385/10/14 16:12:45.5060 INFO uninitEngine finished

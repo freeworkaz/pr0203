@@ -1,0 +1,306 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+  "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ru">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Практическое занятие №17 Настройка механизмов защиты файловых систем и баз данных</title>
+    
+    <link rel="stylesheet" href="_static/epub.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" /> 
+  </head>
+  <body role="document">
+
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Навигация</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.xhtml" title="Алфавитный указатель"
+             accesskey="I">указатель</a></li>
+        <li class="right" >
+          <a href="pz18.xhtml" title="Практическое занятие №18 Моделирование подсистем обеспечения безопасности информации от несанкционированного доступа"
+             accesskey="N">вперёд</a> |</li>
+        <li class="right" >
+          <a href="pz16.xhtml" title="Практическое занятие №16 Настройка различных механизмов защиты электронной почты в сети предприятия"
+             accesskey="P">назад</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.xhtml">Документация course0203 1</a> &#187;</li> 
+      </ul>
+    </div>
+
+    <div class="document">
+      <div class="documentwrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="o17">
+<h1>Практическое занятие №17 Настройка механизмов защиты файловых систем и баз данных</h1>
+<div class="section" id="id1">
+<h2>Цель работы:</h2>
+<ol class="arabic simple">
+<li>Получить практический опыт применения программно-аппаратных средств обеспечения информационной безопасности телекоммуникационных систем;</li>
+<li>Получить практический опыт выявления технических каналов утечки информации.</li>
+</ol>
+</div>
+<div class="section" id="id2">
+<h2>Литература:</h2>
+<ol class="arabic simple">
+<li>Шаньгин, В. Ф. Информационная безопасность и защита информации [Электронный ресурс]: учебное пособие. - Москва: ДМК Пресс, 2014. - &nbsp;Режим доступа: <a class="reference external" href="http://www.iprbookshop.ru/29257">http://www.iprbookshop.ru/29257</a>, по запросу, стр 627-634;</li>
+</ol>
+</div>
+<div class="section" id="id3">
+<h2>Подготовка к работе:</h2>
+<ol class="arabic simple">
+<li>Подготовить бланк отчета;</li>
+<li>Изучить предложенную литературу.</li>
+</ol>
+</div>
+<div class="section" id="id4">
+<h2>Основное оборудование:</h2>
+<ol class="arabic simple">
+<li>Компьютер под управлением ОС Windows Server 2008 R2;</li>
+<li>Виртуальные машины в программе VirtualBox на основе Ubuntu Linux согласно заданию и схеме сети;</li>
+<li>Модель простой сети и ресурсов простой сети;</li>
+<li>Пакет GNS3 и комплект виртуальных машин, необходимых для схемы сети;</li>
+<li>СУБД Mysql, сервер баз данных Mysql в составе виртуальной машины с ОС Ubuntu Linux, тестовая БД Mysql.</li>
+</ol>
+</div>
+<div class="section" id="id5">
+<h2>Задание:</h2>
+<ol class="arabic simple">
+<li>Выполнить настройку системы защиты СУБД MySQL.</li>
+</ol>
+</div>
+<div class="section" id="id6">
+<h2>Порядок выполнения работы:</h2>
+<ol class="arabic simple">
+<li>Реализовать модель малой сети. Установить в модель сервер БД MySQL. Запустить сервер баз данных. Скопировать на него тестовую БД;</li>
+<li>Выполнить конфигурирование системы контроля доступа к ресурсам БД на основе привилегий. Протестировать работу настроенной системы. Результаты указать в отчете.</li>
+<li>Выполнить конфигурирование системы контроля доступа к ресурсам БД на основе дискреционной политики. Результаты указать в отчете.</li>
+<li>Выполнить конфигурирование системы контроля доступа к ресурсам БД на основе ролей для каждого пользователя СУБД. Результаты уазать в отчете и продемонстрировать преподавателю. Результаты указать в отчете;</li>
+<li>Выполнить настройку резервного копирования данных БД с использованием технологии холодного копирования данных. Результаты указать в отчете;</li>
+<li>Выполнить настройку резервного копирования данных БД с использованием технологии горячего копирования данных. Результаты указать в отчете;</li>
+<li>оставить скрипт, который автоматизирует задачи резервного копирования данных СУБД по расписанию:</li>
+</ol>
+<blockquote>
+<div><ol class="arabic simple">
+<li>Полная копия данных один раз в неделю. Результаты указать в отчете;</li>
+<li>Разностная копия данных каждый день. Результаты указать в отчете;</li>
+<li>Копирования БД каждый раз, когда в нее вносится изменение. Результаты указать в отчете;</li>
+</ol>
+</div></blockquote>
+<ol class="arabic simple">
+<li>Результаты работы скриптов продемонстрировать преподавателю;</li>
+<li>Продемонстрировать отчет преподавателю.</li>
+</ol>
+</div>
+<div class="section" id="id7">
+<h2>Содержание отчета:</h2>
+<ol class="arabic simple">
+<li>Цель работы;</li>
+<li>Содержание действий по выполнению данной работы;</li>
+<li>Ответы на контрольные вопросы;</li>
+<li>Вывод.</li>
+</ol>
+</div>
+<div class="section" id="id8">
+<h2>Контрольные вопросы:</h2>
+<ol class="arabic simple">
+<li>Каким образом осуществляется настройка модели безопасности на основе ролей и привилегий?</li>
+<li>Какие параметры указываются при настройке ролей и привилегий в СУБД?</li>
+<li>Что должна включать в себя полная резервная копия СУБД?</li>
+</ol>
+</div>
+<div class="section" id="id9">
+<h2>Приложение</h2>
+<div class="section" id="mysqldump">
+<h3>Утилита mysqldump</h3>
+<p>Данная утилита позволяет получить дамп (<a href="#id10"><span class="problematic" id="id11">``</span></a>моментальный снимок&#8217;&#8216;) содержимого базы данных или совокупности баз для создания резервной копии или пересылки данных на другой SQL-сервер баз данных (не обязательно MySQL-сервер). Дамп будет содержать набор команд SQL для создания и/или заполнения таблиц.</p>
+<p>Если же резервная копия создается на сервере, то вместо описываемой утилиты следует использовать mysqlhotcopy.</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">shell</span><span class="o">&gt;</span> <span class="n">mysqldump</span> <span class="p">[</span><span class="n">OPTIONS</span><span class="p">]</span> <span class="n">database</span> <span class="p">[</span><span class="n">tables</span><span class="p">]</span>
+<span class="n">или</span>  <span class="n">mysqldump</span> <span class="p">[</span><span class="n">OPTIONS</span><span class="p">]</span> <span class="o">--</span><span class="n">databases</span> <span class="p">[</span><span class="n">OPTIONS</span><span class="p">]</span> <span class="n">DB1</span> <span class="p">[</span><span class="n">DB2</span> <span class="n">DB3</span><span class="o">...</span><span class="p">]</span>
+<span class="n">или</span>  <span class="n">mysqldump</span> <span class="p">[</span><span class="n">OPTIONS</span><span class="p">]</span> <span class="o">--</span><span class="nb">all</span><span class="o">-</span><span class="n">databases</span> <span class="p">[</span><span class="n">OPTIONS</span><span class="p">]</span>
+</pre></div>
+</div>
+<p>Если не указывать имена таблиц или использовать параметры &#8211;databases или &#8211;all-databases, то будет получен дамп базы данных в целом (соответственно - всех баз данных).</p>
+<p>Перечень опций, поддерживаемых вашей конкретной версией утилиты mysqldump, можно получить, выполнив команду mysqldump &#8211;help.</p>
+<p>Следует иметь в виду, что утилита mysqldump, используемая без опций &#8211;quick или &#8211;opt, перед тем, как сделать дамп результата выборки информации, загрузит весь результат в память. Это может создать проблемы при получении дампа большой базы данных.</p>
+<p>Учтите, что не следует применять параметры &#8211;opt или -e, если вы собираетесь использовать для получения дампа новую копию программы mysqldump, а затем воспроизводить его на очень старом MySQL-сервере.</p>
+<p>Утилита mysqldump поддерживает следующие опции:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span>--add-locks
+ Добавить команды LOCK TABLES перед выполнением и UNLOCK TABLE после выполнения каждого дампа таблицы (для ускорения доступа к MySQL).
+--add-drop-table
+ Добавить команду DROP TABLE перед каждой командой CREATE TABLE.
+-A, --all-databases
+ Произвести дамп всех баз данных. Аналогично опции --databases с указанием всех баз данных.
+-a, --all
+ Включить все опции создания объектов, специфичные для MySQL.
+--allow-keywords
+ Разрешить создавать имена столбцов, которые совпадают с ключевыми словами. Отсутствие конфликтов обеспечивается прибавлением имени таблицы в качестве префикса к имени каждого столбца.
+-c, --complete-insert
+ Использовать полные команды INSERT (с именами столбцов).
+-C, --compress
+ Использовать сжатие всей информации между клиентом и сервером, если они оба поддерживают сжатие.
+-B, --databases
+ Выполнить дамп нескольких баз данных. Обратите внимание на разницу в использовании: в этом случае таблицы не указываются. Все имена аргументов рассматриваются как имена баз данных. Оператор USE db_name; включается в вывод перед каждой новой базой данных.
+--delayed
+ Использовать команду INSERT DELAYED при вставке строк.
+-e, --extended-insert
+ Использовать команду INSERT с новым многострочным синтаксисом (повышает компактность и быстродействие операторов ввода).
+-#, --debug[=option_string]
+ Отслеживать прохождение программы (для отладки).
+--help
+ Вывести справочную информацию и выйти из программы.
+--fields-terminated-by=...
+--fields-enclosed-by=...
+--fields-optionally-enclosed-by=...
+--fields-escaped-by=...
+--lines-terminated-by=...
+ Эти опции используются совместно с параметром -T и имеют то же самое значение, что и соответствующие операторы для LOAD DATA INFILE. См. раздел See section 6.4.9 Синтаксис оператора LOAD DATA INFILE.
+-F, --flush-logs
+ Записать на диск данные системного журнала из буфера MySQL-сервера перед началом выполнения дампа.
+-f, --force,
+ Продолжать даже при получении ошибки SQL при выполнении дампа таблицы.
+-h, --host=..
+ Выполнить дамп данных MySQL сервера на указанном хосте. Значение хоста по умолчанию - localhost.
+-l, --lock-tables.
+ Заблокировать все таблицы перед началом выполнения дампа. Таблицы блокируются оператором READ LOCAL, чтобы разрешить параллельные записи для MyISAM-таблиц. Следует отметить, что при выполнении дампа совокупности баз данных опция --lock-tables блокирует таблицы каждой базы по отдельности. Таким образом, использование этого параметра не гарантирует, что таблицы будут логически непротиворечивы в пределах этих баз данных. В различных базах данных при выполнении дампа таблицы могут находиться в совершенно разных состояниях.
+-K, --disable-keys
+ Добавляет выражение /*!40000 ALTER TABLE tb_name DISABLE KEYS */; и /*!40000 ALTER TABLE tb_name ENABLE KEYS */; в выводе результата. Это ускорит загрузку данных на сервер MySQL 4.0, так как индексы создаются после внесения всех данных.
+-n, --no-create-db
+ В выводе результата выражение CREATE DATABASE /*!32312 IF NOT EXISTS*/ db_name; будет отсутствовать. Данная строка будет добавлена в любом случае при использовании опций --databases или --all-databases.
+-t, --no-create-info
+ Не записывать информацию о создании таблицы (команда CREATE TABLE).
+-d, --no-data
+ Не записывать информацию из строк таблицы. Это очень полезно для получения дампа структуры таблицы!
+--opt
+ То же, что и --quick --add-drop-table --add-locks --extended-insert --lock-tables. Должно дать наиболее быстрый дамп для чтения на MySQL-сервере.
+-pyour_pass, --password[=your_pass]
+ Используемый пароль при подключении к серверу. Если аргумент =your_pass не введен, mysqldump предложит ввести пароль.
+-P port_num, --port=port_num
+ Номер порта TCP/IP, используемого для подключения к хосту (применяется при подсоединении к хостам, отличным от localhost, для которого используются сокеты Unix ).
+-q, --quick
+ Выводить дамп непосредственно на стандартный вывод stdout без буферизации запроса. Для этого используется функция mysql_use_result().
+-Q, --quote-names
+ Взять в кавычки имена таблиц и столбцов без символов ``&#39;.
+-r, --result-file=...
+ Прямой вывод указанного файла. Этот опцию следует использовать в MS DOS, так как она предотвращает преобразование символа новой строки &#39;\n&#39; в последовательность &#39;\n\r&#39; (новая строка + возврат каретки).
+--single-transaction
+ Данная опция выдает SQL-команду BEGIN перед выполнением дампа данных с сервера. Наиболее часто используется с InnoDB-таблицамии и уровнем изоляции транзакций READ_COMMITTED, так как именно в этом режиме можно получить дамп с непротиворечивым состоянием базы данных после выполнения команды BEGIN без блокирования каких-либо приложений. Используя эту опцию, необходимо помнить, что при выполнении дампа только транзакционные таблицы будут находиться в непротиворечивом состоянии, т.е. некоторые MyISAM- или HEAP-таблицы при использовании данной опции могут все же изменить свое состояние. Опция --single-transaction добавлена в версии 4.0.2. Она является взаимоисключающей по отношению к опции --lock-tables, так как команда LOCK TABLES прерывает выполнение предыдущей транзакции.
+-S /path/to/socket, --socket=/path/to/socket
+ Файл сокета для подсоединения к localhost (значение хоста по умолчанию).
+--tables
+ Перекрывает параметр --databases (-B).
+-T, --tab=path-to-some-directory
+ Для каждой заданной таблицы создает файл a `table_name.sql&#39;, содержащий SQL CREATE команды для создания таблицы, и файл `table_name.txt&#39; с данными таблицы. Файл `.txt&#39; имеет формат в соответствии с параметрами --fields-xxx и --lines--xxx. Примечание: Этот параметр работает только при условии, что утилита mysqldump запущена на том же компьютере, что и демон mysqld, причем пользователь/группа, запустившие данный поток mysqld (обычно это пользователь mysql и группа mysql), должны иметь право создавать/записывать файл по указанному адресу.
+-u user_name, --user=user_name
+ Имя пользователя MySQL-сервера, используемое при подключении к серверу. Значением по умолчанию является имя пользователя Unix.
+-O var=option, --set-variable var=option
+ Установить значения переменных. Доступные для использования переменные перечислены ниже.
+-v, --verbose
+ Расширенный режим вывода. Вывод более детальной информации о работе программы.
+-V, --version
+ Вывести информацию о версии и выйти из программы.
+-w, --where=&#39;where-condition&#39;
+ Выполнить дамп только выбранных записей. Обратите внимание, что кавычки обязательны.
+
+ &quot;--where=user=&#39;jimf&#39;&quot; &quot;-wuserid&gt;1&quot; &quot;-wuserid&lt;1&quot;
+
+-X, --xml
+ Представляет дамп базы данных в виде XML.
+-x, --first-slave
+ Блокирует все таблицы во всех базах данных.
+-O net_buffer_length=#, where # &lt; 16M
+ При создании многострочных операторов ввода (как и в случаях применения параметров --extended-insert или --opt) утилита mysqldump будет создавать строки длиной вплоть до указанной в net_buffer_length. При увеличении значения этой переменной необходимо также убедиться в том, что в MySQL-сервере для переменной max_allowed_packet указано значение больше, чем величина net_buffer_length.
+</pre></div>
+</div>
+<p>Чаще всего утилита mysqldump используется для получения резервной копии всех баз данных. See section 4.4.1 Резервное копирование баз данных.</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">mysqldump</span> <span class="o">--</span><span class="n">opt</span> <span class="n">database</span> <span class="o">&gt;</span> <span class="n">backup</span><span class="o">-</span><span class="n">file</span><span class="o">.</span><span class="n">sql</span>
+</pre></div>
+</div>
+<p>Можно, наоборот, прочитать этот файл на MySQL-сервере посредством команды:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">mysql</span> <span class="n">database</span> <span class="o">&lt;</span> <span class="n">backup</span><span class="o">-</span><span class="n">file</span><span class="o">.</span><span class="n">sql</span>
+</pre></div>
+</div>
+<p>или</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">mysql</span> <span class="o">-</span><span class="n">e</span> <span class="s2">&quot;source /patch-to-backup/backup-file.sql&quot;</span> <span class="n">database</span>
+</pre></div>
+</div>
+<p>Данная утилита достаточно часто используется и для переноса информации из базы данных на другой MySQL-сервер:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">mysqldump</span> <span class="o">--</span><span class="n">opt</span> <span class="n">database</span> <span class="o">|</span> <span class="n">mysql</span> <span class="o">--</span><span class="n">host</span><span class="o">=</span><span class="n">remote</span><span class="o">-</span><span class="n">host</span> <span class="o">-</span><span class="n">C</span> <span class="n">database</span>
+</pre></div>
+</div>
+<p>Вполне возможно получить дамп нескольких баз данных с помощью одной команды:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">mysqldump</span> <span class="o">--</span><span class="n">databases</span> <span class="n">database1</span> <span class="p">[</span><span class="n">database2</span> <span class="o">...</span><span class="p">]</span> <span class="o">&gt;</span> <span class="n">my_databases</span><span class="o">.</span><span class="n">sql</span>
+</pre></div>
+</div>
+<p>Если необходим дамп всех баз данных, можно использовать:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">mysqldump</span> <span class="o">--</span><span class="nb">all</span><span class="o">-</span><span class="n">databases</span> <span class="o">&gt;</span> <span class="n">all_databases</span><span class="o">.</span><span class="n">sql</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="mysqlhotcopy">
+<h3>Утилита Mysqlhotcopy</h3>
+<blockquote>
+<div>Утилита mysqlhotcopy представляет собой Perl-сценарий, использующий SQL-команды LOCK TABLES, FLUSH TABLES и Unix-утилиты cp или scp для быстрого получения резервной копии базы данных. Пожалуй, это наиболее быстрый способ копирования базы данных в целом или одиночных таблиц, но он может работать только на том же компьютере, где расположены каталоги копируемой базы данных.</div></blockquote>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">mysqlhotcopy</span> <span class="n">db_name</span> <span class="p">[</span><span class="o">/</span><span class="n">path</span><span class="o">/</span><span class="n">to</span><span class="o">/</span><span class="n">new_directory</span><span class="p">]</span>
+<span class="n">mysqlhotcopy</span> <span class="n">db_name_1</span> <span class="o">...</span> <span class="n">db_name_n</span> <span class="o">/</span><span class="n">path</span><span class="o">/</span><span class="n">to</span><span class="o">/</span><span class="n">new_directory</span>
+<span class="n">mysqlhotcopy</span> <span class="n">db_name</span><span class="o">./</span><span class="n">regex</span><span class="o">/</span>
+</pre></div>
+</div>
+<p>Утилита mysqlhotcopy поддерживает следующие опции:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span>-?, --help
+ Показать окно справки и выйти из программы.
+-u, --user=#
+ Имя пользователя для входа в базу данных.
+-p, --password=#
+ Используемый пароль при подсоединении к серверу.
+-P, --port=#
+ Номер порта, используемого для подсоединения к локальному серверу.
+-S, --socket=#
+ Номер сокета, используемого для подсоединения к локальному серверу.
+--allowold
+ Не делать прерывания, если объект уже существует (переименовать в it_old).
+--keepold
+ Не удалять предыдущий результат (только что переименованный) после выполнения команды.
+--noindices
+ Не включать обширные индексные файлы в копию, чтобы сделать дубликат меньше по размеру и более быстрым. Индексы можно реконструировать позже с помощью команды myisamchk -rq.
+--method=#
+ Метод копирования (cp или scp).
+-q, --quiet
+ Выводить только сообщения об ошибках.
+--debug
+ Разрешить отладку.
+-n, --dryrun
+ Сообщать о действиях без их выполнения.
+--regexp=#
+ Копировать все базы данных с именами, встречающимися в функции regexp.
+--suffix=#
+ Суффикс для имен скопированных баз данных.
+--checkpoint=#
+ Внести проверочную запись в предусмотренную таблицу базы данных.
+--flushlog
+ Записать на диск данные журналов из буфера, как только все таблицы заблокируются.
+--tmpdir=#
+ Временная директория (вместо `/tmp&#39;).
+</pre></div>
+</div>
+<p>Более полное описание данного сценария можно посмотреть в документации по языку программирования Perl.</p>
+<p>Сценарий mysqlhotcopy берет информацию для групп [client] и [mysqlhotcopy] из файлов опций.</p>
+<p>Для выполнения программы mysqlhotcopy необходимы доступ для записи в директорию, куда будет помещена копия, и привилегия выполнения команды SELECT для копируемых таблиц и команды RELOAD для MySQL-сервера (чтобы выполнить FLUSH TABLES).</p>
+</div>
+</div>
+</div>
+
+
+          </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+
+    <div class="footer" role="contentinfo">
+        &#169; Copyright 2016, Vladimir Dushkevich.
+      Создано с помощью <a href="http://sphinx-doc.org/">Sphinx</a> 1.4.8.
+    </div>
+  </body>
+</html>

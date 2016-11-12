@@ -1,0 +1,201 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+  "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ru">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Практическое занятие №9 Тестирования программных межсетевых экранов.</title>
+    
+    <link rel="stylesheet" href="_static/epub.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" /> 
+  </head>
+  <body role="document">
+
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Навигация</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.xhtml" title="Алфавитный указатель"
+             accesskey="I">указатель</a></li>
+        <li class="right" >
+          <a href="pz10.xhtml" title="Практическое занятие №10 Настройка персональных межсетевых экранов."
+             accesskey="N">вперёд</a> |</li>
+        <li class="right" >
+          <a href="pz8.xhtml" title="Практическое занятие №8 Тестирования аппаратных межсетевых экранов."
+             accesskey="P">назад</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.xhtml">Документация course0203 1</a> &#187;</li> 
+      </ul>
+    </div>
+
+    <div class="document">
+      <div class="documentwrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="o9">
+<h1>Практическое занятие №9 Тестирования программных межсетевых экранов.</h1>
+<div class="section" id="id1">
+<h2>Цель работы:</h2>
+<ol class="arabic simple">
+<li>Получить практический опыт применения программно-аппаратных средств обеспечения информационной безопасности телекоммуникационных систем;</li>
+<li>Получить практический опыт выявления технических каналов утечки информации.</li>
+</ol>
+</div>
+<div class="section" id="id2">
+<h2>Литература:</h2>
+<ol class="arabic simple">
+<li>Шаньгин, В. Ф. Информационная безопасность и защита информации [Электронный ресурс]: учебное пособие. - Москва: ДМК Пресс, 2014. - &nbsp;Режим доступа: <a class="reference external" href="http://www.iprbookshop.ru/29257">http://www.iprbookshop.ru/29257</a>, по запросу, стр 435-444;</li>
+</ol>
+</div>
+<div class="section" id="id3">
+<h2>Подготовка к работе:</h2>
+<ol class="arabic simple">
+<li>Подготовить бланк отчета;</li>
+<li>Изучить предложенную литературу.</li>
+</ol>
+</div>
+<div class="section" id="id4">
+<h2>Основное оборудование:</h2>
+<ol class="arabic simple">
+<li>Межсетевой экран в составе виртуальной машины pfsense;</li>
+<li>Коммутаторы второго уровня Dlink или аналогичные;</li>
+<li>Программы CMD, putty;</li>
+<li>Схема простой сети и ресурсов простой сети;</li>
+<li>Программа Libreoffice для составления отчетов.</li>
+</ol>
+</div>
+<div class="section" id="id5">
+<h2>Задание:</h2>
+<ol class="arabic simple">
+<li>Выполнить настройку и тестирование предложенного межсетевого экрана (МЭ).</li>
+</ol>
+</div>
+<div class="section" id="id6">
+<h2>Порядок выполнения работы:</h2>
+<ol class="arabic simple">
+<li>Выбрать модель средней сети согласно индивидуальному заданию, собрать сеть по схеме в GNS3. Протестировать работу компонентов. Настроить работу МЭ в полученной модели сети;</li>
+<li>Выполнить тестирование предложенного МЭ:</li>
+</ol>
+<blockquote>
+<div><ol class="arabic simple">
+<li>Выполнить создание пользователей, являющихся администраторами;</li>
+<li>Выполнить создание пользователей, не являющихся администраторами. Выяснить их права и привилегии. Типы пользовательских четныхзаписей и их привилиегии отразить в отчете;</li>
+<li>Выполнить анализ политики МЭ по умолчанию. Составить диаграмму связей (т.н. «майнд -карту»), отражающую применение политик по умолчанию;</li>
+</ol>
+</div></blockquote>
+<ol class="arabic simple">
+<li>Выполнить настройку МЭ для фильтрации траффика между портами LAN и WAN на примере протоколов icmp, telnet.</li>
+<li>Выполнить настройку МЭ для фильтрации траффика между портами DMZ и WAN на примере протоколов icmp, telnet4</li>
+<li>Выполнить настройку устройства для фильтрации трафика между клиентами и серверами сети на основе белого списка адресов;</li>
+<li>Выполнить настройку устройства для фильтрации трафика между клиентами и серверами сети на основе черного списка адресов;</li>
+<li>Выполнить настройку устройства для фильтрации трафика между клиентами и серверами сети на основе списка ACL;</li>
+<li>Выполнить настройку ведения журналов подключений к межсетевым экранам для каждого из пользователей;</li>
+<li>Выполнить настройку срока действия и смены пароля каждого пользователя.</li>
+<li>Выполить настройку резервного копирования настроек МЭ;</li>
+<li>Реализованные настройки продемонстрировать преподавателю.</li>
+</ol>
+</div>
+<div class="section" id="id7">
+<h2>Содержание отчета:</h2>
+<ol class="arabic simple">
+<li>Цель работы;</li>
+<li>Содержание действий по выполнению данной работы;</li>
+<li>Ответы на контрольные вопросы;</li>
+<li>Вывод.</li>
+</ol>
+</div>
+<div class="section" id="id8">
+<h2>Контрольные вопросы:</h2>
+<ol class="arabic simple">
+<li>Что понимают под системой защиты информации с «полным перекрытием»?</li>
+<li>Что понимают под мерами компенсирования воздействия угроз?</li>
+<li>Каким образом на практике оценивается эффективность реализованных мер защиты?</li>
+</ol>
+</div>
+<div class="section" id="id9">
+<h2>Приложение:</h2>
+<p>Фаервол, встроенный в ядро Linux, называется Netfilter, а iptables — утилита для управления этим фаерволом.
+Какие примерно задачи можно решать с помощью Netfilter:</p>
+<ul class="simple">
+<li>Разрешать/запрещать входящий трафик на определенные порты по определенным протоколам (IPv4/IPv6, TCP/UDP) с указанных адресов (IP, MAC) или подсетей;</li>
+<li>Все то же самое в отношении исходящего трафика;</li>
+<li>Можно, например, полностью игнорировать все ICMP пакеты;</li>
+<li>Настройка NAT, см пост про установку и настройку OpenVPN;</li>
+</ul>
+<p>Рассмотрим основные команды.</p>
+<p>Показать все правила:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="c1"># iptables -L -n</span>
+</pre></div>
+</div>
+<p>Вы можете заметить, что в Netfilter есть какие-то «цепочки» (chains) — как минимум INPUT, OUTPUT и FORWARD. У меня лично на машине есть еще и цепочка DOCKER. На первое время можно думать о первых двух, как обо всем входящем и исходящем трафике соответственно, а об остальных временно забыть. Велика вероятность, что они вообще никогда вам не понадобятся.</p>
+<p>Удалить все правила:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="c1"># iptables -F</span>
+</pre></div>
+</div>
+<p>Изменить политику (поведение по умолчанию) цепочки:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="c1"># iptables -P INPUT DROP</span>
+<span class="c1"># iptables -P INPUT ACCEPT</span>
+</pre></div>
+</div>
+<p>Запретить доступ с хоста/подсети:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="c1"># iptables -A INPUT -s 123.45.67.89 -j DROP</span>
+<span class="c1"># iptables -A INPUT -s 123.45.0.0/16 -j DROP</span>
+</pre></div>
+</div>
+<p>Также можно использовать доменные имена:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="c1"># iptables -A INPUT -s example.ru -j DROP</span>
+</pre></div>
+</div>
+<p>Запрет исходящих соединений:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="c1"># iptables -A OUTPUT -d 123.45.67.89 -j DROP</span>
+</pre></div>
+</div>
+<p>В правилах можно использовать отрицания:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="c1"># iptables -A INPUT ! -s 123.45.67.89 -j DROP</span>
+</pre></div>
+</div>
+<p>Удаление правила по его номеру в цепочке:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="c1"># iptables -D INPUT 1</span>
+</pre></div>
+</div>
+<p>Удаление правила на основе того, что оно делает:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="c1"># iptables -D INPUT -s 123.45.67.89 -j DROP</span>
+</pre></div>
+</div>
+<p>Опция -p указывает на протокол. Можно использовать all, icmp, tcp, udp или номер протокола из /etc/protocols. Флаг &#8211;sport указывает порт, с которого был прислан пакет, а &#8211;dport указывает порт назначения:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="c1"># iptables -A INPUT -p tcp --sport 80 -j ACCEPT</span>
+<span class="c1"># iptables -A INPUT -p tcp --dport 80 -j ACCEPT</span>
+</pre></div>
+</div>
+<p>Вставка (insert) правила в начало цепочки:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="c1"># iptables -I INPUT ...</span>
+</pre></div>
+</div>
+<p>Или можно указать конкретную позицию:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="c1"># iptables -I INPUT 3 ...</span>
+</pre></div>
+</div>
+<p>Сохранить правила:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="c1"># iptables-save &gt; /etc/iptables.rules</span>
+</pre></div>
+</div>
+<p>Восстановить правила:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="c1"># iptables-restore &lt; /etc/iptables.rules</span>
+</pre></div>
+</div>
+</div>
+</div>
+
+
+          </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+
+    <div class="footer" role="contentinfo">
+        &#169; Copyright 2016, Vladimir Dushkevich.
+      Создано с помощью <a href="http://sphinx-doc.org/">Sphinx</a> 1.4.8.
+    </div>
+  </body>
+</html>

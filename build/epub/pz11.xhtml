@@ -1,0 +1,288 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+  "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ru">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Практическое занятие №11 Настройка и конфигурирование межсетевых экранов в сетях SOHO</title>
+    
+    <link rel="stylesheet" href="_static/epub.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" /> 
+  </head>
+  <body role="document">
+
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Навигация</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.xhtml" title="Алфавитный указатель"
+             accesskey="I">указатель</a></li>
+        <li class="right" >
+          <a href="pz12.xhtml" title="Практическое занятие №12 Настройка и конфигурирование межсетевых экранов в средних сетях."
+             accesskey="N">вперёд</a> |</li>
+        <li class="right" >
+          <a href="pz10.xhtml" title="Практическое занятие №10 Настройка персональных межсетевых экранов."
+             accesskey="P">назад</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.xhtml">Документация course0203 1</a> &#187;</li> 
+      </ul>
+    </div>
+
+    <div class="document">
+      <div class="documentwrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="o11-soho">
+<h1>Практическое занятие №11 Настройка и конфигурирование межсетевых экранов в  сетях SOHO</h1>
+<div class="section" id="id1">
+<h2>Цель работы:</h2>
+<ol class="arabic simple">
+<li>Получить практический опыт применения программно-аппаратных средств обеспечения информационной безопасности телекоммуникационных систем;</li>
+<li>Получить практический опыт выявления технических каналов утечки информации.</li>
+</ol>
+</div>
+<div class="section" id="id2">
+<h2>Литература:</h2>
+<ol class="arabic simple">
+<li>Шаньгин, В. Ф. Информационная безопасность и защита информации [Электронный ресурс]: учебное пособие. - Москва: ДМК Пресс, 2014. - &nbsp;Режим доступа: <a class="reference external" href="http://www.iprbookshop.ru/29257">http://www.iprbookshop.ru/29257</a>, по запросу, стр 447-463;</li>
+</ol>
+</div>
+<div class="section" id="id3">
+<h2>Подготовка к работе:</h2>
+<ol class="arabic simple">
+<li>Подготовить бланк отчета;</li>
+<li>Изучить предложенную литературу.</li>
+</ol>
+</div>
+<div class="section" id="id4">
+<h2>Основное оборудование:</h2>
+<ol class="arabic simple">
+<li>Межсетевой экран в составе виртуальной машины pfsense;</li>
+<li>Виртуальные машины в программе VirtualBox на основе Ubuntu Linux согласно заданию и схеме сети;</li>
+<li>Модель простой сети и ресурсов простой сети;</li>
+<li>Пакет GNS3 и комплект виртуальных машин, необходимых для схемы сети;</li>
+<li>Программа Libreoffice для составления отчетов.</li>
+</ol>
+</div>
+<div class="section" id="id5">
+<h2>Задание:</h2>
+<ol class="arabic simple">
+<li>Выполнить конфигурирование МЭ в сети small ofice home office (SOHO).</li>
+</ol>
+</div>
+<div class="section" id="id6">
+<h2>Порядок выполнения работы:</h2>
+<ol class="arabic simple">
+<li>Собрать схему простой сети по индивидуальному заданию и обеспечитьл ее работоспособность.</li>
+<li>Подключить pfsense в модель сети. Выполнить первичную настройку компонента (создать пользователей, сменить пароль по умолчанию, выполнить настройку).</li>
+<li>Выполнить фильтрацию трафика. Настроить межсетевой экран по «белому» списку для обеспечения разрешенных подключений от клиентов к серверам. Все подключения, кроме разрешенных, должны блокироваться с ведением записей в журнал.</li>
+<li>Выполнить фильтрацию трафика. Настроить межсетевой экран по «черному» списку для обеспечения запрета подключений от клиентов к серверам.Все подключения, кроме запрещенных, должны разрешаться с ведением записей в журнал.</li>
+<li>Выполнить создание пользователей pfsense, отличных от администратора.</li>
+<li>Выполнить создание сертификата пользователя и организовать доступ к настройкам pfsense только для пользователя, имеющего сертификат.</li>
+<li>Выполнить настройку ведения журналов подключения пользователей pfsense.</li>
+<li>Выполнить настройку средств отказоустойчивости МЭ pfsense.</li>
+<li>Выполить настройку полного резервного копирования настроек МЭ.</li>
+<li>Выполить настройку дифференцированного резервного копирования настроек МЭ.</li>
+<li>Составить план проведения резервного копирования настроек МЭ</li>
+</ol>
+</div>
+<div class="section" id="id7">
+<h2>Содержание отчета:</h2>
+<ol class="arabic simple">
+<li>Цель работы;</li>
+<li>Содержание действий по выполнению данной работы;</li>
+<li>Ответы на контрольные вопросы;</li>
+<li>Вывод.</li>
+</ol>
+</div>
+<div class="section" id="id8">
+<h2>Контрольные вопросы:</h2>
+<ol class="arabic simple">
+<li>Каким образом достигается дифференцированное резервное копирование?</li>
+<li>Что понимают под «черным списком» межсетевого экрана?</li>
+<li>Для каких целей ведется настройка системных журналов МЭ?</li>
+</ol>
+</div>
+<div class="section" id="id9">
+<h2>Приложение:</h2>
+<p>Предположим, что у нашего сервера есть два физических сетевых интерфейса: eth0 (открытый) и eth1 (закрытый). Необходимо соединить их с помощью NAT (network address transform – преобразование сетевых адресов), чтобы сетевой трафик мог прозрачно передаваться из одного интерфейса в другой. В качестве маски подсети закрытой сети используется 192.168.0.0/255.255.0.0; в листинге 12 приведено NAT-правило для перенаправления.</p>
+<p>Правила для NAT и перенаправления:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">iptables</span> <span class="o">-</span><span class="n">A</span> <span class="n">FORWARD</span> <span class="o">-</span><span class="n">s</span> <span class="mf">192.168</span><span class="o">.</span><span class="mf">0.0</span><span class="o">/</span><span class="mf">255.255</span><span class="o">.</span><span class="mf">0.0</span> <span class="o">-</span><span class="n">i</span> <span class="n">eth0</span> <span class="o">-</span><span class="n">o</span> <span class="n">eth1</span> <span class="o">-</span><span class="n">m</span>\
+<span class="n">conntrack</span> <span class="o">--</span><span class="n">ctstate</span> <span class="n">NEW</span> <span class="o">-</span><span class="n">j</span> <span class="n">ACCEPT</span>
+<span class="n">iptables</span> <span class="o">-</span><span class="n">A</span> <span class="n">FORWARD</span> <span class="o">-</span><span class="n">m</span> <span class="n">conntrack</span> <span class="o">--</span><span class="n">ctstate</span> <span class="n">RELATED</span><span class="p">,</span><span class="n">ESTABLISHED</span> <span class="o">-</span><span class="n">j</span> <span class="n">ACCEPT</span>
+<span class="n">iptables</span> <span class="o">-</span><span class="n">A</span> <span class="n">POSTROUTING</span> <span class="o">-</span><span class="n">t</span> <span class="n">nat</span> <span class="o">-</span><span class="n">j</span> <span class="n">MASQUERADE</span>
+</pre></div>
+</div>
+<p>Далее необходимо модифицировать настройки в proc, чтобы активировать перенаправление на сервере.
+Активация перенаправления на сервере</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">sh</span> <span class="o">-</span><span class="n">c</span> <span class="s2">&quot;echo 1 &gt; /proc/sys/net/ipv4/ip_forward&quot;</span>
+</pre></div>
+</div>
+<p>Стоит отметить, что изменения в proc не сохраняются, так что они будут утрачены после перезагрузки. Есть несколько способов обеспечить сохранность изменений после перезагрузки. Чтобы обеспечить запуск указанных строк в дистрибутивах Debian/Ubuntu, необходимо добавить их в /etc/rc.local.</p>
+<p>Далее показано еще одно изменение в конфигурации, меняющее параметры ядра во время выполнения (sysctl). Эти параметры конфигурации обычно находятся в файле sysctl.conf, но они закомментированы. Необходимо их раскомментировать или добавить в файл, если они отсутствуют в используемом дистрибутиве.
+Настройка параметра ядра - sysctl</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">net</span><span class="o">.</span><span class="n">ipv4</span><span class="o">.</span><span class="n">conf</span><span class="o">.</span><span class="n">default</span><span class="o">.</span><span class="n">forwarding</span><span class="o">=</span><span class="mi">1</span>
+<span class="n">net</span><span class="o">.</span><span class="n">ipv4</span><span class="o">.</span><span class="n">conf</span><span class="o">.</span><span class="n">all</span><span class="o">.</span><span class="n">forwarding</span><span class="o">=</span><span class="mi">1</span>
+</pre></div>
+</div>
+<div class="section" id="arp">
+<h3>Пороговое значение кэша ARP</h3>
+<p>Использование Linux-сервера в качестве шлюза вызывает определенные проблемы, связанные с DNS. Ядро спроектировано так, чтобы хранить привязку IP-адресов, но заданное максимальное количество записей недостаточно для поддержки большого количества трафика. Когда достигается максимальный уровень, сервер перестает отвечать на DNS-запросы от клиентов. При небольшом количестве клиентов этот порог достигается редко, но более тридцати клиентов, одновременно использующих данный межсетевой экран, могут привести к проблемам.</p>
+<p>Значения, приведенные далее, обычно вполне достаточны для исключения подобных проблем, хотя для вашей среды могут потребоваться изменения.
+Увеличение размера кэша ARP</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">echo</span> <span class="mi">1024</span> <span class="o">&gt;</span> <span class="o">/</span><span class="n">proc</span><span class="o">/</span><span class="n">sys</span><span class="o">/</span><span class="n">net</span><span class="o">/</span><span class="n">ipv4</span><span class="o">/</span><span class="n">neigh</span><span class="o">/</span><span class="n">default</span><span class="o">/</span><span class="n">gc_thresh1</span>
+<span class="n">echo</span> <span class="mi">2048</span> <span class="o">&gt;</span> <span class="o">/</span><span class="n">proc</span><span class="o">/</span><span class="n">sys</span><span class="o">/</span><span class="n">net</span><span class="o">/</span><span class="n">ipv4</span><span class="o">/</span><span class="n">neigh</span><span class="o">/</span><span class="n">default</span><span class="o">/</span><span class="n">gc_thresh2</span>
+<span class="n">echo</span> <span class="mi">4096</span> <span class="o">&gt;</span> <span class="o">/</span><span class="n">proc</span><span class="o">/</span><span class="n">sys</span><span class="o">/</span><span class="n">net</span><span class="o">/</span><span class="n">ipv4</span><span class="o">/</span><span class="n">neigh</span><span class="o">/</span><span class="n">default</span><span class="o">/</span><span class="n">gc_thresh3</span>
+</pre></div>
+</div>
+<p>Указанием на то, что пришло время увеличить указанные значения, служит появление в системном журнале предупреждающих сообщений, подобных приведенным ниже.
+Предупреждающие сообщения о переполнении кэша ARP</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">Nov</span>  <span class="mi">22</span> <span class="mi">11</span><span class="p">:</span><span class="mi">36</span><span class="p">:</span><span class="mi">16</span> <span class="n">firewall</span> <span class="n">kernel</span><span class="p">:</span> <span class="p">[</span><span class="mf">92374.325689</span><span class="p">]</span> <span class="n">Neighbour</span> <span class="n">table</span> <span class="n">overflow</span><span class="o">.</span>
+<span class="n">Nov</span>  <span class="mi">22</span> <span class="mi">11</span><span class="p">:</span><span class="mi">36</span><span class="p">:</span><span class="mi">20</span> <span class="n">firewall</span> <span class="n">kernel</span><span class="p">:</span> <span class="p">[</span><span class="mf">92379.089870</span><span class="p">]</span> <span class="n">printk</span><span class="p">:</span> <span class="mi">37</span> <span class="n">messages</span> <span class="n">suppressed</span><span class="o">.</span>
+<span class="n">Nov</span>  <span class="mi">22</span> <span class="mi">11</span><span class="p">:</span><span class="mi">36</span><span class="p">:</span><span class="mi">20</span> <span class="n">firewall</span> <span class="n">kernel</span><span class="p">:</span> <span class="p">[</span><span class="mf">92379.089876</span><span class="p">]</span> <span class="n">Neighbour</span> <span class="n">table</span> <span class="n">overflow</span><span class="o">.</span>
+<span class="n">Nov</span>  <span class="mi">22</span> <span class="mi">11</span><span class="p">:</span><span class="mi">36</span><span class="p">:</span><span class="mi">26</span> <span class="n">firewall</span> <span class="n">kernel</span><span class="p">:</span> <span class="p">[</span><span class="mf">92384.333161</span><span class="p">]</span> <span class="n">printk</span><span class="p">:</span> <span class="mi">51</span> <span class="n">messages</span> <span class="n">suppressed</span><span class="o">.</span>
+<span class="n">Nov</span>  <span class="mi">22</span> <span class="mi">11</span><span class="p">:</span><span class="mi">36</span><span class="p">:</span><span class="mi">26</span> <span class="n">firewall</span> <span class="n">kernel</span><span class="p">:</span> <span class="p">[</span><span class="mf">92384.333166</span><span class="p">]</span> <span class="n">Neighbour</span> <span class="n">table</span> <span class="n">overflow</span><span class="o">.</span>
+<span class="n">Nov</span>  <span class="mi">22</span> <span class="mi">11</span><span class="p">:</span><span class="mi">36</span><span class="p">:</span><span class="mi">30</span> <span class="n">firewall</span> <span class="n">kernel</span><span class="p">:</span> <span class="p">[</span><span class="mf">92389.084373</span><span class="p">]</span> <span class="n">printk</span><span class="p">:</span> <span class="mi">200</span> <span class="n">messages</span> <span class="n">suppressed</span><span class="o">.</span>
+</pre></div>
+</div>
+<p>Настроив МЭ таким образом можно переходить к настройке правил межсетевого экрана.</p>
+<p>аправление соединения, бывает входящее и исходящее. Исходящим называется соединение, инициируемое локальным компьютером, входящим — инициируемое удаленным компьютером. Обратите внимание, что, если ваш браузер обращается к некоторому ресурсу в сети, и тот отвечает ему какими-либо данными, то этот ответ по-прежнему считается отправленным в рамках исходящего подключения.</p>
+<p>Суть работы брандмауэра заключается в разрешении одних соединений (подключений) и блокировании других. В связи с этим, следуя правилам фильтрации появились понятия:</p>
+<blockquote>
+<div><ul class="simple">
+<li>Черный список: разрешить все, кроме запрещенного.</li>
+<li>Белый список: запретить все кроме разрешенного.</li>
+</ul>
+</div></blockquote>
+</div>
+<div class="section" id="id10">
+<h3>Настройка МЭ по белому списку</h3>
+<p>Если у вас свежеустановленная система и вы не пытались настроить на ней сетевой фильтр, то правила будут иметь примерно следующую картину:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">netfilter</span><span class="p">:</span><span class="o">~</span><span class="c1"># iptables -L</span>
+<span class="n">Chain</span> <span class="n">INPUT</span> <span class="p">(</span><span class="n">policy</span> <span class="n">ACCEPT</span><span class="p">)</span>
+<span class="n">target</span> <span class="n">prot</span> <span class="n">opt</span> <span class="n">source</span> <span class="n">destination</span>
+<span class="n">Chain</span> <span class="n">FORWARD</span> <span class="p">(</span><span class="n">policy</span> <span class="n">ACCEPT</span><span class="p">)</span>
+<span class="n">target</span> <span class="n">prot</span> <span class="n">opt</span> <span class="n">source</span> <span class="n">destination</span>
+<span class="n">Chain</span> <span class="n">OUTPUT</span> <span class="p">(</span><span class="n">policy</span> <span class="n">ACCEPT</span><span class="p">)</span>
+<span class="n">target</span> <span class="n">prot</span> <span class="n">opt</span> <span class="n">source</span> <span class="n">destination</span>
+</pre></div>
+</div>
+<p>Это значит, что политика по умолчанию для таблицы filter во всех цепочках - ACCEPT и нет никаких других правил, что-либо запрещающих. Поэтому давайте сначала запретим ВСЁ входящие, исходящие и проходящие пакеты (не вздумайте это делать удаленно-тут же потеряете доступ):</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">netfilter</span><span class="p">:</span><span class="o">~</span><span class="c1"># iptables -P INPUT DROP</span>
+<span class="n">netfilter</span><span class="p">:</span><span class="o">~</span><span class="c1"># iptables -P OUTPUT DROP</span>
+<span class="n">netfilter</span><span class="p">:</span><span class="o">~</span><span class="c1"># iptables -P FORWARD DROP</span>
+</pre></div>
+</div>
+<p>Этими командами мы устанавливаем политику DROP по умолчанию. Это значит, что любой пакет, для которого явно не задано правило, которое его разрешает, автоматически отбрасывается. Поскольку пока еще у нас не задано ни одно правило - будут отвергнуты все пакеты, которые придут на ваш компьютер, равно как и те, которые вы попытаетесь отправить в сеть. В качестве демонстрации можно попробовать пропинговать свой компьютер через интерфейс обратной петли:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">netfilter</span><span class="p">:</span><span class="o">~</span><span class="c1"># ping -c2 127.0.0.1</span>
+<span class="n">PING</span> <span class="mf">127.0</span><span class="o">.</span><span class="mf">0.1</span> <span class="p">(</span><span class="mf">127.0</span><span class="o">.</span><span class="mf">0.1</span><span class="p">)</span> <span class="mi">56</span><span class="p">(</span><span class="mi">84</span><span class="p">)</span> <span class="nb">bytes</span> <span class="n">of</span> <span class="n">data</span><span class="o">.</span>
+<span class="n">ping</span><span class="p">:</span> <span class="n">sendmsg</span><span class="p">:</span> <span class="n">Operation</span> <span class="ow">not</span> <span class="n">permitted</span>
+<span class="n">ping</span><span class="p">:</span> <span class="n">sendmsg</span><span class="p">:</span> <span class="n">Operation</span> <span class="ow">not</span> <span class="n">permitted</span>
+<span class="o">---</span> <span class="n">localhost</span> <span class="n">ping</span> <span class="n">statistics</span> <span class="o">---</span>
+<span class="mi">2</span> <span class="n">packets</span> <span class="n">transmitted</span><span class="p">,</span> <span class="mi">0</span> <span class="n">received</span><span class="p">,</span> <span class="mi">100</span><span class="o">%</span> <span class="n">packet</span> <span class="n">loss</span><span class="p">,</span> <span class="n">time</span> <span class="mi">1004</span><span class="n">ms</span>
+</pre></div>
+</div>
+<p>На самом деле это полностью не функционирующая сеть и это не очень хорошо, т.к. некоторые демоны используют для обмена между собой петлевой интерфейс, который после проделанных действий более не функционирует. Это может нарушить работу подобных сервисов. Поэтому в первую очередь в обязательно разрешим передачу пакетов через входящий петлевой интерфейс и исходящий петлевой интерфейс в таблицах INPUT (для возможности получения отправленных пакетов) и OUTPUT (для возможности отправки пакетов) соответственно. Итак, обязательно выполняем:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">netfilter</span><span class="p">:</span><span class="o">~</span><span class="c1"># iptables -A INPUT -i lo -j ACCEPT</span>
+<span class="n">netfilter</span><span class="p">:</span><span class="o">~</span><span class="c1"># iptables -A OUTPUT -o lo -j ACCEPT</span>
+</pre></div>
+</div>
+<p>После этого пинг на локалхост заработает:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">netfilter</span><span class="p">:</span><span class="o">~</span><span class="c1"># ping -c1 127.0.0.1</span>
+<span class="n">PING</span> <span class="mf">127.0</span><span class="o">.</span><span class="mf">0.1</span> <span class="p">(</span><span class="mf">127.0</span><span class="o">.</span><span class="mf">0.1</span><span class="p">)</span> <span class="mi">56</span><span class="p">(</span><span class="mi">84</span><span class="p">)</span> <span class="nb">bytes</span> <span class="n">of</span> <span class="n">data</span><span class="o">.</span>
+<span class="mi">64</span> <span class="nb">bytes</span> <span class="kn">from</span> <span class="mf">127.0</span><span class="o">.</span><span class="mf">0.1</span> <span class="p">(</span><span class="mf">127.0</span><span class="o">.</span><span class="mf">0.1</span><span class="p">):</span> <span class="n">icmp_seq</span><span class="o">=</span><span class="mi">1</span> <span class="n">ttl</span><span class="o">=</span><span class="mi">64</span> <span class="n">time</span><span class="o">=</span><span class="mf">0.116</span> <span class="n">ms</span>
+<span class="o">---</span> <span class="mf">127.0</span><span class="o">.</span><span class="mf">0.1</span> <span class="n">ping</span> <span class="n">statistics</span> <span class="o">---</span>
+<span class="mi">1</span> <span class="n">packets</span> <span class="n">transmitted</span><span class="p">,</span> <span class="mi">1</span> <span class="n">received</span><span class="p">,</span> <span class="mi">0</span><span class="o">%</span> <span class="n">packet</span> <span class="n">loss</span><span class="p">,</span> <span class="n">time</span> <span class="mi">116</span><span class="n">ms</span>
+<span class="n">rtt</span> <span class="nb">min</span><span class="o">/</span><span class="n">avg</span><span class="o">/</span><span class="nb">max</span><span class="o">/</span><span class="n">mdev</span> <span class="o">=</span> <span class="mf">0.116</span><span class="o">/</span><span class="mf">0.116</span><span class="o">/</span><span class="mf">0.116</span><span class="o">/</span><span class="mf">0.116</span> <span class="n">ms</span>
+</pre></div>
+</div>
+<p>Если подходить к настройке файервола не шибко фанатично, то можно разрешить работу протокола ICMP:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">netfilter</span><span class="p">:</span><span class="o">~</span><span class="c1"># iptables -A INPUT -p icmp -j ACCEPT</span>
+<span class="n">netfilter</span><span class="p">:</span><span class="o">~</span><span class="c1"># iptables -A OUTPUT -p icmp -j ACCEPT</span>
+</pre></div>
+</div>
+<p>Более безопасно будет указать следующую аналогичную команду iptables:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">netfilter</span><span class="p">:</span><span class="o">~</span><span class="c1"># iptables -A INPUT -p icmp --icmp-type 0 -j ACCEPT</span>
+<span class="n">netfilter</span><span class="p">:</span><span class="o">~</span><span class="c1"># iptables -A INPUT -p icmp --icmp-type 8 -j ACCEPT</span>
+<span class="n">netfilter</span><span class="p">:</span><span class="o">~</span><span class="c1"># iptables -A OUTPUT -p icmp -j ACCEPT</span>
+</pre></div>
+</div>
+<p>Данная команда разрешит типы ICMP пакета эхо-запрос и эхо-ответ, что повысит безопасность.</p>
+<p>Будем считать, что компьютер не заражен вредоносным ПО и он устанавливает только безопасные исходящие соединения. А так же, зная, что безопасные соединения - это соединения из т.н. эфимерного диапазона портов, который задается ядром в файле /proc/sys/net/ipv4/ip_local_port_range, можно разрешить исходящие соединения с этих безопасных портов:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">netfilter</span><span class="p">:</span><span class="o">~</span><span class="c1"># cat /proc/sys/net/ipv4/ip_local_port_range</span>
+<span class="mi">32768</span> <span class="mi">61000</span>
+<span class="n">netfilter</span><span class="p">:</span><span class="o">~</span><span class="c1"># iptables -A OUTPUT -p TCP --sport 32768:61000 -j ACCEPT</span>
+<span class="n">netfilter</span><span class="p">:</span><span class="o">~</span><span class="c1"># iptables -A OUTPUT -p UDP --sport 32768:61000 -j ACCEPT</span>
+</pre></div>
+</div>
+<p>Если подходить к ограничению исходящих пакетов не параноидально, то можно было ограничиться одной командой iptables, разрешающей все исхолящие соединения оп всем протоколам и портам:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">netfilter</span><span class="p">:</span><span class="o">~</span><span class="c1"># iptables -A OUTPUT -j ACCEPT</span>
+<span class="n">netfilter</span><span class="p">:</span><span class="o">~</span><span class="c1"># # или просто задать политику по умолчанию ACCEPT для цепочки OUTPUT</span>
+<span class="n">netfilter</span><span class="p">:</span><span class="o">~</span><span class="c1"># iptables -P OUTPUT ACCEPT</span>
+</pre></div>
+</div>
+<p>Далее, зная что в netfilter сетевые соединения имеют 4 состояния (NEW, ESTABLISHED, RELATED и INVALID) и новые исходящие соединения с локального компьютера (с состоянием NEW) у нас разрешены в прошлых двух командах iptables, что уже установленные соединения и дополнительные имеют состояния ESTABLISHED и RELATED, соответственно, а так же зная, что входящие соединения к локальной системе приходят через цепочку INPUT, можно разрешить попадание на наш компьютер только тех TCP- и UDP-пакетов, которые были запрошены локальными приложениями:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">netfilter</span><span class="p">:</span><span class="o">~</span><span class="c1"># iptables -A INPUT -p TCP -m state --state ESTABLISHED,RELATED -j ACCEPT</span>
+<span class="n">netfilter</span><span class="p">:</span><span class="o">~</span><span class="c1"># iptables -A INPUT -p UDP -m state --state ESTABLISHED,RELATED -j ACCEPT</span>
+</pre></div>
+</div>
+<p>Если на десктопе все же работает какая-то сетевая служба, то необходимо добавить соответствующие правила для входящих соединений и для исходящих. Например, для работы ssh-сервера, который принимает и отправляет запросы на 22 TCP-порту, необходимо добавить следующие iptables-правила:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">netfilter</span><span class="p">:</span><span class="o">~</span><span class="c1"># iptables -A INPUT -i eth0 -p TCP --dport 22 -j ACCEPT</span>
+<span class="n">netfilter</span><span class="p">:</span><span class="o">~</span><span class="c1"># iptables -A OUTPUT -o eth0 -p TCP --sport 22 -j ACCEPT</span>
+</pre></div>
+</div>
+<p>Т.е. для любого сервиса нужно добавить по одному правилу в цепочки INPUT и OUTPUT, разрешающему соответственно прием и отправку пакетов с использованием этого порта для конкретного сетевого интерфейса (если интерфейс не указывать, то будет разрешено принимать/отправлять пакеты по любому интерфейсу).</p>
+</div>
+<div class="section" id="netfilter-iptables">
+<h3>Настройка netfilter/iptables для подключения нескольких клиентов к одному соединению.</h3>
+<p>Рассмотрим использование Linux в качестве шлюза для локальной сети во внешнюю сеть Internet. Предположим, что интерфейс eth0 подключен к интернету и имеет IP 198.166.0.200, а интерфейс eth1 подключен к локальной сети и имеет IP 10.0.0.1. По умолчанию, в ядре Linux пересылка пакетов через цепочку FORWARD (пакетов, не предназначенных локальной системе) отключена. Чтобы включить данную функцию, необходимо задать значение 1 в файле /proc/sys/net/ipv4/ip_forward:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">netfilter</span><span class="p">:</span><span class="o">~</span><span class="c1"># echo 1 &gt; /proc/sys/net/ipv4/ip_forward</span>
+</pre></div>
+</div>
+<p>Чтобы форвардинг пакетов сохранился после перезагрузки, необходимо в файле /etc/sysctl.conf раскомментировать (или просто добавить) строку net.ipv4.ip_forward=1.</p>
+<p>Итак, у нас есть внешний адрес (198.166.0.200), в локальной сети имеется некоторое количество гипотетических клиентов, которые имеют адреса из диапазона локальной сети и посылают запросы во внешнюю сеть. Если эти клиенты будут отправлять во внешнюю сеть запросы через шлюз &#8220;как есть&#8221;, без преобразования, то удаленный сервер не сможет на них ответить, т.к. обратным адресом будет получатель из &#8220;локальной сети&#8221;. Для того, чтобы эта схема корректно работала, необходимо подменять адрес отправителя, на внешний адрес шлюза Linux. Это достигается за счет действия MASQUERADE (маскарадинг) в цепочке POSTROUTING, в таблице nat.</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">netfilter</span><span class="p">:</span><span class="o">~</span><span class="c1"># iptables -A FORWARD -m conntrack --ctstate ESTABLISHED,RELATED -j ACCEPT</span>
+<span class="n">netfilter</span><span class="p">:</span><span class="o">~</span><span class="c1"># iptables -A FORWARD -m conntrack --ctstate NEW -i eth1 -s 10.0.0.1/24 -j ACCEPT</span>
+<span class="n">netfilter</span><span class="p">:</span><span class="o">~</span><span class="c1"># iptables -P FORWARD DROP</span>
+<span class="n">netfilter</span><span class="p">:</span><span class="o">~</span><span class="c1"># iptables -t nat -A POSTROUTING -o eth0 -j MASQUERADE</span>
+</pre></div>
+</div>
+<p>Итак, по порядку сверху-вниз мы разрешаем уже установленные соединения в цепочке FORWARD, таблице filter, далее мы разрешаем устанавливать новые соединения в цепочке FORWARD, таблице filter, которые пришли с интерфейса eth1 и из сети 10.0.0.1/24. Все остальные пакеты, которые проходят через цепочку FORWARD - отбрасывать. Далее, выполняем маскирование (подмену адреса отправителя пакета в заголовках) всех пакетов, исходящих с интерфейса eth0.
+Кроме указанных правил так же нужно добавить правила для фильтрации пакетов, предназначенных локальному хосту - как описано в прошлом разделе. То есть добавить запрещающие и разрешающие правила для входящих и исходящих соединений:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">netfilter</span><span class="p">:</span><span class="o">~</span><span class="c1"># iptables -P INPUT DROP</span>
+<span class="n">netfilter</span><span class="p">:</span><span class="o">~</span><span class="c1"># iptables -P OUTPUT DROP</span>
+<span class="n">netfilter</span><span class="p">:</span><span class="o">~</span><span class="c1"># iptables -A INPUT -i lo -j ACCEPT</span>
+<span class="n">netfilter</span><span class="p">:</span><span class="o">~</span><span class="c1"># iptables -A OUTPUT -o lo -j ACCEPT</span>
+<span class="n">netfilter</span><span class="p">:</span><span class="o">~</span><span class="c1"># iptables -A INPUT -p icmp --icmp-type 0 -j ACCEPT</span>
+<span class="n">netfilter</span><span class="p">:</span><span class="o">~</span><span class="c1"># iptables -A INPUT -p icmp --icmp-type 8 -j ACCEPT</span>
+<span class="n">netfilter</span><span class="p">:</span><span class="o">~</span><span class="c1"># iptables -A OUTPUT -p icmp -j ACCEPT</span>
+<span class="n">netfilter</span><span class="p">:</span><span class="o">~</span><span class="c1"># cat /proc/sys/net/ipv4/ip_local_port_range</span>
+<span class="mi">32768</span> <span class="mi">61000</span>
+<span class="n">netfilter</span><span class="p">:</span><span class="o">~</span><span class="c1"># iptables -A OUTPUT -p TCP --sport 32768:61000 -j ACCEPT</span>
+<span class="n">netfilter</span><span class="p">:</span><span class="o">~</span><span class="c1"># iptables -A OUTPUT -p UDP --sport 32768:61000 -j ACCEPT</span>
+<span class="n">netfilter</span><span class="p">:</span><span class="o">~</span><span class="c1"># iptables -A INPUT -p TCP -m state --state ESTABLISHED,RELATED -j ACCEPT</span>
+<span class="n">netfilter</span><span class="p">:</span><span class="o">~</span><span class="c1"># iptables -A INPUT -p UDP -m state --state ESTABLISHED,RELATED -j ACCEPT</span>
+</pre></div>
+</div>
+<p>В результате, если один из хостов локальной сети, например 10.0.0.2, попытается связаться с одним из интернет-хостов, например, 93.158.134.3 (ya.ru), при проходе его пакетов через шлюз, их исходный адрес будет подменяться на внешний адрес шлюза в цепочке POSTROUTING таблице nat, то есть исходящий IP  10.0.0.2 будет заменен на 198.166.0.200. С точки зрения удаленного хоста (ya.ru), это будет выглядеть, как будто с ним связывается непосредственно сам шлюз. Когда же удаленный хост начнет ответную передачу данных, он будет адресовать их именно шлюзу, то есть 198.166.0.200. Однако, на шлюзе адрес назначения этих пакетов будет подменяться на 10.0.0.2, после чего пакеты будут передаваться настоящему получателю в локальной сети. Для такого обратного преобразования никаких дополнительных правил указывать не нужно — это будет делать все та же операция MASQUERADE, которая помнит какой хост из локальной сети отправил запрос и какому хосту необходимо вернуть пришедший ответ.</p>
+<p>Примечание: желательно негласно принято, перед всеми командами iptables очищать цепочки, в которые будут добавляться правила:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">netfilter</span><span class="p">:</span><span class="o">~</span><span class="c1"># iptables -F ИМЯ_ЦЕПОЧКИ</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+
+
+          </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+
+    <div class="footer" role="contentinfo">
+        &#169; Copyright 2016, Vladimir Dushkevich.
+      Создано с помощью <a href="http://sphinx-doc.org/">Sphinx</a> 1.4.8.
+    </div>
+  </body>
+</html>

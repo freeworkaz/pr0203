@@ -1,0 +1,182 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ru">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Практическое занятие №15 Организация процесса построения защищенных каналов связи в различных сетях &#8212; Документация course0203 1</title>
+    
+    <link rel="stylesheet" href="_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    './',
+        VERSION:     '1',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <script type="text/javascript" src="_static/translations.js"></script>
+    <link rel="index" title="Алфавитный указатель" href="genindex.html" />
+    <link rel="search" title="Поиск" href="search.html" />
+    <link rel="top" title="Документация course0203 1" href="index.html" />
+    <link rel="next" title="Практическое занятие №16 Настройка различных механизмов защиты электронной почты в сети предприятия" href="pz16.html" />
+    <link rel="prev" title="Практическое занятие №14 Моделирование защищенных каналов связи в различных сетях" href="pz14.html" />
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head>
+  <body role="document">
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="o15">
+<h1>Практическое занятие №15 Организация процесса построения защищенных каналов связи в различных сетях<a class="headerlink" href="#o15" title="Ссылка на этот заголовок">¶</a></h1>
+<div class="section" id="id1">
+<h2>Цель работы:<a class="headerlink" href="#id1" title="Ссылка на этот заголовок">¶</a></h2>
+<ol class="arabic simple">
+<li>Получить практический опыт применения инженерно-технических средств обеспечения информационной безопасности телекоммуникационных систем;</li>
+<li>Получить практический опыт применения программно-аппаратных средств обеспечения информационной безопасности телекоммуникационных систем;</li>
+<li>Получить практический опыт выявления технических каналов утечки информации.</li>
+</ol>
+</div>
+<div class="section" id="id2">
+<h2>Литература:<a class="headerlink" href="#id2" title="Ссылка на этот заголовок">¶</a></h2>
+<ol class="arabic simple">
+<li>Шаньгин, В. Ф. Информационная безопасность и защита информации [Электронный ресурс]: учебное пособие. - Москва: ДМК Пресс, 2014. - &nbsp;Режим доступа: <a class="reference external" href="http://www.iprbookshop.ru/29257">http://www.iprbookshop.ru/29257</a>, по запросу, стр 463-478;</li>
+</ol>
+</div>
+<div class="section" id="id3">
+<h2>Подготовка к работе:<a class="headerlink" href="#id3" title="Ссылка на этот заголовок">¶</a></h2>
+<ol class="arabic simple">
+<li>Подготовить бланк отчета;</li>
+<li>Изучить предложенную литературу.</li>
+</ol>
+</div>
+<div class="section" id="id4">
+<h2>Основное оборудование:<a class="headerlink" href="#id4" title="Ссылка на этот заголовок">¶</a></h2>
+<ol class="arabic simple">
+<li>Компьютер под управлением ОС Windows Server 2008 R2;</li>
+<li>Виртуальная машина с дистрибутивом pfsense;</li>
+<li>Виртуальные машины в программе VirtualBox на основе Ubuntu Linux согласно заданию и схеме сети;</li>
+<li>Модель простой сети и ресурсов простой сети;</li>
+<li>Пакет GNS3 и комплект виртуальных машин, необходимых для схемы сети;</li>
+<li>Пакет программ LibreOffice.</li>
+</ol>
+</div>
+<div class="section" id="id5">
+<h2>Задание:<a class="headerlink" href="#id5" title="Ссылка на этот заголовок">¶</a></h2>
+<ol class="arabic simple">
+<li>Выполнить настройку защищенного соединения VPN при помощи ПАК pfsense в модели простой сети.</li>
+</ol>
+</div>
+<div class="section" id="id6">
+<h2>Порядок выполнения работы:<a class="headerlink" href="#id6" title="Ссылка на этот заголовок">¶</a></h2>
+<ol class="arabic simple">
+<li>Изучить схему простой сети. Выполнить подключение виртуальной машины pfsense в состав модели;</li>
+<li>Используя возможности програмно-аппаратного комплекса (ПАК) pfsense связать два компьютера модели с использованием VPN туннеля по протоколу PPTP;</li>
+<li>Проверить работу созданного туннеля с использованием программы wireshark. Для этого выполнить перехват пакетов на стороне клиента;</li>
+<li>Составить документ, в котором описать политику применения дистрибутива pfsense в рамках простейшей SOHO сети;</li>
+<li>Позвать преподавателя для проверки.</li>
+</ol>
+</div>
+<div class="section" id="id7">
+<h2>Содержание отчета:<a class="headerlink" href="#id7" title="Ссылка на этот заголовок">¶</a></h2>
+<ol class="arabic simple">
+<li>Цель работы;</li>
+<li>Содержание действий по выполнению данной работы;</li>
+<li>Ответы на контрольные вопросы;</li>
+<li>Вывод.</li>
+</ol>
+</div>
+<div class="section" id="id8">
+<h2>Контрольные вопросы:<a class="headerlink" href="#id8" title="Ссылка на этот заголовок">¶</a></h2>
+<ol class="arabic simple">
+<li>Каким образом осуществляется построение VPN туннелей с использованием выбранного ПАК?</li>
+<li>Каким образом осуществляется проверка работы созданного в выбранном ПАК туннеля?</li>
+<li>Каким образом происходит установление соединения в рамках туннеля, созданного с использованием выбранного ПАК?</li>
+</ol>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <h3><a href="index.html">Оглавление</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">Практическое занятие №15 Организация процесса построения защищенных каналов связи в различных сетях</a><ul>
+<li><a class="reference internal" href="#id1">Цель работы:</a></li>
+<li><a class="reference internal" href="#id2">Литература:</a></li>
+<li><a class="reference internal" href="#id3">Подготовка к работе:</a></li>
+<li><a class="reference internal" href="#id4">Основное оборудование:</a></li>
+<li><a class="reference internal" href="#id5">Задание:</a></li>
+<li><a class="reference internal" href="#id6">Порядок выполнения работы:</a></li>
+<li><a class="reference internal" href="#id7">Содержание отчета:</a></li>
+<li><a class="reference internal" href="#id8">Контрольные вопросы:</a></li>
+</ul>
+</li>
+</ul>
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="index.html">Documentation overview</a><ul>
+      <li>Previous: <a href="pz14.html" title="предыдущая глава">Практическое занятие №14 Моделирование защищенных каналов связи в различных сетях</a></li>
+      <li>Next: <a href="pz16.html" title="следующая глава">Практическое занятие №16 Настройка различных механизмов защиты электронной почты в сети предприятия</a></li>
+  </ul></li>
+</ul>
+</div>
+  <div role="note" aria-label="source link">
+    <h3>Эта страница</h3>
+    <ul class="this-page-menu">
+      <li><a href="_sources/pz15.txt"
+            rel="nofollow">Исходный текст</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3>Быстрый поиск</h3>
+    <form class="search" action="search.html" method="get">
+      <div><input type="text" name="q" /></div>
+      <div><input type="submit" value="Искать" /></div>
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2016, Vladimir Dushkevich.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 1.4.8</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.9</a>
+      
+      |
+      <a href="_sources/pz15.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

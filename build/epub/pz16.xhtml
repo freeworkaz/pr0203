@@ -1,0 +1,163 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+  "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ru">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Практическое занятие №16 Настройка различных механизмов защиты электронной почты в сети предприятия</title>
+    
+    <link rel="stylesheet" href="_static/epub.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" /> 
+  </head>
+  <body role="document">
+
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Навигация</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.xhtml" title="Алфавитный указатель"
+             accesskey="I">указатель</a></li>
+        <li class="right" >
+          <a href="pz17.xhtml" title="Практическое занятие №17 Настройка механизмов защиты файловых систем и баз данных"
+             accesskey="N">вперёд</a> |</li>
+        <li class="right" >
+          <a href="pz15.xhtml" title="Практическое занятие №15 Организация процесса построения защищенных каналов связи в различных сетях"
+             accesskey="P">назад</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.xhtml">Документация course0203 1</a> &#187;</li> 
+      </ul>
+    </div>
+
+    <div class="document">
+      <div class="documentwrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="o16">
+<h1>Практическое занятие №16 Настройка различных механизмов защиты электронной почты в сети предприятия</h1>
+<div class="section" id="id1">
+<h2>Цель работы:</h2>
+<ol class="arabic simple">
+<li>Получить практический опыт применения программно-аппаратных средств обеспечения информационной безопасности телекоммуникационных систем;</li>
+<li>Получить практический опыт выявления технических каналов утечки информации.</li>
+</ol>
+</div>
+<div class="section" id="id2">
+<h2>Литература:</h2>
+<ol class="arabic simple">
+<li>Шаньгин, В. Ф. Информационная безопасность и защита информации [Электронный ресурс]: учебное пособие. - Москва: ДМК Пресс, 2014. - &nbsp;Режим доступа: <a class="reference external" href="http://www.iprbookshop.ru/29257">http://www.iprbookshop.ru/29257</a>, по запросу, стр 595-607;</li>
+</ol>
+</div>
+<div class="section" id="id3">
+<h2>Подготовка к работе:</h2>
+<ol class="arabic simple">
+<li>Подготовить бланк отчета;</li>
+<li>Изучить предложенную литературу.</li>
+</ol>
+</div>
+<div class="section" id="id4">
+<h2>Основное оборудование:</h2>
+<ol class="arabic simple">
+<li>Компьютер под управлением ОС Windows Server 2008 R2;</li>
+<li>Почтовый сервер IredMail;</li>
+<li>Виртуальная машина с настроенным DNS и DHCP сервером;</li>
+<li>Виртуальные машины в программе VirtualBox на основе Ubuntu Linux согласно заданию и схеме сети;</li>
+<li>Модель простой сети и ресурсов простой сети;</li>
+<li>Пакет GNS3 и комплект виртуальных машин, необходимых для схемы сети;</li>
+<li>Пакет программ LibreOffice.</li>
+</ol>
+</div>
+<div class="section" id="id5">
+<h2>Задание:</h2>
+<ol class="arabic simple">
+<li>Организовать в рамках предложенной модели защищенный обмен лектронной почтой.</li>
+</ol>
+</div>
+<div class="section" id="id6">
+<h2>Порядок выполнения работы:</h2>
+<ol class="arabic simple">
+<li>Собрать схему малой сети по заданию и обеспечить ее работоспособность. Ввести компоненты модели в предложенный домен;</li>
+<li>Выполнить установку почтового сервера на ОС Linux. Выполнить подключение почтового сервера к модели сети. Выполнить настройку клиентов для чтения электронной почты с сервера;</li>
+<li>Выполнить добавление DKIM подписи для домена на почтовом сервере;</li>
+<li>Выполнить добавление и настройку антиспам фильтра spamassasin на почтовом сервере;</li>
+<li>Выполнить настройку резервного копирования данных сервера;</li>
+<li>Составить политику, в которой отразить состав и структуру элементов защиты инфрмации на почтовом сервер с указанием угроз, от которых реализуется защита;</li>
+<li>Построенную политику свести к читаемой таблице, на основе которой составить задание для администратора.</li>
+</ol>
+</div>
+<div class="section" id="id7">
+<h2>Содержание отчета:</h2>
+<ol class="arabic simple">
+<li>Цель работы;</li>
+<li>Содержание действий по выполнению данной работы;</li>
+<li>Ответы на контрольные вопросы;</li>
+<li>Вывод.</li>
+</ol>
+</div>
+<div class="section" id="id8">
+<h2>Контрольные вопросы:</h2>
+<ol class="arabic simple">
+<li>Что понимают под подписью DKIM?</li>
+<li>Что понимают под MTA и MDA?</li>
+<li>На основе каких технологий реализуется фильтрация в программе spamassasin?</li>
+</ol>
+</div>
+<div class="section" id="id9">
+<h2>Приложение</h2>
+<p>Настройка Spamassassin выполняется по пунктам:
+#. следует открыть стандартный файл правил SpamAssassin командой: nano /etc/spamassassin/local.cf (чтобы активировать правила, следует раскомментировать нужные строки, удалив символ «#»);
+#. чтобы добавить заголовки в спам, нужно раскомментировать или добавить строку: rewrite_headerSubject [<strong>*</strong> SPAM _SCORE_ <strong>*</strong>] (после проведения различных тестов Spamassassin дает оценку каждому сообщению);
+#. следующая строка отмечает сообщения как спам, если оценка фильтра превышает значение, указанное в правиле: required_score 3.0, если не указано, что бывает чаще всего, необходимо проставить оценку фильтру 3.0;
+#. чтобы использовать для проверки почты теорему Байеса, необходимо раскомментировать или добавить строку: use_bayes 1, bayes_auto_learn 1;
+#. после того, как были внесены все вышеперечисленные строки, необходимо сохранить файл сочетанием клавиш «Ctrl+O»;
+#. теперь необходимо перезапустить спам – фильтр командой: service spamassassin restart.</p>
+<p>Чтобы убедиться в том, что spamassassin работает должным образом, следует проверить лог – файл фильтра:nano /var/log/spamassassin/spamd.log или отправить почту с внешнего сервера и проверить почтовые заголовки.
+Злоумышленник (хакер) посылает письмо на почтовый сервер, содержащее в себе СПАМ рассылку, иначе говоря сообщение содержащее вирус. При входе на потовый ящик адресата сообщения во вкладке СПАМ должно появиться«+1» сообщение, которое сразу отметилось пометкой СПАМ и верно настроенный iredmail определили его как СПАМ.</p>
+<p>Для тестирования работы модуля можно использовать письмо следующего содержания:XJS*C4JDBQADN1.NSBN3*2IDNEN*GTUBE-STANDARD-ANTI-UBE-TEST-EMAIL*C.34X.</p>
+<div class="section" id="spamassassin">
+<h3>Настройка spamassassin</h3>
+<p>Теперь нам нужно поменять некоторые настройки в файле /etc/default/spamassassin и удостовериться, что у вас получились следующие значения:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">ENABLED</span><span class="o">=</span><span class="mi">1</span>
+<span class="n">SAHOME</span><span class="o">=</span><span class="s2">&quot;/var/lib/spamassassin/&quot;</span>
+<span class="n">OPTIONS</span><span class="o">=</span><span class="s2">&quot;--create-prefs --max-children 5 --username spamd --helper-home-dir $</span><span class="si">{SAHOME}</span><span class="s2"> -s $</span><span class="si">{SAHOME}</span><span class="s2">spamd.log&quot;</span>
+<span class="n">PIDFILE</span><span class="o">=</span><span class="s2">&quot;$</span><span class="si">{SAHOME}</span><span class="s2">spamd.pid&quot;</span>
+</pre></div>
+</div>
+<p>Таким образом мы настроили запуск демона spamd от пользователя spamd, создали его собственный домашний каталог (/var/lib/spamassassin/) и заставили его ввести журнал в файле /var/lib/spamassassin/spamd.log</p>
+<p>Теперь нужно задать spamassassin некоторые правила. Настройки по умолчанию вполне подходящие, однако вы можете захотеть слегка подправить их. Давайте отредактируем файл /etc/spamassassin/local.cf и приведём его к следующему виду:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">rewrite_header</span> <span class="n">Subject</span> <span class="p">[</span><span class="o">*****</span> <span class="n">SPAM</span> <span class="n">_SCORE_</span> <span class="o">*****</span><span class="p">]</span>
+<span class="n">required_score</span> <span class="mf">2.0</span>
+<span class="c1"># Чтобы использовать _SCORE_ нам нужно установить report_safe в 0</span>
+<span class="c1"># Если эта опция установлена в 0, у поступающего спама к заголовками будут добавлены</span>
+<span class="c1"># записи &quot;X-Spam-&quot;, но изменений в тело не вносится.</span>
+<span class="n">report_safe</span> <span class="mi">0</span>
+<span class="c1"># Включить систему Бэйс</span>
+<span class="n">use_bayes</span> <span class="mi">1</span>
+<span class="n">use_bayes_rules</span> <span class="mi">1</span>
+<span class="c1"># Включить автообучение Бэйс</span>
+<span class="n">bayes_auto_learn</span> <span class="mi">1</span>
+<span class="c1"># Включить или выключить проверки сети</span>
+<span class="n">skip_rbl_checks</span> <span class="mi">0</span>
+<span class="n">use_razor2</span> <span class="mi">0</span>
+<span class="n">use_dcc</span> <span class="mi">0</span>
+<span class="n">use_pyzor</span> <span class="mi">0</span>
+</pre></div>
+</div>
+<p>Здесь мы указали spamassassin стандартные настройки spamd для перезаписи темы письма на [<strong>*</strong> SPAM _SCORE_ <strong>*</strong>], где _SCORE_ - это количество баллов, назначаемых spamassassin после различных тестов, только если действительное значение баллов выше или равно 2.0. Так, письма с баллами ниже 2 изменены не будут.</p>
+<p>Чтобы позволить использование _SCORE_ в директиве rewrite_header, вы должны установить report_safe в 0.</p>
+</div>
+</div>
+</div>
+
+
+          </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+
+    <div class="footer" role="contentinfo">
+        &#169; Copyright 2016, Vladimir Dushkevich.
+      Создано с помощью <a href="http://sphinx-doc.org/">Sphinx</a> 1.4.8.
+    </div>
+  </body>
+</html>

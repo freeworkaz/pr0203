@@ -1,0 +1,1490 @@
+<?xml version="1.0"?>
+<ncx version="2005-1" xmlns="http://www.daisy.org/z3986/2005/ncx/">
+  <head>
+    <meta name="dtb:uid" content="unknown"/>
+    <meta name="dtb:depth" content="3"/>
+    <meta name="dtb:totalPageCount" content="0"/>
+    <meta name="dtb:maxPageNumber" content="0"/>
+  </head>
+  <docTitle>
+    <text>course0203</text>
+  </docTitle>
+  <navMap>
+    <navPoint id="navPoint1" playOrder="1">
+      <navLabel>
+        <text>Сборник заданий для учебной практики МДК0203</text>
+      </navLabel>
+      <content src="index.xhtml" />
+    </navPoint>
+    <navPoint id="navPoint2" playOrder="2">
+      <navLabel>
+        <text>Практическое занятие №1 Работа с программными средствами анализа рисков</text>
+      </navLabel>
+      <content src="pz1.xhtml" />
+      <navPoint id="navPoint3" playOrder="2">
+        <navLabel>
+          <text>Практическое занятие №1 Работа с программными средствами анализа рисков</text>
+        </navLabel>
+        <content src="pz1.xhtml" />
+      </navPoint>
+      <navPoint id="navPoint4" playOrder="3">
+        <navLabel>
+          <text>Цель работы:</text>
+        </navLabel>
+        <content src="pz1.xhtml#id1" />
+      </navPoint>
+      <navPoint id="navPoint5" playOrder="4">
+        <navLabel>
+          <text>Литература:</text>
+        </navLabel>
+        <content src="pz1.xhtml#id2" />
+      </navPoint>
+      <navPoint id="navPoint6" playOrder="5">
+        <navLabel>
+          <text>Подготовка к работе:</text>
+        </navLabel>
+        <content src="pz1.xhtml#id3" />
+      </navPoint>
+      <navPoint id="navPoint7" playOrder="6">
+        <navLabel>
+          <text>Основное оборудование:</text>
+        </navLabel>
+        <content src="pz1.xhtml#id4" />
+      </navPoint>
+      <navPoint id="navPoint8" playOrder="7">
+        <navLabel>
+          <text>Задание:</text>
+        </navLabel>
+        <content src="pz1.xhtml#id5" />
+      </navPoint>
+      <navPoint id="navPoint9" playOrder="8">
+        <navLabel>
+          <text>Порядок выполнения работы:</text>
+        </navLabel>
+        <content src="pz1.xhtml#id6" />
+      </navPoint>
+      <navPoint id="navPoint10" playOrder="9">
+        <navLabel>
+          <text>Содержание отчета:</text>
+        </navLabel>
+        <content src="pz1.xhtml#id7" />
+      </navPoint>
+      <navPoint id="navPoint11" playOrder="10">
+        <navLabel>
+          <text>Контрольные вопросы:</text>
+        </navLabel>
+        <content src="pz1.xhtml#id8" />
+      </navPoint>
+      <navPoint id="navPoint12" playOrder="11">
+        <navLabel>
+          <text>Приложение:</text>
+        </navLabel>
+        <content src="pz1.xhtml#id9" />
+      </navPoint>
+    </navPoint>
+    <navPoint id="navPoint13" playOrder="12">
+      <navLabel>
+        <text>Практическое занятие №2 Составление концепции управления рисками в области информационной безопасности предприятия.</text>
+      </navLabel>
+      <content src="pz2.xhtml" />
+      <navPoint id="navPoint14" playOrder="12">
+        <navLabel>
+          <text>Практическое занятие №2 Составление концепции управления рисками в области информационной безопасности предприятия.</text>
+        </navLabel>
+        <content src="pz2.xhtml" />
+      </navPoint>
+      <navPoint id="navPoint15" playOrder="13">
+        <navLabel>
+          <text>Цель работы:</text>
+        </navLabel>
+        <content src="pz2.xhtml#id1" />
+      </navPoint>
+      <navPoint id="navPoint16" playOrder="14">
+        <navLabel>
+          <text>Литература:</text>
+        </navLabel>
+        <content src="pz2.xhtml#id2" />
+      </navPoint>
+      <navPoint id="navPoint17" playOrder="15">
+        <navLabel>
+          <text>Подготовка к работе:</text>
+        </navLabel>
+        <content src="pz2.xhtml#id3" />
+      </navPoint>
+      <navPoint id="navPoint18" playOrder="16">
+        <navLabel>
+          <text>Основное оборудование:</text>
+        </navLabel>
+        <content src="pz2.xhtml#id4" />
+      </navPoint>
+      <navPoint id="navPoint19" playOrder="17">
+        <navLabel>
+          <text>Задание:</text>
+        </navLabel>
+        <content src="pz2.xhtml#id5" />
+      </navPoint>
+      <navPoint id="navPoint20" playOrder="18">
+        <navLabel>
+          <text>Порядок выполнения работы:</text>
+        </navLabel>
+        <content src="pz2.xhtml#id6" />
+      </navPoint>
+      <navPoint id="navPoint21" playOrder="19">
+        <navLabel>
+          <text>Содержание отчета:</text>
+        </navLabel>
+        <content src="pz2.xhtml#id7" />
+      </navPoint>
+      <navPoint id="navPoint22" playOrder="20">
+        <navLabel>
+          <text>Контрольные вопросы:</text>
+        </navLabel>
+        <content src="pz2.xhtml#id8" />
+      </navPoint>
+      <navPoint id="navPoint23" playOrder="21">
+        <navLabel>
+          <text>Приложение:</text>
+        </navLabel>
+        <content src="pz2.xhtml#id9" />
+      </navPoint>
+    </navPoint>
+    <navPoint id="navPoint24" playOrder="22">
+      <navLabel>
+        <text>Практическое занятие №3 Составление матрицы угроз для предприятия.</text>
+      </navLabel>
+      <content src="pz3.xhtml" />
+      <navPoint id="navPoint25" playOrder="22">
+        <navLabel>
+          <text>Практическое занятие №3 Составление матрицы угроз для предприятия.</text>
+        </navLabel>
+        <content src="pz3.xhtml" />
+      </navPoint>
+      <navPoint id="navPoint26" playOrder="23">
+        <navLabel>
+          <text>Цель работы:</text>
+        </navLabel>
+        <content src="pz3.xhtml#id1" />
+      </navPoint>
+      <navPoint id="navPoint27" playOrder="24">
+        <navLabel>
+          <text>Литература:</text>
+        </navLabel>
+        <content src="pz3.xhtml#id2" />
+      </navPoint>
+      <navPoint id="navPoint28" playOrder="25">
+        <navLabel>
+          <text>Подготовка к работе:</text>
+        </navLabel>
+        <content src="pz3.xhtml#id3" />
+      </navPoint>
+      <navPoint id="navPoint29" playOrder="26">
+        <navLabel>
+          <text>Основное оборудование:</text>
+        </navLabel>
+        <content src="pz3.xhtml#id4" />
+      </navPoint>
+      <navPoint id="navPoint30" playOrder="27">
+        <navLabel>
+          <text>Задание:</text>
+        </navLabel>
+        <content src="pz3.xhtml#id5" />
+      </navPoint>
+      <navPoint id="navPoint31" playOrder="28">
+        <navLabel>
+          <text>Порядок выполнения работы:</text>
+        </navLabel>
+        <content src="pz3.xhtml#id6" />
+      </navPoint>
+      <navPoint id="navPoint32" playOrder="29">
+        <navLabel>
+          <text>Содержание отчета:</text>
+        </navLabel>
+        <content src="pz3.xhtml#id7" />
+      </navPoint>
+      <navPoint id="navPoint33" playOrder="30">
+        <navLabel>
+          <text>Контрольные вопросы:</text>
+        </navLabel>
+        <content src="pz3.xhtml#id8" />
+      </navPoint>
+      <navPoint id="navPoint34" playOrder="31">
+        <navLabel>
+          <text>Приложение:</text>
+        </navLabel>
+        <content src="pz3.xhtml#id9" />
+      </navPoint>
+    </navPoint>
+    <navPoint id="navPoint35" playOrder="32">
+      <navLabel>
+        <text>Практическое занятие №4 Развертывание систем обнаружения вторжений.</text>
+      </navLabel>
+      <content src="pz4.xhtml" />
+      <navPoint id="navPoint36" playOrder="32">
+        <navLabel>
+          <text>Практическое занятие №4 Развертывание систем обнаружения вторжений.</text>
+        </navLabel>
+        <content src="pz4.xhtml" />
+      </navPoint>
+      <navPoint id="navPoint37" playOrder="33">
+        <navLabel>
+          <text>Цель работы:</text>
+        </navLabel>
+        <content src="pz4.xhtml#id1" />
+      </navPoint>
+      <navPoint id="navPoint38" playOrder="34">
+        <navLabel>
+          <text>Литература:</text>
+        </navLabel>
+        <content src="pz4.xhtml#id2" />
+      </navPoint>
+      <navPoint id="navPoint39" playOrder="35">
+        <navLabel>
+          <text>Подготовка к работе:</text>
+        </navLabel>
+        <content src="pz4.xhtml#id3" />
+      </navPoint>
+      <navPoint id="navPoint40" playOrder="36">
+        <navLabel>
+          <text>Основное оборудование:</text>
+        </navLabel>
+        <content src="pz4.xhtml#id4" />
+      </navPoint>
+      <navPoint id="navPoint41" playOrder="37">
+        <navLabel>
+          <text>Задание:</text>
+        </navLabel>
+        <content src="pz4.xhtml#id5" />
+      </navPoint>
+      <navPoint id="navPoint42" playOrder="38">
+        <navLabel>
+          <text>Порядок выполнения работы:</text>
+        </navLabel>
+        <content src="pz4.xhtml#id6" />
+      </navPoint>
+      <navPoint id="navPoint43" playOrder="39">
+        <navLabel>
+          <text>Содержание отчета:</text>
+        </navLabel>
+        <content src="pz4.xhtml#id7" />
+      </navPoint>
+      <navPoint id="navPoint44" playOrder="40">
+        <navLabel>
+          <text>Контрольные вопросы:</text>
+        </navLabel>
+        <content src="pz4.xhtml#id8" />
+      </navPoint>
+      <navPoint id="navPoint45" playOrder="41">
+        <navLabel>
+          <text>Приложение:</text>
+        </navLabel>
+        <content src="pz4.xhtml#id9" />
+      </navPoint>
+    </navPoint>
+    <navPoint id="navPoint46" playOrder="42">
+      <navLabel>
+        <text>Практическое занятие №5 Конфигурирование систем обнаружения вторжений.</text>
+      </navLabel>
+      <content src="pz5.xhtml" />
+      <navPoint id="navPoint47" playOrder="42">
+        <navLabel>
+          <text>Практическое занятие №5 Конфигурирование систем обнаружения вторжений.</text>
+        </navLabel>
+        <content src="pz5.xhtml" />
+      </navPoint>
+      <navPoint id="navPoint48" playOrder="43">
+        <navLabel>
+          <text>Цель работы:</text>
+        </navLabel>
+        <content src="pz5.xhtml#id1" />
+      </navPoint>
+      <navPoint id="navPoint49" playOrder="44">
+        <navLabel>
+          <text>Литература:</text>
+        </navLabel>
+        <content src="pz5.xhtml#id2" />
+      </navPoint>
+      <navPoint id="navPoint50" playOrder="45">
+        <navLabel>
+          <text>Подготовка к работе:</text>
+        </navLabel>
+        <content src="pz5.xhtml#id3" />
+      </navPoint>
+      <navPoint id="navPoint51" playOrder="46">
+        <navLabel>
+          <text>Основное оборудование:</text>
+        </navLabel>
+        <content src="pz5.xhtml#id4" />
+      </navPoint>
+      <navPoint id="navPoint52" playOrder="47">
+        <navLabel>
+          <text>Задание:</text>
+        </navLabel>
+        <content src="pz5.xhtml#id5" />
+      </navPoint>
+      <navPoint id="navPoint53" playOrder="48">
+        <navLabel>
+          <text>Порядок выполнения работы:</text>
+        </navLabel>
+        <content src="pz5.xhtml#id6" />
+      </navPoint>
+      <navPoint id="navPoint54" playOrder="49">
+        <navLabel>
+          <text>Содержание отчета:</text>
+        </navLabel>
+        <content src="pz5.xhtml#id7" />
+      </navPoint>
+      <navPoint id="navPoint55" playOrder="50">
+        <navLabel>
+          <text>Контрольные вопросы:</text>
+        </navLabel>
+        <content src="pz5.xhtml#id8" />
+      </navPoint>
+      <navPoint id="navPoint56" playOrder="51">
+        <navLabel>
+          <text>Приложение:</text>
+        </navLabel>
+        <content src="pz5.xhtml#id9" />
+      </navPoint>
+    </navPoint>
+    <navPoint id="navPoint57" playOrder="52">
+      <navLabel>
+        <text>Практическое занятие №6 Настройка систем обнаружения вторжений для обнаружения сетевых атак.</text>
+      </navLabel>
+      <content src="pz6.xhtml" />
+      <navPoint id="navPoint58" playOrder="52">
+        <navLabel>
+          <text>Практическое занятие №6 Настройка систем обнаружения вторжений для обнаружения сетевых атак.</text>
+        </navLabel>
+        <content src="pz6.xhtml" />
+      </navPoint>
+      <navPoint id="navPoint59" playOrder="53">
+        <navLabel>
+          <text>Цель работы:</text>
+        </navLabel>
+        <content src="pz6.xhtml#id1" />
+      </navPoint>
+      <navPoint id="navPoint60" playOrder="54">
+        <navLabel>
+          <text>Литература:</text>
+        </navLabel>
+        <content src="pz6.xhtml#id2" />
+      </navPoint>
+      <navPoint id="navPoint61" playOrder="55">
+        <navLabel>
+          <text>Подготовка к работе:</text>
+        </navLabel>
+        <content src="pz6.xhtml#id3" />
+      </navPoint>
+      <navPoint id="navPoint62" playOrder="56">
+        <navLabel>
+          <text>Основное оборудование:</text>
+        </navLabel>
+        <content src="pz6.xhtml#id4" />
+      </navPoint>
+      <navPoint id="navPoint63" playOrder="57">
+        <navLabel>
+          <text>Задание:</text>
+        </navLabel>
+        <content src="pz6.xhtml#id5" />
+      </navPoint>
+      <navPoint id="navPoint64" playOrder="58">
+        <navLabel>
+          <text>Порядок выполнения работы:</text>
+        </navLabel>
+        <content src="pz6.xhtml#id6" />
+      </navPoint>
+      <navPoint id="navPoint65" playOrder="59">
+        <navLabel>
+          <text>Содержание отчета:</text>
+        </navLabel>
+        <content src="pz6.xhtml#id7" />
+      </navPoint>
+      <navPoint id="navPoint66" playOrder="60">
+        <navLabel>
+          <text>Контрольные вопросы:</text>
+        </navLabel>
+        <content src="pz6.xhtml#id8" />
+      </navPoint>
+      <navPoint id="navPoint67" playOrder="61">
+        <navLabel>
+          <text>Приложение:</text>
+        </navLabel>
+        <content src="pz6.xhtml#id9" />
+        <navPoint id="navPoint68" playOrder="61">
+          <navLabel>
+            <text>Приложение:</text>
+          </navLabel>
+          <content src="pz6.xhtml#id9" />
+        </navPoint>
+        <navPoint id="navPoint69" playOrder="62">
+          <navLabel>
+            <text>ICMP-флуд.</text>
+          </navLabel>
+          <content src="pz6.xhtml#icmp" />
+        </navPoint>
+        <navPoint id="navPoint70" playOrder="63">
+          <navLabel>
+            <text>SYN-флуд.</text>
+          </navLabel>
+          <content src="pz6.xhtml#syn" />
+        </navPoint>
+        <navPoint id="navPoint71" playOrder="64">
+          <navLabel>
+            <text>UDP-флуд.</text>
+          </navLabel>
+          <content src="pz6.xhtml#udp" />
+        </navPoint>
+        <navPoint id="navPoint72" playOrder="65">
+          <navLabel>
+            <text>HTTP-флуд.</text>
+          </navLabel>
+          <content src="pz6.xhtml#http" />
+        </navPoint>
+        <navPoint id="navPoint73" playOrder="66">
+          <navLabel>
+            <text>Универсальные советы</text>
+          </navLabel>
+          <content src="pz6.xhtml#id10" />
+        </navPoint>
+      </navPoint>
+    </navPoint>
+    <navPoint id="navPoint74" playOrder="67">
+      <navLabel>
+        <text>Практическое занятие №7 Составление политики безопасности предприятия с учетом работы систем обнаружения вторжений.</text>
+      </navLabel>
+      <content src="pz7.xhtml" />
+      <navPoint id="navPoint75" playOrder="67">
+        <navLabel>
+          <text>Практическое занятие №7 Составление политики безопасности предприятия с учетом работы систем обнаружения вторжений.</text>
+        </navLabel>
+        <content src="pz7.xhtml" />
+      </navPoint>
+      <navPoint id="navPoint76" playOrder="68">
+        <navLabel>
+          <text>Цель работы:</text>
+        </navLabel>
+        <content src="pz7.xhtml#id1" />
+      </navPoint>
+      <navPoint id="navPoint77" playOrder="69">
+        <navLabel>
+          <text>Литература:</text>
+        </navLabel>
+        <content src="pz7.xhtml#id2" />
+      </navPoint>
+      <navPoint id="navPoint78" playOrder="70">
+        <navLabel>
+          <text>Подготовка к работе:</text>
+        </navLabel>
+        <content src="pz7.xhtml#id3" />
+      </navPoint>
+      <navPoint id="navPoint79" playOrder="71">
+        <navLabel>
+          <text>Основное оборудование:</text>
+        </navLabel>
+        <content src="pz7.xhtml#id4" />
+      </navPoint>
+      <navPoint id="navPoint80" playOrder="72">
+        <navLabel>
+          <text>Задание:</text>
+        </navLabel>
+        <content src="pz7.xhtml#id5" />
+      </navPoint>
+      <navPoint id="navPoint81" playOrder="73">
+        <navLabel>
+          <text>Порядок выполнения работы:</text>
+        </navLabel>
+        <content src="pz7.xhtml#id6" />
+      </navPoint>
+      <navPoint id="navPoint82" playOrder="74">
+        <navLabel>
+          <text>Содержание отчета:</text>
+        </navLabel>
+        <content src="pz7.xhtml#id7" />
+      </navPoint>
+      <navPoint id="navPoint83" playOrder="75">
+        <navLabel>
+          <text>Контрольные вопросы:</text>
+        </navLabel>
+        <content src="pz7.xhtml#id8" />
+      </navPoint>
+      <navPoint id="navPoint84" playOrder="76">
+        <navLabel>
+          <text>Приложение:</text>
+        </navLabel>
+        <content src="pz7.xhtml#id9" />
+      </navPoint>
+    </navPoint>
+    <navPoint id="navPoint85" playOrder="77">
+      <navLabel>
+        <text>Практическое занятие №8 Тестирования аппаратных межсетевых экранов.</text>
+      </navLabel>
+      <content src="pz8.xhtml" />
+      <navPoint id="navPoint86" playOrder="77">
+        <navLabel>
+          <text>Практическое занятие №8 Тестирования аппаратных межсетевых экранов.</text>
+        </navLabel>
+        <content src="pz8.xhtml" />
+      </navPoint>
+      <navPoint id="navPoint87" playOrder="78">
+        <navLabel>
+          <text>Цель работы:</text>
+        </navLabel>
+        <content src="pz8.xhtml#id1" />
+      </navPoint>
+      <navPoint id="navPoint88" playOrder="79">
+        <navLabel>
+          <text>Литература:</text>
+        </navLabel>
+        <content src="pz8.xhtml#id2" />
+      </navPoint>
+      <navPoint id="navPoint89" playOrder="80">
+        <navLabel>
+          <text>Подготовка к работе:</text>
+        </navLabel>
+        <content src="pz8.xhtml#id3" />
+      </navPoint>
+      <navPoint id="navPoint90" playOrder="81">
+        <navLabel>
+          <text>Основное оборудование:</text>
+        </navLabel>
+        <content src="pz8.xhtml#id4" />
+      </navPoint>
+      <navPoint id="navPoint91" playOrder="82">
+        <navLabel>
+          <text>Задание:</text>
+        </navLabel>
+        <content src="pz8.xhtml#id5" />
+      </navPoint>
+      <navPoint id="navPoint92" playOrder="83">
+        <navLabel>
+          <text>Порядок выполнения работы:</text>
+        </navLabel>
+        <content src="pz8.xhtml#id6" />
+      </navPoint>
+      <navPoint id="navPoint93" playOrder="84">
+        <navLabel>
+          <text>Содержание отчета:</text>
+        </navLabel>
+        <content src="pz8.xhtml#id7" />
+      </navPoint>
+      <navPoint id="navPoint94" playOrder="85">
+        <navLabel>
+          <text>Контрольные вопросы:</text>
+        </navLabel>
+        <content src="pz8.xhtml#id8" />
+      </navPoint>
+      <navPoint id="navPoint95" playOrder="86">
+        <navLabel>
+          <text>Приложение:</text>
+        </navLabel>
+        <content src="pz8.xhtml#id9" />
+        <navPoint id="navPoint96" playOrder="86">
+          <navLabel>
+            <text>Приложение:</text>
+          </navLabel>
+          <content src="pz8.xhtml#id9" />
+        </navPoint>
+        <navPoint id="navPoint97" playOrder="87">
+          <navLabel>
+            <text>Первоначальная регистрация в веб-интерфейсе и Мастер установки</text>
+          </navLabel>
+          <content src="pz8.xhtml#id10" />
+        </navPoint>
+        <navPoint id="navPoint98" playOrder="88">
+          <navLabel>
+            <text>Интерфейс командной строки CLI</text>
+          </navLabel>
+          <content src="pz8.xhtml#cli" />
+        </navPoint>
+        <navPoint id="navPoint99" playOrder="89">
+          <navLabel>
+            <text>Структура команд</text>
+          </navLabel>
+          <content src="pz8.xhtml#id11" />
+        </navPoint>
+        <navPoint id="navPoint100" playOrder="90">
+          <navLabel>
+            <text>История команд</text>
+          </navLabel>
+          <content src="pz8.xhtml#id12" />
+        </navPoint>
+        <navPoint id="navPoint101" playOrder="91">
+          <navLabel>
+            <text>Функция Tab Completion</text>
+          </navLabel>
+          <content src="pz8.xhtml#tab-completion" />
+        </navPoint>
+        <navPoint id="navPoint102" playOrder="92">
+          <navLabel>
+            <text>Категории объектов</text>
+          </navLabel>
+          <content src="pz8.xhtml#id13" />
+        </navPoint>
+        <navPoint id="navPoint103" playOrder="93">
+          <navLabel>
+            <text>Выбор категории объектов</text>
+          </navLabel>
+          <content src="pz8.xhtml#id14" />
+        </navPoint>
+        <navPoint id="navPoint104" playOrder="94">
+          <navLabel>
+            <text>Определение нескольких значений параметров</text>
+          </navLabel>
+          <content src="pz8.xhtml#id15" />
+        </navPoint>
+        <navPoint id="navPoint105" playOrder="95">
+          <navLabel>
+            <text>Добавление нового правила в список правил и уникальных имен</text>
+          </navLabel>
+          <content src="pz8.xhtml#id16" />
+        </navPoint>
+        <navPoint id="navPoint106" playOrder="96">
+          <navLabel>
+            <text>Локальный доступ к интерфейсу командной строки</text>
+          </navLabel>
+          <content src="pz8.xhtml#id17" />
+        </navPoint>
+        <navPoint id="navPoint107" playOrder="97">
+          <navLabel>
+            <text>Изменение пароля пользователя admin</text>
+          </navLabel>
+          <content src="pz8.xhtml#admin" />
+        </navPoint>
+        <navPoint id="navPoint108" playOrder="98">
+          <navLabel>
+            <text>Учетные записи для администрирования межсетевого экрана</text>
+          </navLabel>
+          <content src="pz8.xhtml#id18" />
+        </navPoint>
+        <navPoint id="navPoint109" playOrder="99">
+          <navLabel>
+            <text>Сценарии командной строки</text>
+          </navLabel>
+          <content src="pz8.xhtml#id19" />
+        </navPoint>
+        <navPoint id="navPoint110" playOrder="100">
+          <navLabel>
+            <text>Автоматическое создание сценариев</text>
+          </navLabel>
+          <content src="pz8.xhtml#id20" />
+        </navPoint>
+        <navPoint id="navPoint111" playOrder="101">
+          <navLabel>
+            <text>Перезапуск межсетевого экрана, сброс к заводским настройкам по умолчанию</text>
+          </navLabel>
+          <content src="pz8.xhtml#id21" />
+        </navPoint>
+        <navPoint id="navPoint112" playOrder="102">
+          <navLabel>
+            <text>Активация и применение изменений</text>
+          </navLabel>
+          <content src="pz8.xhtml#id22" />
+        </navPoint>
+        <navPoint id="navPoint113" playOrder="103">
+          <navLabel>
+            <text>Управление сессиями с помощью команды sessionmanager</text>
+          </navLabel>
+          <content src="pz8.xhtml#sessionmanager" />
+        </navPoint>
+        <navPoint id="navPoint114" playOrder="104">
+          <navLabel>
+            <text>Поиск неисправностей – команда pcapdump</text>
+          </navLabel>
+          <content src="pz8.xhtml#pcapdump" />
+        </navPoint>
+      </navPoint>
+    </navPoint>
+    <navPoint id="navPoint115" playOrder="105">
+      <navLabel>
+        <text>Практическое занятие №9 Тестирования программных межсетевых экранов.</text>
+      </navLabel>
+      <content src="pz9.xhtml" />
+      <navPoint id="navPoint116" playOrder="105">
+        <navLabel>
+          <text>Практическое занятие №9 Тестирования программных межсетевых экранов.</text>
+        </navLabel>
+        <content src="pz9.xhtml" />
+      </navPoint>
+      <navPoint id="navPoint117" playOrder="106">
+        <navLabel>
+          <text>Цель работы:</text>
+        </navLabel>
+        <content src="pz9.xhtml#id1" />
+      </navPoint>
+      <navPoint id="navPoint118" playOrder="107">
+        <navLabel>
+          <text>Литература:</text>
+        </navLabel>
+        <content src="pz9.xhtml#id2" />
+      </navPoint>
+      <navPoint id="navPoint119" playOrder="108">
+        <navLabel>
+          <text>Подготовка к работе:</text>
+        </navLabel>
+        <content src="pz9.xhtml#id3" />
+      </navPoint>
+      <navPoint id="navPoint120" playOrder="109">
+        <navLabel>
+          <text>Основное оборудование:</text>
+        </navLabel>
+        <content src="pz9.xhtml#id4" />
+      </navPoint>
+      <navPoint id="navPoint121" playOrder="110">
+        <navLabel>
+          <text>Задание:</text>
+        </navLabel>
+        <content src="pz9.xhtml#id5" />
+      </navPoint>
+      <navPoint id="navPoint122" playOrder="111">
+        <navLabel>
+          <text>Порядок выполнения работы:</text>
+        </navLabel>
+        <content src="pz9.xhtml#id6" />
+      </navPoint>
+      <navPoint id="navPoint123" playOrder="112">
+        <navLabel>
+          <text>Содержание отчета:</text>
+        </navLabel>
+        <content src="pz9.xhtml#id7" />
+      </navPoint>
+      <navPoint id="navPoint124" playOrder="113">
+        <navLabel>
+          <text>Контрольные вопросы:</text>
+        </navLabel>
+        <content src="pz9.xhtml#id8" />
+      </navPoint>
+      <navPoint id="navPoint125" playOrder="114">
+        <navLabel>
+          <text>Приложение:</text>
+        </navLabel>
+        <content src="pz9.xhtml#id9" />
+      </navPoint>
+    </navPoint>
+    <navPoint id="navPoint126" playOrder="115">
+      <navLabel>
+        <text>Практическое занятие №10 Настройка персональных межсетевых экранов.</text>
+      </navLabel>
+      <content src="pz10.xhtml" />
+      <navPoint id="navPoint127" playOrder="115">
+        <navLabel>
+          <text>Практическое занятие №10 Настройка персональных межсетевых экранов.</text>
+        </navLabel>
+        <content src="pz10.xhtml" />
+      </navPoint>
+      <navPoint id="navPoint128" playOrder="116">
+        <navLabel>
+          <text>Цель работы:</text>
+        </navLabel>
+        <content src="pz10.xhtml#id1" />
+      </navPoint>
+      <navPoint id="navPoint129" playOrder="117">
+        <navLabel>
+          <text>Литература:</text>
+        </navLabel>
+        <content src="pz10.xhtml#id2" />
+      </navPoint>
+      <navPoint id="navPoint130" playOrder="118">
+        <navLabel>
+          <text>Подготовка к работе:</text>
+        </navLabel>
+        <content src="pz10.xhtml#id3" />
+      </navPoint>
+      <navPoint id="navPoint131" playOrder="119">
+        <navLabel>
+          <text>Основное оборудование:</text>
+        </navLabel>
+        <content src="pz10.xhtml#id4" />
+      </navPoint>
+      <navPoint id="navPoint132" playOrder="120">
+        <navLabel>
+          <text>Задание:</text>
+        </navLabel>
+        <content src="pz10.xhtml#id5" />
+      </navPoint>
+      <navPoint id="navPoint133" playOrder="121">
+        <navLabel>
+          <text>Порядок выполнения работы:</text>
+        </navLabel>
+        <content src="pz10.xhtml#id6" />
+      </navPoint>
+      <navPoint id="navPoint134" playOrder="122">
+        <navLabel>
+          <text>Содержание отчета:</text>
+        </navLabel>
+        <content src="pz10.xhtml#id7" />
+      </navPoint>
+      <navPoint id="navPoint135" playOrder="123">
+        <navLabel>
+          <text>Контрольные вопросы:</text>
+        </navLabel>
+        <content src="pz10.xhtml#id8" />
+      </navPoint>
+      <navPoint id="navPoint136" playOrder="124">
+        <navLabel>
+          <text>Приложение:</text>
+        </navLabel>
+        <content src="pz10.xhtml#id9" />
+      </navPoint>
+    </navPoint>
+    <navPoint id="navPoint137" playOrder="125">
+      <navLabel>
+        <text>Практическое занятие №11 Настройка и конфигурирование межсетевых экранов в  сетях SOHO</text>
+      </navLabel>
+      <content src="pz11.xhtml" />
+      <navPoint id="navPoint138" playOrder="125">
+        <navLabel>
+          <text>Практическое занятие №11 Настройка и конфигурирование межсетевых экранов в  сетях SOHO</text>
+        </navLabel>
+        <content src="pz11.xhtml" />
+      </navPoint>
+      <navPoint id="navPoint139" playOrder="126">
+        <navLabel>
+          <text>Цель работы:</text>
+        </navLabel>
+        <content src="pz11.xhtml#id1" />
+      </navPoint>
+      <navPoint id="navPoint140" playOrder="127">
+        <navLabel>
+          <text>Литература:</text>
+        </navLabel>
+        <content src="pz11.xhtml#id2" />
+      </navPoint>
+      <navPoint id="navPoint141" playOrder="128">
+        <navLabel>
+          <text>Подготовка к работе:</text>
+        </navLabel>
+        <content src="pz11.xhtml#id3" />
+      </navPoint>
+      <navPoint id="navPoint142" playOrder="129">
+        <navLabel>
+          <text>Основное оборудование:</text>
+        </navLabel>
+        <content src="pz11.xhtml#id4" />
+      </navPoint>
+      <navPoint id="navPoint143" playOrder="130">
+        <navLabel>
+          <text>Задание:</text>
+        </navLabel>
+        <content src="pz11.xhtml#id5" />
+      </navPoint>
+      <navPoint id="navPoint144" playOrder="131">
+        <navLabel>
+          <text>Порядок выполнения работы:</text>
+        </navLabel>
+        <content src="pz11.xhtml#id6" />
+      </navPoint>
+      <navPoint id="navPoint145" playOrder="132">
+        <navLabel>
+          <text>Содержание отчета:</text>
+        </navLabel>
+        <content src="pz11.xhtml#id7" />
+      </navPoint>
+      <navPoint id="navPoint146" playOrder="133">
+        <navLabel>
+          <text>Контрольные вопросы:</text>
+        </navLabel>
+        <content src="pz11.xhtml#id8" />
+      </navPoint>
+      <navPoint id="navPoint147" playOrder="134">
+        <navLabel>
+          <text>Приложение:</text>
+        </navLabel>
+        <content src="pz11.xhtml#id9" />
+        <navPoint id="navPoint148" playOrder="134">
+          <navLabel>
+            <text>Приложение:</text>
+          </navLabel>
+          <content src="pz11.xhtml#id9" />
+        </navPoint>
+        <navPoint id="navPoint149" playOrder="135">
+          <navLabel>
+            <text>Пороговое значение кэша ARP</text>
+          </navLabel>
+          <content src="pz11.xhtml#arp" />
+        </navPoint>
+        <navPoint id="navPoint150" playOrder="136">
+          <navLabel>
+            <text>Настройка МЭ по белому списку</text>
+          </navLabel>
+          <content src="pz11.xhtml#id10" />
+        </navPoint>
+        <navPoint id="navPoint151" playOrder="137">
+          <navLabel>
+            <text>Настройка netfilter/iptables для подключения нескольких клиентов к одному соединению.</text>
+          </navLabel>
+          <content src="pz11.xhtml#netfilter-iptables" />
+        </navPoint>
+      </navPoint>
+    </navPoint>
+    <navPoint id="navPoint152" playOrder="138">
+      <navLabel>
+        <text>Практическое занятие №12 Настройка и конфигурирование межсетевых экранов в средних сетях.</text>
+      </navLabel>
+      <content src="pz12.xhtml" />
+      <navPoint id="navPoint153" playOrder="138">
+        <navLabel>
+          <text>Практическое занятие №12 Настройка и конфигурирование межсетевых экранов в средних сетях.</text>
+        </navLabel>
+        <content src="pz12.xhtml" />
+      </navPoint>
+      <navPoint id="navPoint154" playOrder="139">
+        <navLabel>
+          <text>Цель работы:</text>
+        </navLabel>
+        <content src="pz12.xhtml#id1" />
+      </navPoint>
+      <navPoint id="navPoint155" playOrder="140">
+        <navLabel>
+          <text>Литература:</text>
+        </navLabel>
+        <content src="pz12.xhtml#id2" />
+      </navPoint>
+      <navPoint id="navPoint156" playOrder="141">
+        <navLabel>
+          <text>Подготовка к работе:</text>
+        </navLabel>
+        <content src="pz12.xhtml#id3" />
+      </navPoint>
+      <navPoint id="navPoint157" playOrder="142">
+        <navLabel>
+          <text>Основное оборудование:</text>
+        </navLabel>
+        <content src="pz12.xhtml#id4" />
+      </navPoint>
+      <navPoint id="navPoint158" playOrder="143">
+        <navLabel>
+          <text>Задание:</text>
+        </navLabel>
+        <content src="pz12.xhtml#id5" />
+      </navPoint>
+      <navPoint id="navPoint159" playOrder="144">
+        <navLabel>
+          <text>Порядок выполнения работы:</text>
+        </navLabel>
+        <content src="pz12.xhtml#id6" />
+      </navPoint>
+      <navPoint id="navPoint160" playOrder="145">
+        <navLabel>
+          <text>Содержание отчета:</text>
+        </navLabel>
+        <content src="pz12.xhtml#id7" />
+      </navPoint>
+      <navPoint id="navPoint161" playOrder="146">
+        <navLabel>
+          <text>Контрольные вопросы:</text>
+        </navLabel>
+        <content src="pz12.xhtml#id8" />
+      </navPoint>
+      <navPoint id="navPoint162" playOrder="147">
+        <navLabel>
+          <text>Приложение:</text>
+        </navLabel>
+        <content src="pz12.xhtml#id9" />
+      </navPoint>
+    </navPoint>
+    <navPoint id="navPoint163" playOrder="148">
+      <navLabel>
+        <text>Практическое занятие №13 Моделирование работы межсетевых экранов в крупных сетях.</text>
+      </navLabel>
+      <content src="pz13.xhtml" />
+      <navPoint id="navPoint164" playOrder="148">
+        <navLabel>
+          <text>Практическое занятие №13 Моделирование работы межсетевых экранов в крупных сетях.</text>
+        </navLabel>
+        <content src="pz13.xhtml" />
+      </navPoint>
+      <navPoint id="navPoint165" playOrder="149">
+        <navLabel>
+          <text>Цель работы:</text>
+        </navLabel>
+        <content src="pz13.xhtml#id1" />
+      </navPoint>
+      <navPoint id="navPoint166" playOrder="150">
+        <navLabel>
+          <text>Литература:</text>
+        </navLabel>
+        <content src="pz13.xhtml#id2" />
+      </navPoint>
+      <navPoint id="navPoint167" playOrder="151">
+        <navLabel>
+          <text>Подготовка к работе:</text>
+        </navLabel>
+        <content src="pz13.xhtml#id3" />
+      </navPoint>
+      <navPoint id="navPoint168" playOrder="152">
+        <navLabel>
+          <text>Основное оборудование:</text>
+        </navLabel>
+        <content src="pz13.xhtml#id4" />
+      </navPoint>
+      <navPoint id="navPoint169" playOrder="153">
+        <navLabel>
+          <text>Задание:</text>
+        </navLabel>
+        <content src="pz13.xhtml#id5" />
+      </navPoint>
+      <navPoint id="navPoint170" playOrder="154">
+        <navLabel>
+          <text>Порядок выполнения работы:</text>
+        </navLabel>
+        <content src="pz13.xhtml#id6" />
+      </navPoint>
+      <navPoint id="navPoint171" playOrder="155">
+        <navLabel>
+          <text>Содержание отчета:</text>
+        </navLabel>
+        <content src="pz13.xhtml#id7" />
+      </navPoint>
+      <navPoint id="navPoint172" playOrder="156">
+        <navLabel>
+          <text>Контрольные вопросы:</text>
+        </navLabel>
+        <content src="pz13.xhtml#id8" />
+      </navPoint>
+      <navPoint id="navPoint173" playOrder="157">
+        <navLabel>
+          <text>Приложение:</text>
+        </navLabel>
+        <content src="pz13.xhtml#id9" />
+        <navPoint id="navPoint174" playOrder="157">
+          <navLabel>
+            <text>Приложение:</text>
+          </navLabel>
+          <content src="pz13.xhtml#id9" />
+        </navPoint>
+        <navPoint id="navPoint175" playOrder="158">
+          <navLabel>
+            <text>Теория</text>
+          </navLabel>
+          <content src="pz13.xhtml#id10" />
+        </navPoint>
+        <navPoint id="navPoint176" playOrder="159">
+          <navLabel>
+            <text>Виды ACL</text>
+          </navLabel>
+          <content src="pz13.xhtml#acl" />
+        </navPoint>
+        <navPoint id="navPoint177" playOrder="160">
+          <navLabel>
+            <text>Динамический (Dynamic ACL)</text>
+          </navLabel>
+          <content src="pz13.xhtml#dynamic-acl" />
+        </navPoint>
+        <navPoint id="navPoint178" playOrder="161">
+          <navLabel>
+            <text>Рефлексивный (Reflexive ACL)</text>
+          </navLabel>
+          <content src="pz13.xhtml#reflexive-acl" />
+        </navPoint>
+        <navPoint id="navPoint179" playOrder="162">
+          <navLabel>
+            <text>Ограничение по времени (Time-based ACL)</text>
+          </navLabel>
+          <content src="pz13.xhtml#time-based-acl" />
+        </navPoint>
+        <navPoint id="navPoint180" playOrder="163">
+          <navLabel>
+            <text>Настройка</text>
+          </navLabel>
+          <content src="pz13.xhtml#id11" />
+        </navPoint>
+        <navPoint id="navPoint181" playOrder="164">
+          <navLabel>
+            <text>Стандартный список доступа</text>
+          </navLabel>
+          <content src="pz13.xhtml#id12" />
+        </navPoint>
+        <navPoint id="navPoint182" playOrder="165">
+          <navLabel>
+            <text>Расширенный список доступа</text>
+          </navLabel>
+          <content src="pz13.xhtml#id13" />
+        </navPoint>
+        <navPoint id="navPoint183" playOrder="166">
+          <navLabel>
+            <text>Прикрепляем к интерфейсу</text>
+          </navLabel>
+          <content src="pz13.xhtml#id14" />
+        </navPoint>
+        <navPoint id="navPoint184" playOrder="167">
+          <navLabel>
+            <text>Именованные списки доступа</text>
+          </navLabel>
+          <content src="pz13.xhtml#id15" />
+        </navPoint>
+        <navPoint id="navPoint185" playOrder="168">
+          <navLabel>
+            <text>Ограничение доступа к маршрутизатору</text>
+          </navLabel>
+          <content src="pz13.xhtml#id16" />
+        </navPoint>
+        <navPoint id="navPoint186" playOrder="169">
+          <navLabel>
+            <text>Динамические списки доступа</text>
+          </navLabel>
+          <content src="pz13.xhtml#id17" />
+        </navPoint>
+        <navPoint id="navPoint187" playOrder="170">
+          <navLabel>
+            <text>Рефлексивные списки доступа</text>
+          </navLabel>
+          <content src="pz13.xhtml#id18" />
+        </navPoint>
+        <navPoint id="navPoint188" playOrder="171">
+          <navLabel>
+            <text>Ограничение по времени</text>
+          </navLabel>
+          <content src="pz13.xhtml#id19" />
+        </navPoint>
+        <navPoint id="navPoint189" playOrder="172">
+          <navLabel>
+            <text>Поиск проблем</text>
+          </navLabel>
+          <content src="pz13.xhtml#id20" />
+        </navPoint>
+      </navPoint>
+    </navPoint>
+    <navPoint id="navPoint190" playOrder="173">
+      <navLabel>
+        <text>Практическое занятие №14 Моделирование защищенных каналов связи в различных сетях</text>
+      </navLabel>
+      <content src="pz14.xhtml" />
+      <navPoint id="navPoint191" playOrder="173">
+        <navLabel>
+          <text>Практическое занятие №14 Моделирование защищенных каналов связи в различных сетях</text>
+        </navLabel>
+        <content src="pz14.xhtml" />
+      </navPoint>
+      <navPoint id="navPoint192" playOrder="174">
+        <navLabel>
+          <text>Цель работы:</text>
+        </navLabel>
+        <content src="pz14.xhtml#id1" />
+      </navPoint>
+      <navPoint id="navPoint193" playOrder="175">
+        <navLabel>
+          <text>Литература:</text>
+        </navLabel>
+        <content src="pz14.xhtml#id2" />
+      </navPoint>
+      <navPoint id="navPoint194" playOrder="176">
+        <navLabel>
+          <text>Подготовка к работе:</text>
+        </navLabel>
+        <content src="pz14.xhtml#id3" />
+      </navPoint>
+      <navPoint id="navPoint195" playOrder="177">
+        <navLabel>
+          <text>Основное оборудование:</text>
+        </navLabel>
+        <content src="pz14.xhtml#id4" />
+      </navPoint>
+      <navPoint id="navPoint196" playOrder="178">
+        <navLabel>
+          <text>Задание:</text>
+        </navLabel>
+        <content src="pz14.xhtml#id5" />
+      </navPoint>
+      <navPoint id="navPoint197" playOrder="179">
+        <navLabel>
+          <text>Порядок выполнения работы:</text>
+        </navLabel>
+        <content src="pz14.xhtml#id6" />
+      </navPoint>
+      <navPoint id="navPoint198" playOrder="180">
+        <navLabel>
+          <text>Содержание отчета:</text>
+        </navLabel>
+        <content src="pz14.xhtml#id7" />
+      </navPoint>
+      <navPoint id="navPoint199" playOrder="181">
+        <navLabel>
+          <text>Контрольные вопросы:</text>
+        </navLabel>
+        <content src="pz14.xhtml#id8" />
+      </navPoint>
+    </navPoint>
+    <navPoint id="navPoint200" playOrder="182">
+      <navLabel>
+        <text>Практическое занятие №15 Организация процесса построения защищенных каналов связи в различных сетях</text>
+      </navLabel>
+      <content src="pz15.xhtml" />
+      <navPoint id="navPoint201" playOrder="182">
+        <navLabel>
+          <text>Практическое занятие №15 Организация процесса построения защищенных каналов связи в различных сетях</text>
+        </navLabel>
+        <content src="pz15.xhtml" />
+      </navPoint>
+      <navPoint id="navPoint202" playOrder="183">
+        <navLabel>
+          <text>Цель работы:</text>
+        </navLabel>
+        <content src="pz15.xhtml#id1" />
+      </navPoint>
+      <navPoint id="navPoint203" playOrder="184">
+        <navLabel>
+          <text>Литература:</text>
+        </navLabel>
+        <content src="pz15.xhtml#id2" />
+      </navPoint>
+      <navPoint id="navPoint204" playOrder="185">
+        <navLabel>
+          <text>Подготовка к работе:</text>
+        </navLabel>
+        <content src="pz15.xhtml#id3" />
+      </navPoint>
+      <navPoint id="navPoint205" playOrder="186">
+        <navLabel>
+          <text>Основное оборудование:</text>
+        </navLabel>
+        <content src="pz15.xhtml#id4" />
+      </navPoint>
+      <navPoint id="navPoint206" playOrder="187">
+        <navLabel>
+          <text>Задание:</text>
+        </navLabel>
+        <content src="pz15.xhtml#id5" />
+      </navPoint>
+      <navPoint id="navPoint207" playOrder="188">
+        <navLabel>
+          <text>Порядок выполнения работы:</text>
+        </navLabel>
+        <content src="pz15.xhtml#id6" />
+      </navPoint>
+      <navPoint id="navPoint208" playOrder="189">
+        <navLabel>
+          <text>Содержание отчета:</text>
+        </navLabel>
+        <content src="pz15.xhtml#id7" />
+      </navPoint>
+      <navPoint id="navPoint209" playOrder="190">
+        <navLabel>
+          <text>Контрольные вопросы:</text>
+        </navLabel>
+        <content src="pz15.xhtml#id8" />
+      </navPoint>
+    </navPoint>
+    <navPoint id="navPoint210" playOrder="191">
+      <navLabel>
+        <text>Практическое занятие №16 Настройка различных механизмов защиты электронной почты в сети предприятия</text>
+      </navLabel>
+      <content src="pz16.xhtml" />
+      <navPoint id="navPoint211" playOrder="191">
+        <navLabel>
+          <text>Практическое занятие №16 Настройка различных механизмов защиты электронной почты в сети предприятия</text>
+        </navLabel>
+        <content src="pz16.xhtml" />
+      </navPoint>
+      <navPoint id="navPoint212" playOrder="192">
+        <navLabel>
+          <text>Цель работы:</text>
+        </navLabel>
+        <content src="pz16.xhtml#id1" />
+      </navPoint>
+      <navPoint id="navPoint213" playOrder="193">
+        <navLabel>
+          <text>Литература:</text>
+        </navLabel>
+        <content src="pz16.xhtml#id2" />
+      </navPoint>
+      <navPoint id="navPoint214" playOrder="194">
+        <navLabel>
+          <text>Подготовка к работе:</text>
+        </navLabel>
+        <content src="pz16.xhtml#id3" />
+      </navPoint>
+      <navPoint id="navPoint215" playOrder="195">
+        <navLabel>
+          <text>Основное оборудование:</text>
+        </navLabel>
+        <content src="pz16.xhtml#id4" />
+      </navPoint>
+      <navPoint id="navPoint216" playOrder="196">
+        <navLabel>
+          <text>Задание:</text>
+        </navLabel>
+        <content src="pz16.xhtml#id5" />
+      </navPoint>
+      <navPoint id="navPoint217" playOrder="197">
+        <navLabel>
+          <text>Порядок выполнения работы:</text>
+        </navLabel>
+        <content src="pz16.xhtml#id6" />
+      </navPoint>
+      <navPoint id="navPoint218" playOrder="198">
+        <navLabel>
+          <text>Содержание отчета:</text>
+        </navLabel>
+        <content src="pz16.xhtml#id7" />
+      </navPoint>
+      <navPoint id="navPoint219" playOrder="199">
+        <navLabel>
+          <text>Контрольные вопросы:</text>
+        </navLabel>
+        <content src="pz16.xhtml#id8" />
+      </navPoint>
+      <navPoint id="navPoint220" playOrder="200">
+        <navLabel>
+          <text>Приложение</text>
+        </navLabel>
+        <content src="pz16.xhtml#id9" />
+        <navPoint id="navPoint221" playOrder="200">
+          <navLabel>
+            <text>Приложение</text>
+          </navLabel>
+          <content src="pz16.xhtml#id9" />
+        </navPoint>
+        <navPoint id="navPoint222" playOrder="201">
+          <navLabel>
+            <text>Настройка spamassassin</text>
+          </navLabel>
+          <content src="pz16.xhtml#spamassassin" />
+        </navPoint>
+      </navPoint>
+    </navPoint>
+    <navPoint id="navPoint223" playOrder="202">
+      <navLabel>
+        <text>Практическое занятие №17 Настройка механизмов защиты файловых систем и баз данных</text>
+      </navLabel>
+      <content src="pz17.xhtml" />
+      <navPoint id="navPoint224" playOrder="202">
+        <navLabel>
+          <text>Практическое занятие №17 Настройка механизмов защиты файловых систем и баз данных</text>
+        </navLabel>
+        <content src="pz17.xhtml" />
+      </navPoint>
+      <navPoint id="navPoint225" playOrder="203">
+        <navLabel>
+          <text>Цель работы:</text>
+        </navLabel>
+        <content src="pz17.xhtml#id1" />
+      </navPoint>
+      <navPoint id="navPoint226" playOrder="204">
+        <navLabel>
+          <text>Литература:</text>
+        </navLabel>
+        <content src="pz17.xhtml#id2" />
+      </navPoint>
+      <navPoint id="navPoint227" playOrder="205">
+        <navLabel>
+          <text>Подготовка к работе:</text>
+        </navLabel>
+        <content src="pz17.xhtml#id3" />
+      </navPoint>
+      <navPoint id="navPoint228" playOrder="206">
+        <navLabel>
+          <text>Основное оборудование:</text>
+        </navLabel>
+        <content src="pz17.xhtml#id4" />
+      </navPoint>
+      <navPoint id="navPoint229" playOrder="207">
+        <navLabel>
+          <text>Задание:</text>
+        </navLabel>
+        <content src="pz17.xhtml#id5" />
+      </navPoint>
+      <navPoint id="navPoint230" playOrder="208">
+        <navLabel>
+          <text>Порядок выполнения работы:</text>
+        </navLabel>
+        <content src="pz17.xhtml#id6" />
+      </navPoint>
+      <navPoint id="navPoint231" playOrder="209">
+        <navLabel>
+          <text>Содержание отчета:</text>
+        </navLabel>
+        <content src="pz17.xhtml#id7" />
+      </navPoint>
+      <navPoint id="navPoint232" playOrder="210">
+        <navLabel>
+          <text>Контрольные вопросы:</text>
+        </navLabel>
+        <content src="pz17.xhtml#id8" />
+      </navPoint>
+      <navPoint id="navPoint233" playOrder="211">
+        <navLabel>
+          <text>Приложение</text>
+        </navLabel>
+        <content src="pz17.xhtml#id9" />
+        <navPoint id="navPoint234" playOrder="211">
+          <navLabel>
+            <text>Приложение</text>
+          </navLabel>
+          <content src="pz17.xhtml#id9" />
+        </navPoint>
+        <navPoint id="navPoint235" playOrder="212">
+          <navLabel>
+            <text>Утилита mysqldump</text>
+          </navLabel>
+          <content src="pz17.xhtml#mysqldump" />
+        </navPoint>
+        <navPoint id="navPoint236" playOrder="213">
+          <navLabel>
+            <text>Утилита Mysqlhotcopy</text>
+          </navLabel>
+          <content src="pz17.xhtml#mysqlhotcopy" />
+        </navPoint>
+      </navPoint>
+    </navPoint>
+    <navPoint id="navPoint237" playOrder="214">
+      <navLabel>
+        <text>Практическое занятие №18 Моделирование подсистем обеспечения безопасности информации от несанкционированного доступа</text>
+      </navLabel>
+      <content src="pz18.xhtml" />
+      <navPoint id="navPoint238" playOrder="214">
+        <navLabel>
+          <text>Практическое занятие №18 Моделирование подсистем обеспечения безопасности информации от несанкционированного доступа</text>
+        </navLabel>
+        <content src="pz18.xhtml" />
+      </navPoint>
+      <navPoint id="navPoint239" playOrder="215">
+        <navLabel>
+          <text>Цель работы:</text>
+        </navLabel>
+        <content src="pz18.xhtml#id1" />
+      </navPoint>
+      <navPoint id="navPoint240" playOrder="216">
+        <navLabel>
+          <text>Литература:</text>
+        </navLabel>
+        <content src="pz18.xhtml#id2" />
+      </navPoint>
+      <navPoint id="navPoint241" playOrder="217">
+        <navLabel>
+          <text>Подготовка к работе:</text>
+        </navLabel>
+        <content src="pz18.xhtml#id3" />
+      </navPoint>
+      <navPoint id="navPoint242" playOrder="218">
+        <navLabel>
+          <text>Основное оборудование:</text>
+        </navLabel>
+        <content src="pz18.xhtml#id4" />
+      </navPoint>
+      <navPoint id="navPoint243" playOrder="219">
+        <navLabel>
+          <text>Задание:</text>
+        </navLabel>
+        <content src="pz18.xhtml#id5" />
+      </navPoint>
+      <navPoint id="navPoint244" playOrder="220">
+        <navLabel>
+          <text>Порядок выполнения работы:</text>
+        </navLabel>
+        <content src="pz18.xhtml#id6" />
+      </navPoint>
+      <navPoint id="navPoint245" playOrder="221">
+        <navLabel>
+          <text>Содержание отчета:</text>
+        </navLabel>
+        <content src="pz18.xhtml#id7" />
+      </navPoint>
+      <navPoint id="navPoint246" playOrder="222">
+        <navLabel>
+          <text>Контрольные вопросы:</text>
+        </navLabel>
+        <content src="pz18.xhtml#id8" />
+      </navPoint>
+    </navPoint>
+  </navMap>
+</ncx>

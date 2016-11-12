@@ -1,0 +1,250 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ru">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Практическое занятие №5 Конфигурирование систем обнаружения вторжений. &#8212; Документация course0203 1</title>
+    
+    <link rel="stylesheet" href="_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    './',
+        VERSION:     '1',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <script type="text/javascript" src="_static/translations.js"></script>
+    <link rel="index" title="Алфавитный указатель" href="genindex.html" />
+    <link rel="search" title="Поиск" href="search.html" />
+    <link rel="top" title="Документация course0203 1" href="index.html" />
+    <link rel="prev" title="Практическое занятие №4 Развертывание систем обнаружения вторжений." href="pz4.html" />
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head>
+  <body role="document">
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="o5">
+<h1>Практическое занятие №5 Конфигурирование систем обнаружения вторжений.<a class="headerlink" href="#o5" title="Ссылка на этот заголовок">¶</a></h1>
+<div class="section" id="id1">
+<h2>Цель работы:<a class="headerlink" href="#id1" title="Ссылка на этот заголовок">¶</a></h2>
+<ol class="arabic simple">
+<li>Получить практический опыт применения программно-аппаратных средств обеспечения информационной безопасности телекоммуникационных систем;</li>
+<li>Получить практический опыт выявления технических каналов утечки информации.</li>
+</ol>
+</div>
+<div class="section" id="id2">
+<h2>Литература:<a class="headerlink" href="#id2" title="Ссылка на этот заголовок">¶</a></h2>
+<ol class="arabic simple">
+<li>Хорев, П.Б. Программно-аппаратная защита информации : учебное пособие для вузов / П.Б. Хорев. - Москва: ФОРУМ, стр 141-151.</li>
+</ol>
+</div>
+<div class="section" id="id3">
+<h2>Подготовка к работе:<a class="headerlink" href="#id3" title="Ссылка на этот заголовок">¶</a></h2>
+<ol class="arabic simple">
+<li>Подготовить бланк отчета;</li>
+<li>Изучить предложенную литературу.</li>
+</ol>
+</div>
+<div class="section" id="id4">
+<h2>Основное оборудование:<a class="headerlink" href="#id4" title="Ссылка на этот заголовок">¶</a></h2>
+<ol class="arabic simple">
+<li>Компьютер под управлением ОС Windows Server 2008 R2;</li>
+<li>Виртуальные машины в программе VirtualBox на основе Ubuntu Linux согласно заданию и схеме сети;</li>
+<li>Тестовый web сервер на базе Ubuntu Linux;</li>
+<li>Схема простой сети и ресурсов простой сети;</li>
+<li>Пакет GNS3 и комплект виртуальных машин, необходимых для схемы сети;</li>
+<li>Пакеты прикладных программ LibreOffice.</li>
+</ol>
+</div>
+<div class="section" id="id5">
+<h2>Задание:<a class="headerlink" href="#id5" title="Ссылка на этот заголовок">¶</a></h2>
+<ol class="arabic simple">
+<li>Выполнить настройку СОВ Snort для обнаружения сетевых вторжений.</li>
+</ol>
+</div>
+<div class="section" id="id6">
+<h2>Порядок выполнения работы:<a class="headerlink" href="#id6" title="Ссылка на этот заголовок">¶</a></h2>
+<ol class="arabic simple">
+<li>Собрать схему простой сети по индивидуальному заданию и обеспечить ее работоспособность;</li>
+<li>Выполнить загрузку и установку компонентов СОВ Snort на тестовую виртуальную машину;</li>
+<li>Выполнить установку и настройку web интерфейса для СОВ Snort;</li>
+<li>Выделить в сети сегмент DMZ и вынести в него один из серверов схемы сети. Настроить Snort так, чтобы обеспечить фильтрацию траффика в режие IPS по «белому» списку для данного сегмента сети. После проверки вынести ключевые ресурсы сети в DMZ. Настроить доступ к DMZ через Snort таким образом, чтобы трафик обрабатывался правилами Snort.</li>
+<li>Выполнить настройку Snort для работы по анализу передаваемого контента от клиентов к серверу. При передаче определенной информации (например, логина и пароля) должно срабатывать правило а результат правила фиксироваться в системном журнале и отображаться в web интерфейсе.</li>
+<li>Выполнть настройку Snort для работы по анализу нестандартных протоколов и инкапсулированных данных. При обнаружении инкапсуляции данных должно срабатывать правило а результат правила фиксироваться в системном журнале и отображаться в web интерфейсе.</li>
+<li>Выполнить настройку Snort для работы по обнаружению несанкционированного доступа к серверу. При обнаружении несанкционированного доступа должно срабатывать правило а результат правила фиксироваться в системном журнале и отображаться в web интерфейсе.</li>
+<li>Составить политику настройки СОВ в модели сети. Политику оформить в виде документа и предоставить преподавателю.</li>
+</ol>
+</div>
+<div class="section" id="id7">
+<h2>Содержание отчета:<a class="headerlink" href="#id7" title="Ссылка на этот заголовок">¶</a></h2>
+<ol class="arabic simple">
+<li>Цель работы;</li>
+<li>Содержание действий по выполнению данной работы;</li>
+<li>Ответы на контрольные вопросы;</li>
+<li>Вывод.</li>
+</ol>
+</div>
+<div class="section" id="id8">
+<h2>Контрольные вопросы:<a class="headerlink" href="#id8" title="Ссылка на этот заголовок">¶</a></h2>
+<ol class="arabic simple">
+<li>Что понимают под инкапсуляцией данных в сетевой пакет?</li>
+<li>По каким критериям осуществляется фильтрация несанкционарованного доступа?</li>
+<li>Каковы особенности оценки уязвимостей с использованием методологии CVSS?</li>
+</ol>
+</div>
+<div class="section" id="id9">
+<h2>Приложение:<a class="headerlink" href="#id9" title="Ссылка на этот заголовок">¶</a></h2>
+<p>Пакет, который будет использован для тестирования работы Snort можно сгенерировать при помощи программы scapy (от пользователя root). Данный пакет содержит три уровня: IP заголовок, UDP заголовок и полезная нагрузка (payload). Указанные данные мо1жножно сгенерировать при помощи следующих команд:</p>
+<p><a class="reference external" href="mailto:root&#37;&#52;&#48;myhost">root<span>&#64;</span>myhost</a>:~#sudo scapy
+Welcome to Scapy (2.0.1)
+&gt;&gt;&gt;i=IP(dst=&#8221;192.168.1.103&#8221;)
+&gt;&gt;&gt;u=UDP(dport=1234)
+&gt;&gt;&gt;pay=&#8221;evil payload&#8221;
+&gt;&gt;&gt;packet=i/u/pay
+&gt;&gt;&gt;send(pay)</p>
+<p>Сокращённый вариант самого минимального конфига, который решает задачу настройки Snort в режиме IPS в общем виде выглядит так:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="c1"># Пункт 1: Глобальные переменные для конфига</span>
+<span class="c1">#Используются в кофиге и правилах</span>
+</pre></div>
+</div>
+<p>var HOME_NET any
+var RULE_PATH ../rules
+# Пункт 2: настройка декодеров
+config disable_decode_alerts
+……
+# Пункт 3: настройка детектора
+# Разные тонкости применения правил
+config pcre_match_limit: 3500
+……
+# Пункт 5: Настройка препроцессоров
+# Препроцессоры нормализации пакетов
+# нормализуют протоколы на лету, от чего,иногда, случаются неожиданности
+preprocessor normalize_ip4
+….
+# Препроцессор обработки дефрагментированых пакетов
+preprocessor frag3_global: max_frags 65536
+…
+# Препроцессоры контроля состояний и построения сеансов
+preprocessor stream5_global: max_tcp 8192, track_tcp yes, track_udp ….
+…
+# Пункт 6: подключение библиотек детализации вывода
+include classification.config
+…..
+# Пункт 7: подключение правил
+include $RULE_PATH/test.rules</p>
+<p>Для простоты в файле test.rules у нас будет только одно правило:</p>
+<p>reject udp any any -&gt; $HOME_NET 1234 (msg: &#8220;EVIL payload&#8221;; flow:to_server; content:&#8221;evil&#8221;; nocase; sid:1234567;)</p>
+<p>Это правило говорит, что в случае обнаружения во входящих udp пакетах подстроки EVIL payload, то источнику немедленно будет послан RST, и сеанс будет прерван. Опасный пакет дальше IPS в систему не попадёт. Запускаем SNORT:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="c1"># snort -Q --daq nfq --daq-var queue=2 -c /home/ubuntu/Downloads/snort/etc/snort.conf -l /var/log/snort -A full</span>
+</pre></div>
+</div>
+<p>-Q – работа в режиме IPS
+&#8211;daq – источника пакетов
+&#8211;daq-var – параметры источника пакетов
+-с – путь к конфигу
+-l – путь к логам
+-A full – подробные логи (описание атак и дампы трафика)
+-D – работа в режиме демона ( использовать, когда всё отлажено)</p>
+<p>Если запуск произошел с ошибками, то чаще всего нужно подправить пути к файлам в конфиге.</p>
+<p>Пакетный фильтр системы можно настроить так, чтоб он передавал полученный пакет с уровня ядра на уровень пользователя, где пользовательская программа будет обрабатывать его и передавать обратно на уровень ядра, в нашем случае эта программа — SNORT. Так как SNORT у нас запущен для работы с нумерованнной очередью (NFQUEUE), то нам необходимо фильтруемый трафик в эту очередь поставить:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="c1"># iptables -t nat -A PREROUTING -p tcp --dport 8080 -j NFQUEUE --queue-num 2</span>
+</pre></div>
+</div>
+<p>В модели Iptables пакет попадает в базовую очередь PREROUTING до того, как к нему будут применены какие-либо правила маршрутизации. Отправка пакета в SNORT на этом этапе удобна тем, что далее мы можем его либо обрабатывать локально, либо переслать его дальше, например, используя NAT. Плюсом использования нумерованных очередей является то, что очередей можно создать несколько и трафик каждой очереди пропустить через снорт, запущенный с набором правил, заточенным под фильтруемый трафик. Серьёзным минусом такого подхода является то, что в случае падения SNORT, защищаемый сервис становится недоступен, так как передавать данные из режима пользователя назад в ядро становится некому. После запуска SNORT и создания очереди следует сразу же проверить работу, послав, например через netcat, в очередь сигнатуру из правила – abc123. Если всё было сделано правильно, то соединение будет немедленно разорвано.</p>
+<p>Запущенный с описанными параметрами SNORT будет для каждой выявленной угрозы писать в alert файл (так же он может писать в базу или отправлять syslog):</p>
+<p>[**] [1:310:1] Test pattern for snort abc123 [**]
+[Classification: Executable Code was Detected] [Priority: 1]
+01/19-12:03:12.155213136 172.16.249.1:56473 -&gt; 172.16.249.130:8080
+TCP TTL:64 TOS:0x0 ID:1241 IpLen:20 DgmLen:59 DF
+<strong>*AP*</strong> Seq: 0x9510F391 Ack: 0xC40C0E14 Win: 0x8218 TcpLen: 32
+TCP Options (3) =&gt; NOP NOP TS: 125531844 9470333</p>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <h3><a href="index.html">Оглавление</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">Практическое занятие №5 Конфигурирование систем обнаружения вторжений.</a><ul>
+<li><a class="reference internal" href="#id1">Цель работы:</a></li>
+<li><a class="reference internal" href="#id2">Литература:</a></li>
+<li><a class="reference internal" href="#id3">Подготовка к работе:</a></li>
+<li><a class="reference internal" href="#id4">Основное оборудование:</a></li>
+<li><a class="reference internal" href="#id5">Задание:</a></li>
+<li><a class="reference internal" href="#id6">Порядок выполнения работы:</a></li>
+<li><a class="reference internal" href="#id7">Содержание отчета:</a></li>
+<li><a class="reference internal" href="#id8">Контрольные вопросы:</a></li>
+<li><a class="reference internal" href="#id9">Приложение:</a></li>
+</ul>
+</li>
+</ul>
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="index.html">Documentation overview</a><ul>
+      <li>Previous: <a href="pz4.html" title="предыдущая глава">Практическое занятие №4 Развертывание систем обнаружения вторжений.</a></li>
+  </ul></li>
+</ul>
+</div>
+  <div role="note" aria-label="source link">
+    <h3>Эта страница</h3>
+    <ul class="this-page-menu">
+      <li><a href="_sources/pz5.txt"
+            rel="nofollow">Исходный текст</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3>Быстрый поиск</h3>
+    <form class="search" action="search.html" method="get">
+      <div><input type="text" name="q" /></div>
+      <div><input type="submit" value="Искать" /></div>
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2016, Vladimir Dushkevich.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 1.4.8</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.9</a>
+      
+      |
+      <a href="_sources/pz5.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

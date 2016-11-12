@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<theme
+    id="dark"
+    base="base"
+    description="Dark"
+    textColor="#FFFFC0"
+>
+
+    <color id="ICON_COLOR_TRANSFORM_BRIGHTNESS" value="0xC0B0A0"/>
+    <color id="ICON_COLOR_TRANSFORM_CONTRAST" value="0x404040"/>
+    <color id="SLIDER_LINE_COLOR_OUTER"    value="0x808080"/>
+    <color id="SLIDER_LINE_COLOR_INNER"    value="0x000000"/>
+    <color id="SLIDER_POINTER_COLOR_OUTER" value="0xC0C0C0"/>
+    <color id="SLIDER_POINTER_COLOR_INNER" value="0x303030"/>
+    <style
+        id="BUTTON"
+        background="btn_default_normal.9"
+    >
+        <style
+            state="pressed" stateMask="pressed"
+            background="btn_default_pressed.9"
+        />
+        <style
+            state="focused" stateMask="focused"
+            background="btn_default_selected.9"
+        />
+        <style
+            state="disabled" stateMask="disabled"
+            textColor="0x80FFFFFF"
+        />
+    </style>
+    <style
+        id="BUTTON_NOBACKGROUND"
+    >
+        <style
+            state="pressed" stateMask="pressed"
+            background="0xC0404000"
+        />
+        <style
+            state="focused" stateMask="focused"
+            background="0xE0404000"
+        />
+        <style
+            state="disabled" stateMask="disabled"
+            textColor="0x80FFFFFF"
+        />
+    </style>
+    <style
+        id="EDITBOX"
+        background="editbox_background_normal.9"
+        textColor="0x00000000"
+    >
+        <style
+            state="focused" stateMask="focused"
+            background="editbox_background_focus_yellow.9"
+        />
+    </style>
+    <style
+        id="LIST_ITEM"
+    >
+        <style
+            state="pressed" stateMask="pressed"
+            background="0x40404000"
+        />
+        <style
+            state="focused" stateMask="focused"
+            background="0x40404000"
+        />
+        <style
+            state="disabled" stateMask="disabled"
+            textColor="0x80404000"
+        />
+    </style>
+
+    <style
+        id = "HOME_WIDGET"
+        background="#000000"
+        background2="list_shadow_vertical.9"
+    />
+    <style
+        id = "FILE_LIST"
+        background="#000000"
+        background2="list_shadow_vertical.9"
+        listDelimiterVertical="#C0808080,2pt"
+    />
+    <style
+        id = "HOME_LIST_CAPTION"
+        textColor="0x00FFE0C0"
+    />
+    <style
+        id = "TOOL_BAR"
+        background="#000000"
+        background2="toolbar_shadow.9"
+    />
+    <style
+        id = "POPUP_FRAME"
+        background="#404040"
+        background2="toolbar_shadow.9"
+    />
+    <style
+        id = "POPUP_FRAME_HANDLE"
+        background="0xE0808080"
+        background2="home_frame.9"
+    />
+    <style
+        id = "MENU_LIST"
+        listDelimiterVertical="#C0808080,2pt"
+    />
+    <style
+        id = "MENU_ITEM"
+    />
+    <style
+        id = "MENU_ITEM_ICON"
+    />
+    <style
+        id = "MENU_ITEM_TEXT"
+    />
+    <style
+        id = "CONTROL_POPUP"
+        background="#000000"
+        background2="list_shadow_vertical.9"
+    />
+    <style
+        id = "MESSAGE"
+        textColor="0x000000"
+        background="0xC0C0C0"
+        background2="toolbar_shadow.9"
+    />
+    <style
+        id = "SETTINGS_WIDGET"
+        background="#000000"
+        background2="list_shadow_vertical.9"
+    />
+    <style
+        id = "MENU_LIST"
+        listDelimiterVertical="#C0808080,2pt"
+    />
+    <style
+        id = "SETTINGS_ITEM_LIST"
+        background="#000000"
+        listDelimiterVertical="0x60A08060,1pt"
+    />
+    <style
+        id = "SETTINGS_ITEM"
+    />
+    <style
+        id = "SETTINGS_ITEM_TITLE"
+    />
+    <style
+        id = "SETTINGS_ITEM_TEXT_LAYOUT"
+    />
+    <style
+        id = "SETTINGS_ITEM_ICON"
+    />
+    <style
+        id = "SETTINGS_ITEM_DESCRIPTION"
+    />
+</theme>

@@ -1,0 +1,296 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ru">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Практическое занятие №10 Настройка персональных межсетевых экранов. &#8212; Документация course0203 1</title>
+    
+    <link rel="stylesheet" href="_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    './',
+        VERSION:     '1',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <script type="text/javascript" src="_static/translations.js"></script>
+    <link rel="index" title="Алфавитный указатель" href="genindex.html" />
+    <link rel="search" title="Поиск" href="search.html" />
+    <link rel="top" title="Документация course0203 1" href="index.html" />
+    <link rel="prev" title="Практическое занятие №9 Тестирования программных межсетевых экранов." href="pz9.html" />
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head>
+  <body role="document">
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="o10">
+<h1>Практическое занятие №10 Настройка персональных межсетевых экранов.<a class="headerlink" href="#o10" title="Ссылка на этот заголовок">¶</a></h1>
+<div class="section" id="id1">
+<h2>Цель работы:<a class="headerlink" href="#id1" title="Ссылка на этот заголовок">¶</a></h2>
+<ol class="arabic simple">
+<li>Получить практический опыт применения программно-аппаратных средств обеспечения информационной безопасности телекоммуникационных систем;</li>
+<li>Получить практический опыт выявления технических каналов утечки информации.</li>
+</ol>
+</div>
+<div class="section" id="id2">
+<h2>Литература:<a class="headerlink" href="#id2" title="Ссылка на этот заголовок">¶</a></h2>
+<ol class="arabic simple">
+<li>Шаньгин, В. Ф. Информационная безопасность и защита информации [Электронный ресурс]: учебное пособие. - Москва: ДМК Пресс, 2014. - &nbsp;Режим доступа: <a class="reference external" href="http://www.iprbookshop.ru/29257">http://www.iprbookshop.ru/29257</a>, по запросу, стр 446-447;</li>
+</ol>
+</div>
+<div class="section" id="id3">
+<h2>Подготовка к работе:<a class="headerlink" href="#id3" title="Ссылка на этот заголовок">¶</a></h2>
+<ol class="arabic simple">
+<li>Подготовить бланк отчета;</li>
+<li>Изучить предложенную литературу.</li>
+</ol>
+</div>
+<div class="section" id="id4">
+<h2>Основное оборудование:<a class="headerlink" href="#id4" title="Ссылка на этот заголовок">¶</a></h2>
+<ol class="arabic simple">
+<li>Компьютер под управлением ОС Windows Server 2008 R2;</li>
+<li>Виртуальные машины в программе VirtualBox на основе Ubuntu Linux согласно заданию и схеме сети;</li>
+<li>Схема простой сети и ресурсов простой сети;</li>
+<li>Программа Libreoffice для составления отчетов.</li>
+</ol>
+</div>
+<div class="section" id="id5">
+<h2>Задание:<a class="headerlink" href="#id5" title="Ссылка на этот заголовок">¶</a></h2>
+<ol class="arabic simple">
+<li>Выполнить настройку персонального МЭ в модели сети предприятия.</li>
+</ol>
+</div>
+<div class="section" id="id6">
+<h2>Порядок выполнения работы:<a class="headerlink" href="#id6" title="Ссылка на этот заголовок">¶</a></h2>
+<ol class="arabic simple">
+<li>Собрать и настроить модель сети;</li>
+<li>Выполнить настройку персональных межсетевых экранов на оконечных устройствах. В качестве основы для настройки придерживаться следующего алгоритма:</li>
+</ol>
+<blockquote>
+<div><ul class="simple">
+<li>Для клиентов персональные МЭ обеспечивают защиту от угроз, исходящих от клиентов. К таким угрозам относятся: доступ к запрещенным ресурсам (odnoklassniki.ru, mail.ru, vk.com,m.vk.com и аналогичные), использование запрещенных протоколов (bittorrent, telnet, ftp и аналогичные) и портов этих протоколов;</li>
+<li>Должны вестись журналы подключений, в которые записывается информация о срабатывании правил.</li>
+</ul>
+</div></blockquote>
+<ol class="arabic simple">
+<li>Для инфрастуртурных серверов персональные МЭ обеспечивают защиту от угроз, направленных к ресурсам и ответов на подобные запросы. К таким угрозам относятся: использование запрещенных протоколов (bittorrent, telnet, ftp и аналогичные) и портов этих протоколов.</li>
+</ol>
+<blockquote>
+<div><ul class="simple">
+<li>Доступ к ресурсу для соединений (параметры: адрес, порт и протокол) должен быть реализован по т.&nbsp;н. «белому списку».</li>
+<li>Должны вестись журналы подключений, в которые записывается информация о срабатывании правил.</li>
+</ul>
+</div></blockquote>
+<ol class="arabic simple">
+<li>По окончании настроек проверить срабатывание всех правил.</li>
+<li>Составить политику, в которой описать роль персонвльного МЭ в системе межсетевого экранирования модели сети.</li>
+</ol>
+</div>
+<div class="section" id="id7">
+<h2>Содержание отчета:<a class="headerlink" href="#id7" title="Ссылка на этот заголовок">¶</a></h2>
+<ol class="arabic simple">
+<li>Цель работы;</li>
+<li>Содержание действий по выполнению данной работы;</li>
+<li>Ответы на контрольные вопросы;</li>
+<li>Вывод.</li>
+</ol>
+</div>
+<div class="section" id="id8">
+<h2>Контрольные вопросы:<a class="headerlink" href="#id8" title="Ссылка на этот заголовок">¶</a></h2>
+<ol class="arabic simple">
+<li>Как происходит логирование событий межсетевого экрана?</li>
+<li>Как составить правило, которое блокирует сканирование TCP портов и одновременно фиксирует эту информацию в системном журнале операционной системы?</li>
+<li>Как составить политику межсетевого экранирования с использованием фильтрации по т.н. «серому списку»?</li>
+</ol>
+</div>
+<div class="section" id="id9">
+<h2>Приложение:<a class="headerlink" href="#id9" title="Ссылка на этот заголовок">¶</a></h2>
+<p>В качестве примера лога правил рассмотрим правило которое разрешает пинги и логирует их:</p>
+<p>iptables -A INPUT  -p ICMP -s 0/0 &#8211;icmp-type 8 -j LOG &#8211;log-prefix &#8220;Ping detected: &#8221;
+iptables -A INPUT  -p ICMP -s 0/0 &#8211;icmp-type 8 -j ACCEPT</p>
+<p>Теперь по событию подпадающее под это правило будет писаться такое сообщение в /var/log/messages и /var/log/syslog:</p>
+<p>kernel: [122972.300408] Ping detected: IN=eth0 OUT= MAC=00:35:c9:36:7e:d1:00:24:5d:а6:c2:40:08:90 SRC=xxx.xxx.xxx.xxx DST=xxx.xxx.xxx.xxx LEN=60 TOS=0x00 PREC=0x00 TTL=124 ID=23020 PROTO=ICMP TYPE=8 CODE=0 ID=33602 SEQ=2462</p>
+<p>Если попаданий в правила достаточно много, то невозможно проанализировать другие сообщения, т.к. сообщения iptables’а наводняют весь файл логов.</p>
+<p>Для избежания вышеописанного необходимо изменить критерий в префиксе сообщения, например так:</p>
+<p>iptables -A INPUT -p ICMP -s 0/0 &#8211;icmp-type 8 -j LOG &#8211;log-prefix &#8220;Iptables: Ping detected: &#8221;
+iptables -A INPUT -p ICMP -s 0/0 &#8211;icmp-type 8 -j ACCEPT</p>
+<p>И создать файл /etc/rsyslog.d/iptables.conf со следующим содержанием:</p>
+<p>echo &#8216;:msg, contains, &#8220;Iptables: &#8221; -/var/log/iptables.log&#8217; &gt; /etc/rsyslog.d/iptables.conf
+echo &#8216;&amp; ~&#8217; &gt;&gt; /etc/rsyslog.d/iptables.conf</p>
+<dl class="docutils">
+<dt>Где:</dt>
+<dd><ul class="first last simple">
+<li>параметр &amp; ~ говорит о том что дальнейшую обработку записи производить не надо, следовательно она не попадет в другие файлы логов</li>
+<li>&#8220;Iptables: &#8221; — log-prefix — критерий с которого начинается запись лога, чтобы rsyslog смог ее отловить и перенаправить в нужный файл. Его можно было и не менять, а оставить как есть Ping detected, но если правило не одно, то удобнее иметь общий префикс для всех правил, который и был сделан.</li>
+<li>/var/log/iptables.log — файл в который писать лог</li>
+</ul>
+</dd>
+</dl>
+<p>Перезапустить демон rsyslog:</p>
+<p>/etc/init.d/rsyslog restart</p>
+<p>Теперь сообщение в логе /var/log/iptables.log выглядит так:</p>
+<p>kernel: [122972.300408] Iptables: Ping detected: IN=eth0 OUT= MAC=00:35:c9:36:7e:d1:00:24:5d:а6:c2:40:08:90 SRC=xxx.xxx.xxx.xxx DST=xxx.xxx.xxx.xxx LEN=60 TOS=0x00 PREC=0x00 TTL=124 ID=23020 PROTO=ICMP TYPE=8 CODE=0 ID=33602 SEQ=2462</p>
+<p>Наконец iptables пишет в свой личный лог не трогая системные.</p>
+<p>Можно пойти дальше, создав правила для разных событий и каждое событие направить в свой лог, например:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span># Логировать пакеты со статусом INVALID
+$IPT -A INPUT -m state --state INVALID -j LOG --log-prefix &quot;Iptables: Invalid packet: &quot;
+# Логировать INPUT пакеты, которые не попали ни в одно правило
+$IPT -A INPUT -m limit --limit 3/minute --limit-burst 3 -j LOG --log-prefix &quot;Iptables: INPUT packet died: &quot;
+# Логировать FORWARD пакеты, которые не попали ни в одно правило
+$IPT -A FORWARD -m limit --limit 3/minute --limit-burst 3 -j LOG --log-prefix &quot;Iptables: FORWARD packet died: &quot;
+</pre></div>
+</div>
+<p>Создать правила для ведения логирования каждого файла</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">echo</span> <span class="s1">&#39;:msg, contains, &quot;Iptables: Invalid packet&quot; -/var/log/iptables_invalid.log&#39;</span> <span class="o">&gt;</span> <span class="o">/</span><span class="n">etc</span><span class="o">/</span><span class="n">rsyslog</span><span class="o">.</span><span class="n">d</span><span class="o">/</span><span class="n">iptables_invalid</span><span class="o">.</span><span class="n">conf</span>
+<span class="n">echo</span> <span class="s1">&#39;&amp; ~&#39;</span> <span class="o">&gt;&gt;</span> <span class="o">/</span><span class="n">etc</span><span class="o">/</span><span class="n">rsyslog</span><span class="o">.</span><span class="n">d</span><span class="o">/</span><span class="n">iptables_invalid</span><span class="o">.</span><span class="n">conf</span>
+<span class="n">echo</span> <span class="s1">&#39;:msg, contains, &quot;Iptables: INPUT&quot; -/var/log/iptables_input.log&#39;</span> <span class="o">&gt;</span> <span class="o">/</span><span class="n">etc</span><span class="o">/</span><span class="n">rsyslog</span><span class="o">.</span><span class="n">d</span><span class="o">/</span><span class="n">iptables_input</span><span class="o">.</span><span class="n">conf</span>
+<span class="n">echo</span> <span class="s1">&#39;&amp; ~&#39;</span> <span class="o">&gt;&gt;</span> <span class="o">/</span><span class="n">etc</span><span class="o">/</span><span class="n">rsyslog</span><span class="o">.</span><span class="n">d</span><span class="o">/</span><span class="n">iptables_input</span><span class="o">.</span><span class="n">conf</span>
+<span class="n">echo</span> <span class="s1">&#39;:msg, contains, &quot;Iptables: FORWARD&quot; -/var/log/iptables_forward.log&#39;</span> <span class="o">&gt;</span> <span class="o">/</span><span class="n">etc</span><span class="o">/</span><span class="n">rsyslog</span><span class="o">.</span><span class="n">d</span><span class="o">/</span><span class="n">iptables_forward</span><span class="o">.</span><span class="n">conf</span>
+<span class="n">echo</span> <span class="s1">&#39;&amp; ~&#39;</span> <span class="o">&gt;&gt;</span> <span class="o">/</span><span class="n">etc</span><span class="o">/</span><span class="n">rsyslog</span><span class="o">.</span><span class="n">d</span><span class="o">/</span><span class="n">iptables_forward</span><span class="o">.</span><span class="n">conf</span>
+</pre></div>
+</div>
+<p>Перезапустить rsyslog:</p>
+<p>/etc/init.d/rsyslog restart</p>
+<p>При такой конфигурации лог iptables разделен на три части и каждая пишется в свой файл.</p>
+<p>Настроить ротацию логов iptables можно создав файл /etc/logrotate.d/iptables со следующим содержимым. Для одного общего лога:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="o">/</span><span class="n">var</span><span class="o">/</span><span class="n">log</span><span class="o">/</span><span class="n">iptables</span><span class="o">.</span><span class="n">log</span> <span class="p">{</span>
+ <span class="n">daily</span>
+ <span class="n">rotate</span> <span class="mi">30</span>
+ <span class="n">compress</span>
+ <span class="n">missingok</span>
+ <span class="n">notifempty</span>
+ <span class="n">sharedscripts</span>
+ <span class="p">}</span>
+</pre></div>
+</div>
+<p>или для раздельных логов:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="o">/</span><span class="n">var</span><span class="o">/</span><span class="n">log</span><span class="o">/</span><span class="n">iptables_invalid</span><span class="o">.</span><span class="n">log</span> <span class="p">{</span>
+ <span class="n">daily</span>
+ <span class="n">rotate</span> <span class="mi">30</span>
+ <span class="n">compress</span>
+ <span class="n">missingok</span>
+ <span class="n">notifempty</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="o">/</span><span class="n">var</span><span class="o">/</span><span class="n">log</span><span class="o">/</span><span class="n">iptables_input</span><span class="o">.</span><span class="n">log</span> <span class="p">{</span>
+ <span class="n">daily</span>
+ <span class="n">rotate</span> <span class="mi">30</span>
+ <span class="n">compress</span>
+ <span class="n">missingok</span>
+ <span class="n">notifempty</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="o">/</span><span class="n">var</span><span class="o">/</span><span class="n">log</span><span class="o">/</span><span class="n">iptables_forward</span><span class="o">.</span><span class="n">log</span> <span class="p">{</span>
+ <span class="n">daily</span>
+ <span class="n">rotate</span> <span class="mi">30</span>
+ <span class="n">compress</span>
+ <span class="n">missingok</span>
+ <span class="n">notifempty</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+<dl class="docutils">
+<dt>Где</dt>
+<dd><ul class="first last simple">
+<li>daily — ротировать ежедневно</li>
+<li>rotate 30 — сохранять 30 последних ротированных файлов</li>
+<li>compress — сжимать</li>
+<li>missingok — отсутствие файла не является ошибкой</li>
+<li>notifempty — не обрабатывать пустые файлы</li>
+</ul>
+</dd>
+</dl>
+<p>Дабы убедиться в работоспособности, можно принудительно запустить ротацию:</p>
+<p>logrotate -f /etc/logrotate.conf</p>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <h3><a href="index.html">Оглавление</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">Практическое занятие №10 Настройка персональных межсетевых экранов.</a><ul>
+<li><a class="reference internal" href="#id1">Цель работы:</a></li>
+<li><a class="reference internal" href="#id2">Литература:</a></li>
+<li><a class="reference internal" href="#id3">Подготовка к работе:</a></li>
+<li><a class="reference internal" href="#id4">Основное оборудование:</a></li>
+<li><a class="reference internal" href="#id5">Задание:</a></li>
+<li><a class="reference internal" href="#id6">Порядок выполнения работы:</a></li>
+<li><a class="reference internal" href="#id7">Содержание отчета:</a></li>
+<li><a class="reference internal" href="#id8">Контрольные вопросы:</a></li>
+<li><a class="reference internal" href="#id9">Приложение:</a></li>
+</ul>
+</li>
+</ul>
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="index.html">Documentation overview</a><ul>
+      <li>Previous: <a href="pz9.html" title="предыдущая глава">Практическое занятие №9 Тестирования программных межсетевых экранов.</a></li>
+  </ul></li>
+</ul>
+</div>
+  <div role="note" aria-label="source link">
+    <h3>Эта страница</h3>
+    <ul class="this-page-menu">
+      <li><a href="_sources/pz10.txt"
+            rel="nofollow">Исходный текст</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3>Быстрый поиск</h3>
+    <form class="search" action="search.html" method="get">
+      <div><input type="text" name="q" /></div>
+      <div><input type="submit" value="Искать" /></div>
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2016, Vladimir Dushkevich.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 1.4.8</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.9</a>
+      
+      |
+      <a href="_sources/pz10.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

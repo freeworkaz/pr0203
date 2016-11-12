@@ -1,0 +1,196 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ru">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Практическое занятие №12 Настройка и конфигурирование межсетевых экранов в средних сетях. &#8212; Документация course0203 1</title>
+    
+    <link rel="stylesheet" href="_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    './',
+        VERSION:     '1',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <script type="text/javascript" src="_static/translations.js"></script>
+    <link rel="index" title="Алфавитный указатель" href="genindex.html" />
+    <link rel="search" title="Поиск" href="search.html" />
+    <link rel="top" title="Документация course0203 1" href="index.html" />
+    <link rel="next" title="Практическое занятие №13 Моделирование работы межсетевых экранов в крупных сетях." href="pz13.html" />
+    <link rel="prev" title="Практическое занятие №11 Настройка и конфигурирование межсетевых экранов в сетях SOHO" href="pz11.html" />
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head>
+  <body role="document">
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="o12">
+<h1>Практическое занятие №12 Настройка и конфигурирование межсетевых экранов в средних сетях.<a class="headerlink" href="#o12" title="Ссылка на этот заголовок">¶</a></h1>
+<div class="section" id="id1">
+<h2>Цель работы:<a class="headerlink" href="#id1" title="Ссылка на этот заголовок">¶</a></h2>
+<ol class="arabic simple">
+<li>Получить практический опыт применения программно-аппаратных средств обеспечения информационной безопасности телекоммуникационных систем;</li>
+<li>Получить практический опыт выявления технических каналов утечки информации.</li>
+</ol>
+</div>
+<div class="section" id="id2">
+<h2>Литература:<a class="headerlink" href="#id2" title="Ссылка на этот заголовок">¶</a></h2>
+<ol class="arabic simple">
+<li>Шаньгин, В. Ф. Информационная безопасность и защита информации [Электронный ресурс]: учебное пособие. - Москва: ДМК Пресс, 2014. - &nbsp;Режим доступа: <a class="reference external" href="http://www.iprbookshop.ru/29257">http://www.iprbookshop.ru/29257</a>, по запросу, стр 552-556;</li>
+</ol>
+</div>
+<div class="section" id="id3">
+<h2>Подготовка к работе:<a class="headerlink" href="#id3" title="Ссылка на этот заголовок">¶</a></h2>
+<ol class="arabic simple">
+<li>Подготовить бланк отчета;</li>
+<li>Изучить предложенную литературу.</li>
+</ol>
+</div>
+<div class="section" id="id4">
+<h2>Основное оборудование:<a class="headerlink" href="#id4" title="Ссылка на этот заголовок">¶</a></h2>
+<ol class="arabic simple">
+<li>Межсетевой экран в составе виртуальной машины pfsense;</li>
+<li>Виртуальные машины в программе VirtualBox на основе Ubuntu Linux согласно заданию и схеме сети;</li>
+<li>Модель сложной сети и ресурсов сложной сети;</li>
+<li>Пакет GNS3 и комплект виртуальных машин, необходимых для схемы сети;</li>
+<li>Программа Libreoffice для составления отчетов.</li>
+</ol>
+</div>
+<div class="section" id="id5">
+<h2>Задание:<a class="headerlink" href="#id5" title="Ссылка на этот заголовок">¶</a></h2>
+<ol class="arabic simple">
+<li>Выполнить конфигурирование МЭ в средней сети с демилитаризованной зоной (DMZ).</li>
+</ol>
+</div>
+<div class="section" id="id6">
+<h2>Порядок выполнения работы:<a class="headerlink" href="#id6" title="Ссылка на этот заголовок">¶</a></h2>
+<ol class="arabic simple">
+<li>Собрать схему средней сети по индивидуальному заданию и обеспечить ее работоспособность;</li>
+<li>Выполнить подключение pfsence в сетевую структуру с задействованием порта DMZ при необходимости;</li>
+<li>Подключить pfsense в модель сети. Выполнить первичную настройку компонента (создать пользователей, сменить пароль по умолчанию, выполнить настройку).</li>
+<li>Выполнить фильтрацию транзитного траффика. Все транзитные пакеты должны пересылаться адресатам и межсетевой экран должен вести записи о прозодящих  транзитных пакетах в системный журнал;</li>
+<li>Выполнить настройку DMZ и выполнить настройку МЭ таким образом, чтобы он обеспечивал подключение к подсети DMZ только пользователей локальной (или внутренней) сети;</li>
+<li>Выполнить настройку DMZ и выполнить настройку МЭ таким образом, чтобы он обеспечивал подключение к подсети DMZ только пользователей удаленной (или внешней) сети;</li>
+<li>Выполнить создание пользователей, отличных от администратора pfsense;</li>
+<li>Выполнить создание сертификата пользователя и организовать доступ к настройкам pfsense только для пользователя, имеющего сертификат;</li>
+<li>Выполнить настройку ведения журналов подключения пользователей pfsense;</li>
+<li>Выполнить настройку средств отказоустойчивости МЭ pfsense:</li>
+<li>Выполить настройку полного резервного копирования настроек МЭ pfsense;</li>
+<li>Выполить настройку дифференцированного резервного копирования настроек МЭ pfsense;</li>
+<li>Составить план проведения резервного копирования настроек МЭ pfsense.</li>
+</ol>
+</div>
+<div class="section" id="id7">
+<h2>Содержание отчета:<a class="headerlink" href="#id7" title="Ссылка на этот заголовок">¶</a></h2>
+<ol class="arabic simple">
+<li>Цель работы;</li>
+<li>Содержание действий по выполнению данной работы;</li>
+<li>Ответы на контрольные вопросы;</li>
+<li>Вывод.</li>
+</ol>
+</div>
+<div class="section" id="id8">
+<h2>Контрольные вопросы:<a class="headerlink" href="#id8" title="Ссылка на этот заголовок">¶</a></h2>
+<ol class="arabic simple">
+<li>Как реализуется на практике методика сканирования портов?</li>
+<li>Как реализуется на практике методика проведения DOS атак?</li>
+<li>Какие существуют методы защиты от сканирования портов?</li>
+</ol>
+</div>
+<div class="section" id="id9">
+<h2>Приложение:<a class="headerlink" href="#id9" title="Ссылка на этот заголовок">¶</a></h2>
+<p>Суть DMZ заключается в том, что она не входит непосредственно ни во внутреннюю, ни во внешнюю сеть, и доступ к ней может осуществляться только по заранее заданным правилам межсетевого экрана. В DMZ нет пользователей — там располагаются только серверы. Демилитаризованная зона как правило служит для предотвращения доступа из внешней сети к хостам внутренней сети за счет выноса из локальной сети в особую зону всех сервисов, требующих доступа извне. Фактически получается, что эта зона будет являться отдельной подсетью с публичными адресами, защищенной (или — отделенной) от публичных и корпоративных сетей межсетевыми экранами.
+При создании такой зоны перед администраторами корпоративной сети возникают дополнительные задачи. Необходимо обеспечить разграничение доступа к ресурсам и серверам, расположенным в DMZ, обеспечить кофиденциальность информации, передаваемой при работе пользователей с этими ресурсами, вести конроль за действиями пользователей. В отношении информации, которая может находиться на серверах, можно сказать следующее. Учитывая, что публичные сервисы могут быть взломаны, на них должна находиться наименее важная информация, а любая ценная информация должна размещаться исключительно в локальной сети, которая не будет доступна с публичных серверов.
+На серверах, размещенных в DMZ, не должно быть никакой информации о пользователях, клиентах компании, иной конфиденциальной информации, не должно быть личных почтовых ящиков сотрудников — это все должно быть надежно &#8220;спрятано&#8221; в защищенной части локальной сети. А для той информации, которая будет доступна на публичных серверах, необходимо предусмотреть проведение резервного архивирования с возможно меньшей периодичностью. Кроме этого рекомендуется для почтовых серверов применять как минимум двухсерверную модель обслуживания, а для веб-серверов вести постоянный мониторинг состояния информации для своевременного обнаружения и устранения последствий взлома.
+Для защиты проникновения через демилитаризованную зону в корпоративную сеть используются межсетевые экраны</p>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <h3><a href="index.html">Оглавление</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">Практическое занятие №12 Настройка и конфигурирование межсетевых экранов в средних сетях.</a><ul>
+<li><a class="reference internal" href="#id1">Цель работы:</a></li>
+<li><a class="reference internal" href="#id2">Литература:</a></li>
+<li><a class="reference internal" href="#id3">Подготовка к работе:</a></li>
+<li><a class="reference internal" href="#id4">Основное оборудование:</a></li>
+<li><a class="reference internal" href="#id5">Задание:</a></li>
+<li><a class="reference internal" href="#id6">Порядок выполнения работы:</a></li>
+<li><a class="reference internal" href="#id7">Содержание отчета:</a></li>
+<li><a class="reference internal" href="#id8">Контрольные вопросы:</a></li>
+<li><a class="reference internal" href="#id9">Приложение:</a></li>
+</ul>
+</li>
+</ul>
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="index.html">Documentation overview</a><ul>
+      <li>Previous: <a href="pz11.html" title="предыдущая глава">Практическое занятие №11 Настройка и конфигурирование межсетевых экранов в  сетях SOHO</a></li>
+      <li>Next: <a href="pz13.html" title="следующая глава">Практическое занятие №13 Моделирование работы межсетевых экранов в крупных сетях.</a></li>
+  </ul></li>
+</ul>
+</div>
+  <div role="note" aria-label="source link">
+    <h3>Эта страница</h3>
+    <ul class="this-page-menu">
+      <li><a href="_sources/pz12.txt"
+            rel="nofollow">Исходный текст</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3>Быстрый поиск</h3>
+    <form class="search" action="search.html" method="get">
+      <div><input type="text" name="q" /></div>
+      <div><input type="submit" value="Искать" /></div>
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2016, Vladimir Dushkevich.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 1.4.8</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.9</a>
+      
+      |
+      <a href="_sources/pz12.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

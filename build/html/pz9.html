@@ -1,0 +1,266 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ru">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Практическое занятие №9 Тестирования программных межсетевых экранов. &#8212; Документация course0203 1</title>
+    
+    <link rel="stylesheet" href="_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    './',
+        VERSION:     '1',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <script type="text/javascript" src="_static/translations.js"></script>
+    <link rel="index" title="Алфавитный указатель" href="genindex.html" />
+    <link rel="search" title="Поиск" href="search.html" />
+    <link rel="top" title="Документация course0203 1" href="index.html" />
+    <link rel="prev" title="Практическое занятие №8 Тестирования аппаратных межсетевых экранов." href="pz8.html" />
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head>
+  <body role="document">
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="o9">
+<h1>Практическое занятие №9 Тестирования программных межсетевых экранов.<a class="headerlink" href="#o9" title="Ссылка на этот заголовок">¶</a></h1>
+<div class="section" id="id1">
+<h2>Цель работы:<a class="headerlink" href="#id1" title="Ссылка на этот заголовок">¶</a></h2>
+<ol class="arabic simple">
+<li>Получить практический опыт применения программно-аппаратных средств обеспечения информационной безопасности телекоммуникационных систем;</li>
+<li>Получить практический опыт выявления технических каналов утечки информации.</li>
+</ol>
+</div>
+<div class="section" id="id2">
+<h2>Литература:<a class="headerlink" href="#id2" title="Ссылка на этот заголовок">¶</a></h2>
+<ol class="arabic simple">
+<li>Шаньгин, В. Ф. Информационная безопасность и защита информации [Электронный ресурс]: учебное пособие. - Москва: ДМК Пресс, 2014. - &nbsp;Режим доступа: <a class="reference external" href="http://www.iprbookshop.ru/29257">http://www.iprbookshop.ru/29257</a>, по запросу, стр 435-444;</li>
+</ol>
+</div>
+<div class="section" id="id3">
+<h2>Подготовка к работе:<a class="headerlink" href="#id3" title="Ссылка на этот заголовок">¶</a></h2>
+<ol class="arabic simple">
+<li>Подготовить бланк отчета;</li>
+<li>Изучить предложенную литературу.</li>
+</ol>
+</div>
+<div class="section" id="id4">
+<h2>Основное оборудование:<a class="headerlink" href="#id4" title="Ссылка на этот заголовок">¶</a></h2>
+<ol class="arabic simple">
+<li>Межсетевой экран в составе виртуальной машины pfsense;</li>
+<li>Коммутаторы второго уровня Dlink или аналогичные;</li>
+<li>Программы CMD, putty;</li>
+<li>Схема простой сети и ресурсов простой сети;</li>
+<li>Программа Libreoffice для составления отчетов.</li>
+</ol>
+</div>
+<div class="section" id="id5">
+<h2>Задание:<a class="headerlink" href="#id5" title="Ссылка на этот заголовок">¶</a></h2>
+<ol class="arabic simple">
+<li>Выполнить настройку и тестирование предложенного межсетевого экрана (МЭ).</li>
+</ol>
+</div>
+<div class="section" id="id6">
+<h2>Порядок выполнения работы:<a class="headerlink" href="#id6" title="Ссылка на этот заголовок">¶</a></h2>
+<ol class="arabic simple">
+<li>Выбрать модель средней сети согласно индивидуальному заданию, собрать сеть по схеме в GNS3. Протестировать работу компонентов. Настроить работу МЭ в полученной модели сети;</li>
+<li>Выполнить тестирование предложенного МЭ:</li>
+</ol>
+<blockquote>
+<div><ol class="arabic simple">
+<li>Выполнить создание пользователей, являющихся администраторами;</li>
+<li>Выполнить создание пользователей, не являющихся администраторами. Выяснить их права и привилегии. Типы пользовательских четныхзаписей и их привилиегии отразить в отчете;</li>
+<li>Выполнить анализ политики МЭ по умолчанию. Составить диаграмму связей (т.н. «майнд -карту»), отражающую применение политик по умолчанию;</li>
+</ol>
+</div></blockquote>
+<ol class="arabic simple">
+<li>Выполнить настройку МЭ для фильтрации траффика между портами LAN и WAN на примере протоколов icmp, telnet.</li>
+<li>Выполнить настройку МЭ для фильтрации траффика между портами DMZ и WAN на примере протоколов icmp, telnet4</li>
+<li>Выполнить настройку устройства для фильтрации трафика между клиентами и серверами сети на основе белого списка адресов;</li>
+<li>Выполнить настройку устройства для фильтрации трафика между клиентами и серверами сети на основе черного списка адресов;</li>
+<li>Выполнить настройку устройства для фильтрации трафика между клиентами и серверами сети на основе списка ACL;</li>
+<li>Выполнить настройку ведения журналов подключений к межсетевым экранам для каждого из пользователей;</li>
+<li>Выполнить настройку срока действия и смены пароля каждого пользователя.</li>
+<li>Выполить настройку резервного копирования настроек МЭ;</li>
+<li>Реализованные настройки продемонстрировать преподавателю.</li>
+</ol>
+</div>
+<div class="section" id="id7">
+<h2>Содержание отчета:<a class="headerlink" href="#id7" title="Ссылка на этот заголовок">¶</a></h2>
+<ol class="arabic simple">
+<li>Цель работы;</li>
+<li>Содержание действий по выполнению данной работы;</li>
+<li>Ответы на контрольные вопросы;</li>
+<li>Вывод.</li>
+</ol>
+</div>
+<div class="section" id="id8">
+<h2>Контрольные вопросы:<a class="headerlink" href="#id8" title="Ссылка на этот заголовок">¶</a></h2>
+<ol class="arabic simple">
+<li>Что понимают под системой защиты информации с «полным перекрытием»?</li>
+<li>Что понимают под мерами компенсирования воздействия угроз?</li>
+<li>Каким образом на практике оценивается эффективность реализованных мер защиты?</li>
+</ol>
+</div>
+<div class="section" id="id9">
+<h2>Приложение:<a class="headerlink" href="#id9" title="Ссылка на этот заголовок">¶</a></h2>
+<p>Фаервол, встроенный в ядро Linux, называется Netfilter, а iptables — утилита для управления этим фаерволом.
+Какие примерно задачи можно решать с помощью Netfilter:</p>
+<ul class="simple">
+<li>Разрешать/запрещать входящий трафик на определенные порты по определенным протоколам (IPv4/IPv6, TCP/UDP) с указанных адресов (IP, MAC) или подсетей;</li>
+<li>Все то же самое в отношении исходящего трафика;</li>
+<li>Можно, например, полностью игнорировать все ICMP пакеты;</li>
+<li>Настройка NAT, см пост про установку и настройку OpenVPN;</li>
+</ul>
+<p>Рассмотрим основные команды.</p>
+<p>Показать все правила:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="c1"># iptables -L -n</span>
+</pre></div>
+</div>
+<p>Вы можете заметить, что в Netfilter есть какие-то «цепочки» (chains) — как минимум INPUT, OUTPUT и FORWARD. У меня лично на машине есть еще и цепочка DOCKER. На первое время можно думать о первых двух, как обо всем входящем и исходящем трафике соответственно, а об остальных временно забыть. Велика вероятность, что они вообще никогда вам не понадобятся.</p>
+<p>Удалить все правила:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="c1"># iptables -F</span>
+</pre></div>
+</div>
+<p>Изменить политику (поведение по умолчанию) цепочки:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="c1"># iptables -P INPUT DROP</span>
+<span class="c1"># iptables -P INPUT ACCEPT</span>
+</pre></div>
+</div>
+<p>Запретить доступ с хоста/подсети:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="c1"># iptables -A INPUT -s 123.45.67.89 -j DROP</span>
+<span class="c1"># iptables -A INPUT -s 123.45.0.0/16 -j DROP</span>
+</pre></div>
+</div>
+<p>Также можно использовать доменные имена:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="c1"># iptables -A INPUT -s example.ru -j DROP</span>
+</pre></div>
+</div>
+<p>Запрет исходящих соединений:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="c1"># iptables -A OUTPUT -d 123.45.67.89 -j DROP</span>
+</pre></div>
+</div>
+<p>В правилах можно использовать отрицания:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="c1"># iptables -A INPUT ! -s 123.45.67.89 -j DROP</span>
+</pre></div>
+</div>
+<p>Удаление правила по его номеру в цепочке:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="c1"># iptables -D INPUT 1</span>
+</pre></div>
+</div>
+<p>Удаление правила на основе того, что оно делает:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="c1"># iptables -D INPUT -s 123.45.67.89 -j DROP</span>
+</pre></div>
+</div>
+<p>Опция -p указывает на протокол. Можно использовать all, icmp, tcp, udp или номер протокола из /etc/protocols. Флаг &#8211;sport указывает порт, с которого был прислан пакет, а &#8211;dport указывает порт назначения:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="c1"># iptables -A INPUT -p tcp --sport 80 -j ACCEPT</span>
+<span class="c1"># iptables -A INPUT -p tcp --dport 80 -j ACCEPT</span>
+</pre></div>
+</div>
+<p>Вставка (insert) правила в начало цепочки:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="c1"># iptables -I INPUT ...</span>
+</pre></div>
+</div>
+<p>Или можно указать конкретную позицию:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="c1"># iptables -I INPUT 3 ...</span>
+</pre></div>
+</div>
+<p>Сохранить правила:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="c1"># iptables-save &gt; /etc/iptables.rules</span>
+</pre></div>
+</div>
+<p>Восстановить правила:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="c1"># iptables-restore &lt; /etc/iptables.rules</span>
+</pre></div>
+</div>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <h3><a href="index.html">Оглавление</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">Практическое занятие №9 Тестирования программных межсетевых экранов.</a><ul>
+<li><a class="reference internal" href="#id1">Цель работы:</a></li>
+<li><a class="reference internal" href="#id2">Литература:</a></li>
+<li><a class="reference internal" href="#id3">Подготовка к работе:</a></li>
+<li><a class="reference internal" href="#id4">Основное оборудование:</a></li>
+<li><a class="reference internal" href="#id5">Задание:</a></li>
+<li><a class="reference internal" href="#id6">Порядок выполнения работы:</a></li>
+<li><a class="reference internal" href="#id7">Содержание отчета:</a></li>
+<li><a class="reference internal" href="#id8">Контрольные вопросы:</a></li>
+<li><a class="reference internal" href="#id9">Приложение:</a></li>
+</ul>
+</li>
+</ul>
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="index.html">Documentation overview</a><ul>
+      <li>Previous: <a href="pz8.html" title="предыдущая глава">Практическое занятие №8 Тестирования аппаратных межсетевых экранов.</a></li>
+  </ul></li>
+</ul>
+</div>
+  <div role="note" aria-label="source link">
+    <h3>Эта страница</h3>
+    <ul class="this-page-menu">
+      <li><a href="_sources/pz9.txt"
+            rel="nofollow">Исходный текст</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3>Быстрый поиск</h3>
+    <form class="search" action="search.html" method="get">
+      <div><input type="text" name="q" /></div>
+      <div><input type="submit" value="Искать" /></div>
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2016, Vladimir Dushkevich.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 1.4.8</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.9</a>
+      
+      |
+      <a href="_sources/pz9.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>
